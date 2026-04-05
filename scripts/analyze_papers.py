@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ArXiv Paper Correlation Analyzer
-Analyzes papers and assigns correlation levels based on defined rules.
+Analyzes papers and assigns correlation levels based on title only.
 """
 
 import json
@@ -61,16 +61,15 @@ def check_keywords_match(text, keywords, partial_match=True):
     return False, None
 
 
-def is_large_model_related(title, abstract, rules_def):
-    """Check if paper is related to large models."""
+def is_large_model_related(title, rules_def):
+    """Check if paper is related to large models (using title only)."""
     large_model_terms = rules_def.get('large_models', [])
     
     title_lower = normalize_text(title)
-    abstract_lower = normalize_text(abstract)
     
     for term in large_model_terms:
         term_lower = term.lower()
-        if term_lower in title_lower or term_lower in abstract_lower:
+        if term_lower in title_lower:
             return True
     
     return False
@@ -80,14 +79,14 @@ def analyze_paper(paper, rules_config):
     """Analyze a single paper and return correlation level.
     
     Priority: 1 (safety) > 2 (capability) > 3 (related) > 4 (other)
+    Analysis is based on title ONLY.
     """
     title = paper.get('title', '')
-    abstract = paper.get('abstract', '')
     rules = rules_config.get('rules', [])
     rules_def = rules_config.get('definition', {})
     
     # Check if paper is large-model related first (for levels 1-3)
-    is_llm_related = is_large_model_related(title, abstract, rules_def)
+    is_llm_related = is_large_model_related(title, rules_def)
     
     # Get rules sorted by priority
     sorted_rules = sorted(rules, key=lambda x: x.get('priority', 999))
@@ -96,24 +95,20 @@ def analyze_paper(paper, rules_config):
     safety_rule = next((r for r in sorted_rules if r['level'] == 1), None)
     if safety_rule and is_llm_related:
         title_keywords = safety_rule.get('keywords', {}).get('title', [])
-        abstract_keywords = safety_rule.get('keywords', {}).get('abstract', [])
         
         title_match, _ = check_keywords_match(title, title_keywords)
-        abstract_match, _ = check_keywords_match(abstract, abstract_keywords)
         
-        if title_match or abstract_match:
+        if title_match:
             return 1
     
     # Level 2: Capability research
     capability_rule = next((r for r in sorted_rules if r['level'] == 2), None)
     if capability_rule and is_llm_related:
         title_keywords = capability_rule.get('keywords', {}).get('title', [])
-        abstract_keywords = capability_rule.get('keywords', {}).get('abstract', [])
         
         title_match, _ = check_keywords_match(title, title_keywords)
-        abstract_match, _ = check_keywords_match(abstract, abstract_keywords)
         
-        if title_match or abstract_match:
+        if title_match:
             return 2
     
     # Level 3: General LLM related research
@@ -143,6 +138,7 @@ def analyze_daily_file(date_str=None):
         papers = json.load(f)
     
     print(f"Analyzing {len(papers)} papers from {date_str}...")
+    print(f"Method: Title-only analysis")
     print("=" * 60)
     
     # Analyze each paper

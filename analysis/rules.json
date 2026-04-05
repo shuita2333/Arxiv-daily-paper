@@ -1,0 +1,116 @@
+{
+  "version": "1.1",
+  "description": "大模型论文相关性分析规则 - 四等级分类系统（仅使用标题分析）",
+  "definition": {
+    "large_models": [
+      "LLM", "RLLM", "MLLM", "DLLM", "MoE", "Agent",
+      "language model", "multimodal model", "large model",
+      "foundation model", "transformer", "GPT", "BERT",
+      "reasoning model", "diffusion model", "mixture of experts",
+      "reinforcement learning from human feedback", "RLHF",
+      "chain-of-thought", "in-context learning", "few-shot learning",
+      "prompt engineering", "fine-tuning", "pre-training",
+      "alignment", "hallucination", "interpretability",
+      "safety", "robustness", "fairness", "privacy",
+      "jailbreak", "adversarial attack", "poisoning",
+      "backdoor", "data contamination", "benchmark",
+      "evaluation", "capability", "reasoning", "planning",
+      "tool use", "code generation", "math reasoning",
+      "knowledge", "memory", "generalization",
+      "scaling law", "emergence", "capability emergence"
+    ]
+  },
+  "rules": [
+    {
+      "level": 1,
+      "name": "大模型安全相关研究",
+      "description": "文章直接讨论了大模型某一方面的安全问题",
+      "priority": 1,
+      "keywords": {
+        "title": [
+          "safety", "security", "robustness", "attack", "defense",
+          "adversarial", "jailbreak", "poisoning", "backdoor",
+          "toxicity", "harmful", "malicious", "vulnerability",
+          "exploit", "misuse", "alignment", "RLHF", "red teaming",
+          "content moderation", "filter", "guardrail",
+          "privacy", "leakage", "memorization", "data contamination",
+          "fairness", "bias", "discrimination",
+          "hallucination detection", "truthfulness", "factuality",
+          "interpretability", "explainability", "transparency",
+          "trustworthiness", "reliability", "risk",
+          "societal impact", "ethical", "governance",
+          "autonomous", "agent safety", "tool safety"
+        ]
+      },
+      "model_context": true
+    },
+    {
+      "level": 2,
+      "name": "大模型内生能力研究",
+      "description": "探索模型的各方面能力（推理、规划、知识、工具使用等）",
+      "priority": 2,
+      "keywords": {
+        "title": [
+          "reasoning", "planning", "problem solving",
+          "knowledge", "understanding", "comprehension",
+          "memory", "retrieval", "context",
+          "generalization", "transfer learning",
+          "few-shot", "zero-shot", "in-context learning",
+          "chain-of-thought", "CoT", "thought",
+          "tool use", "tool learning", "API",
+          "code generation", "programming", "coding",
+          "math", "mathematical reasoning", "arithmetic",
+          "creativity", "generation", "synthesis",
+          "summarization", "translation", "QA",
+          "instruction following", "prompt",
+          "scaling", "emergence", "capability",
+          "benchmark", "evaluation", "assessment",
+          "performance", "accuracy", "efficiency",
+          "inference", "decoding", "generation"
+        ]
+      },
+      "model_context": true
+    },
+    {
+      "level": 3,
+      "name": "大模型相关研究",
+      "description": "和大模型相关的研究内容（训练、架构、优化等）",
+      "priority": 3,
+      "keywords": {
+        "title": [
+          "LLM", "large language model", "foundation model",
+          "transformer", "GPT", "BERT", "T5", "Llama",
+          "multimodal", "MLLM", "vision language",
+          "reinforcement learning", "RLHF", "DPO", "PPO",
+          "fine-tuning", "instruction tuning", "SFT",
+          "pre-training", "continual learning",
+          "MoE", "mixture of experts",
+          "quantization", "pruning", "distillation",
+          "efficiency", "compression", "acceleration",
+          "training", "optimization", "convergence",
+          "architecture", "attention", "self-attention",
+          "token", "embedding", "representation",
+          "diffusion", "flow matching",
+          "agent", "multi-agent", "autonomous",
+          "rag", "retrieval augmented",
+          "dataset", "corpus", "pretraining data"
+        ]
+      },
+      "model_context": false
+    },
+    {
+      "level": 4,
+      "name": "其他研究",
+      "description": "不属于大模型领域的其他研究",
+      "priority": 4,
+      "keywords": {},
+      "model_context": false
+    }
+  ],
+  "matching_strategy": {
+    "description": "优先级匹配策略：按1→2→3→4顺序检查，仅使用标题进行匹配",
+    "analysis_method": "title_only",
+    "case_sensitive": false,
+    "partial_match": true
+  }
+}
