@@ -52,19 +52,17 @@ Respond with only the JSON, no other text."""
 
 def get_llm_client():
     """Initialize LLM client from environment variables."""
-    api_key = os.getenv("OPENAI_API_KEY") or os.getenv("LLM_API_KEY")
-    base_url = os.getenv("LLM_BASE_URL") or os.getenv("OPENAI_BASE_URL")
+    # Priority: user-provided key > environment variables
+    api_key = "sk-kimi-zxHeXjGYWdKcL4L8SVTukUXsHoUEgyH6k518vM60W0hSGhpVJopTXOYNpaIuJk5p"
+    base_url = "https://api.moonshot.cn/v1"
     
-    if not api_key:
-        print("⚠️  Warning: No API key found. Set OPENAI_API_KEY or LLM_API_KEY environment variable.")
-        return None
-    
-    client_kwargs = {"api_key": api_key}
-    if base_url:
-        client_kwargs["base_url"] = base_url
+    # Allow override from environment
+    if os.getenv("OPENAI_API_KEY") or os.getenv("LLM_API_KEY"):
+        api_key = os.getenv("OPENAI_API_KEY") or os.getenv("LLM_API_KEY")
+        base_url = os.getenv("LLM_BASE_URL") or os.getenv("OPENAI_BASE_URL") or "https://api.moonshot.cn/v1"
     
     try:
-        return OpenAI(**client_kwargs)
+        return OpenAI(api_key=api_key, base_url=base_url)
     except Exception as e:
         print(f"❌ Error initializing LLM client: {e}")
         return None
@@ -174,7 +172,7 @@ def analyze_paper(paper, client, use_llm=True):
     return classify_with_rules(title)
 
 
-def analyze_daily_file(date_str=None, use_llm=True, model="gpt-4o-mini"):
+def analyze_daily_file(date_str=None, use_llm=True, model="moonshot-v1-8k"):
     """Analyze papers for a specific date."""
     if date_str is None:
         date_str = datetime.now().strftime('%Y-%m-%d')
@@ -244,7 +242,7 @@ def main():
     # Parse arguments
     date_str = None
     use_llm = True
-    model = "gpt-4o-mini"
+    model = "moonshot-v1-8k"
     
     args = sys.argv[1:]
     i = 0
