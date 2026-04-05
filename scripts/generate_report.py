@@ -12,10 +12,10 @@ from pathlib import Path
 # Configuration
 BASE_DIR = Path.home() / "Documents" / "arxiv每日阅读"
 DAILY_DIR = BASE_DIR / "daily"
-REPORTS_DIR = BASE_DIR / "reports"
+PAPERS_DIR = BASE_DIR / "papers"
 
-# Ensure reports directory exists
-REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+# Ensure papers directory exists
+PAPERS_DIR.mkdir(parents=True, exist_ok=True)
 
 # Font color definitions (fixed)
 FONT_COLORS = {
@@ -99,7 +99,7 @@ def generate_report(date_str=None):
         date_str = datetime.now().strftime('%Y-%m-%d')
     
     input_file = DAILY_DIR / f"{date_str}.json"
-    output_file = REPORTS_DIR / f"{date_str}-report.md"
+    output_file = PAPERS_DIR / f"{date_str}.md"
     
     if not input_file.exists():
         print(f"Error: Input file not found: {input_file}")
