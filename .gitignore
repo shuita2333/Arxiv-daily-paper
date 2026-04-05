@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+
+# But keep these files and directories
+!README.md
+!papers/
+!papers/**
+
+# Also keep .gitignore itself
+!.gitignore
