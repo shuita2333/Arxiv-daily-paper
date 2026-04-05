@@ -1,125 +1,180 @@
 #!/usr/bin/env python3
 """
 ArXiv Paper Correlation Analyzer
-Analyzes papers and assigns correlation levels based on title only.
+Uses LLM semantic analysis to classify papers into correlation levels.
 """
 
 import json
+import os
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
 
+# Try to import OpenAI, but don't fail if not available
+try:
+    from openai import OpenAI
+    HAS_OPENAI = True
+except ImportError:
+    HAS_OPENAI = False
+
 # Configuration
 BASE_DIR = Path.home() / "Documents" / "arxiv每日阅读"
-RULES_FILE = BASE_DIR / "analysis" / "rules.json"
 DAILY_DIR = BASE_DIR / "daily"
 
+# Classification prompt template
+CLASSIFICATION_PROMPT = """You are an expert in computer science and AI research. Analyze the following arXiv paper title and classify it into one of four levels based on its relevance to large language models (LLMs).
 
-def load_rules():
-    """Load analysis rules from config file."""
-    with open(RULES_FILE, 'r', encoding='utf-8') as f:
-        return json.load(f)
+Paper Title: {title}
+
+Classification Levels:
+1. **大模型安全相关研究** - Directly discusses LLM safety issues (safety, security, alignment, privacy, fairness, hallucination detection, interpretability, jailbreak, adversarial attacks, etc.)
+
+2. **大模型内生能力研究** - Explores LLM capabilities (reasoning, planning, knowledge, memory, in-context learning, chain-of-thought, tool use, code generation, math reasoning, scaling, emergence, etc.)
+
+3. **大模型相关研究** - Related to LLMs but not specifically safety or capability exploration (LLM architecture, training, fine-tuning, MoE, RAG, multimodal, agents, etc.)
+
+4. **其他研究** - Not related to LLMs (traditional ML, CV, NLP non-LLM, other CS areas)
+
+Instructions:
+- Analyze the semantic meaning of the title
+- Consider the main focus of the research
+- If uncertain between levels, choose the lower number (more specific)
+
+Output your response in this exact JSON format:
+{{
+  "level": 1,
+  "reasoning": "Brief explanation of why this level was chosen"
+}}
+
+Respond with only the JSON, no other text."""
 
 
-def normalize_text(text):
-    """Normalize text for matching (lowercase, remove extra spaces)."""
-    if not text:
-        return ""
-    # Convert to lowercase
-    text = text.lower()
-    # Remove extra whitespace
-    text = re.sub(r'\s+', ' ', text)
-    return text
-
-
-def check_keywords_match(text, keywords, partial_match=True):
-    """Check if any keyword matches in the text.
+def get_llm_client():
+    """Initialize LLM client from environment variables."""
+    api_key = os.getenv("OPENAI_API_KEY") or os.getenv("LLM_API_KEY")
+    base_url = os.getenv("LLM_BASE_URL") or os.getenv("OPENAI_BASE_URL")
     
-    Args:
-        text: Text to search in
-        keywords: List of keywords to search for
-        partial_match: If True, allows partial word matches
+    if not api_key:
+        print("⚠️  Warning: No API key found. Set OPENAI_API_KEY or LLM_API_KEY environment variable.")
+        return None
     
-    Returns:
-        (matched, matched_keyword)
-    """
-    text = normalize_text(text)
+    client_kwargs = {"api_key": api_key}
+    if base_url:
+        client_kwargs["base_url"] = base_url
     
-    for keyword in keywords:
-        keyword_lower = keyword.lower()
+    try:
+        return OpenAI(**client_kwargs)
+    except Exception as e:
+        print(f"❌ Error initializing LLM client: {e}")
+        return None
+
+
+def classify_with_llm(title, client, model="gpt-4o-mini"):
+    """Classify a paper using LLM semantic analysis."""
+    if not client:
+        return None, "LLM client not available"
+    
+    prompt = CLASSIFICATION_PROMPT.format(title=title)
+    
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": "You are a helpful research assistant specializing in AI paper classification."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.3,
+            max_tokens=150
+        )
         
-        if partial_match:
-            # Partial match - keyword can be part of a word
-            if keyword_lower in text:
-                return True, keyword
-        else:
-            # Whole word match
-            pattern = r'\b' + re.escape(keyword_lower) + r'\b'
-            if re.search(pattern, text):
-                return True, keyword
-    
-    return False, None
+        content = response.choices[0].message.content.strip()
+        
+        # Extract JSON from response
+        # Handle cases where LLM wraps JSON in markdown code blocks
+        json_match = re.search(r'\{[\s\S]*\}', content)
+        if json_match:
+            content = json_match.group(0)
+        
+        result = json.loads(content)
+        level = result.get("level", 4)
+        reasoning = result.get("reasoning", "")
+        
+        # Validate level
+        if not isinstance(level, int) or level < 1 or level > 4:
+            level = 4
+        
+        return level, reasoning
+        
+    except Exception as e:
+        return None, f"LLM error: {str(e)}"
 
 
-def is_large_model_related(title, rules_def):
-    """Check if paper is related to large models (using title only)."""
-    large_model_terms = rules_def.get('large_models', [])
+def classify_with_rules(title):
+    """Fallback classification using keyword rules when LLM is unavailable."""
+    title_lower = title.lower()
     
-    title_lower = normalize_text(title)
+    # Level 1: Safety-related keywords
+    safety_keywords = [
+        "safety", "security", "robustness", "attack", "defense",
+        "adversarial", "jailbreak", "poisoning", "backdoor",
+        "toxicity", "harmful", "malicious", "vulnerability",
+        "alignment", "RLHF", "red teaming", "privacy",
+        "fairness", "bias", "hallucination detection",
+        "interpretability", "explainability", "trustworthiness",
+        "risk", "ethical", "governance"
+    ]
     
-    for term in large_model_terms:
-        term_lower = term.lower()
-        if term_lower in title_lower:
-            return True
+    for kw in safety_keywords:
+        if kw in title_lower:
+            return 1, f"Rule-based: matched '{kw}'"
     
-    return False
+    # Level 2: Capability-related keywords
+    capability_keywords = [
+        "reasoning", "planning", "problem solving",
+        "knowledge", "memory", "generalization",
+        "few-shot", "zero-shot", "in-context learning",
+        "chain-of-thought", "CoT", "tool use",
+        "code generation", "programming", "math",
+        "creativity", "summarization", "translation",
+        "instruction following", "scaling", "emergence"
+    ]
+    
+    for kw in capability_keywords:
+        if kw in title_lower:
+            return 2, f"Rule-based: matched '{kw}'"
+    
+    # Level 3: LLM-related keywords
+    llm_keywords = [
+        "LLM", "language model", "foundation model",
+        "transformer", "GPT", "BERT", "T5",
+        "multimodal", "reinforcement learning",
+        "fine-tuning", "pre-training", "MoE",
+        "rag", "retrieval augmented", "agent"
+    ]
+    
+    for kw in llm_keywords:
+        if kw.lower() in title_lower:
+            return 3, f"Rule-based: matched '{kw}'"
+    
+    # Level 4: Other
+    return 4, "Rule-based: no LLM keywords found"
 
 
-def analyze_paper(paper, rules_config):
-    """Analyze a single paper and return correlation level.
-    
-    Priority: 1 (safety) > 2 (capability) > 3 (related) > 4 (other)
-    Analysis is based on title ONLY.
-    """
+def analyze_paper(paper, client, use_llm=True):
+    """Analyze a single paper and return correlation level."""
     title = paper.get('title', '')
-    rules = rules_config.get('rules', [])
-    rules_def = rules_config.get('definition', {})
     
-    # Check if paper is large-model related first (for levels 1-3)
-    is_llm_related = is_large_model_related(title, rules_def)
+    if use_llm and client:
+        level, reasoning = classify_with_llm(title, client)
+        if level is not None:
+            return level, reasoning
+        # Fall back to rules if LLM fails
     
-    # Get rules sorted by priority
-    sorted_rules = sorted(rules, key=lambda x: x.get('priority', 999))
-    
-    # Level 1: Safety research (highest priority for LLM papers)
-    safety_rule = next((r for r in sorted_rules if r['level'] == 1), None)
-    if safety_rule and is_llm_related:
-        title_keywords = safety_rule.get('keywords', {}).get('title', [])
-        
-        title_match, _ = check_keywords_match(title, title_keywords)
-        
-        if title_match:
-            return 1
-    
-    # Level 2: Capability research
-    capability_rule = next((r for r in sorted_rules if r['level'] == 2), None)
-    if capability_rule and is_llm_related:
-        title_keywords = capability_rule.get('keywords', {}).get('title', [])
-        
-        title_match, _ = check_keywords_match(title, title_keywords)
-        
-        if title_match:
-            return 2
-    
-    # Level 3: General LLM related research
-    if is_llm_related:
-        return 3
-    
-    # Level 4: Other research
-    return 4
+    return classify_with_rules(title)
 
 
-def analyze_daily_file(date_str=None):
+def analyze_daily_file(date_str=None, use_llm=True, model="gpt-4o-mini"):
     """Analyze papers for a specific date."""
     if date_str is None:
         date_str = datetime.now().strftime('%Y-%m-%d')
@@ -127,66 +182,97 @@ def analyze_daily_file(date_str=None):
     input_file = DAILY_DIR / f"{date_str}.json"
     
     if not input_file.exists():
-        print(f"Error: File not found: {input_file}")
+        print(f"❌ Error: File not found: {input_file}")
         return None
-    
-    # Load rules
-    rules_config = load_rules()
     
     # Load papers
     with open(input_file, 'r', encoding='utf-8') as f:
         papers = json.load(f)
     
-    print(f"Analyzing {len(papers)} papers from {date_str}...")
-    print(f"Method: Title-only analysis")
-    print("=" * 60)
+    # Initialize LLM client if requested
+    client = None
+    method = "LLM semantic analysis"
+    if use_llm:
+        client = get_llm_client()
+        if not client:
+            print("⚠️  LLM not available, falling back to keyword rules")
+            method = "Keyword rules (LLM unavailable)"
+    else:
+        method = "Keyword rules (LLM disabled)"
+    
+    print(f"\n{'='*60}")
+    print(f"Analyzing {len(papers)} papers from {date_str}")
+    print(f"Method: {method}")
+    print(f"{'='*60}\n")
     
     # Analyze each paper
     stats = {1: 0, 2: 0, 3: 0, 4: 0}
     
     for i, paper in enumerate(papers):
-        level = analyze_paper(paper, rules_config)
+        title = paper.get('title', 'Untitled')
+        level, reasoning = analyze_paper(paper, client, use_llm)
         paper['correlation'] = level
         stats[level] += 1
         
-        # Progress indicator every 20 papers
-        if (i + 1) % 20 == 0:
-            print(f"  Processed {i + 1}/{len(papers)} papers...")
+        # Print progress
+        print(f"[{i+1}/{len(papers)}] Level {level}: {title[:60]}...")
+        print(f"       → {reasoning[:80]}...")
+        
+        # Progress indicator every 10 papers
+        if (i + 1) % 10 == 0:
+            print(f"\n📊 Progress: {i+1}/{len(papers)} papers analyzed\n")
     
     # Save updated papers
     with open(input_file, 'w', encoding='utf-8') as f:
         json.dump(papers, f, ensure_ascii=False, indent=2)
     
-    print("=" * 60)
-    print(f"Analysis complete!")
-    print(f"")
-    print(f"Correlation distribution:")
-    print(f"  Level 1 (大模型安全相关研究): {stats[1]} papers")
-    print(f"  Level 2 (大模型内生能力研究): {stats[2]} papers")
-    print(f"  Level 3 (大模型相关研究):     {stats[3]} papers")
-    print(f"  Level 4 (其他研究):           {stats[4]} papers")
-    print(f"")
-    print(f"Updated file: {input_file}")
+    print(f"\n{'='*60}")
+    print("✅ Analysis complete!")
+    print(f"\n📈 Correlation distribution:")
+    print(f"  Level 1 (大模型安全):    {stats[1]:3d} papers")
+    print(f"  Level 2 (大模型能力):    {stats[2]:3d} papers")
+    print(f"  Level 3 (大模型相关):    {stats[3]:3d} papers")
+    print(f"  Level 4 (其他研究):      {stats[4]:3d} papers")
+    print(f"\n💾 Updated: {input_file}")
+    print(f"{'='*60}")
     
     return stats
 
 
 def main():
     """Main entry point."""
-    import sys
-    
-    # Check for date argument
+    # Parse arguments
     date_str = None
-    if len(sys.argv) > 1:
-        date_str = sys.argv[1]
+    use_llm = True
+    model = "gpt-4o-mini"
+    
+    args = sys.argv[1:]
+    i = 0
+    while i < len(args):
+        if args[i] == "--no-llm":
+            use_llm = False
+        elif args[i] == "--model" and i + 1 < len(args):
+            model = args[i + 1]
+            i += 1
+        elif not date_str and not args[i].startswith("-"):
+            date_str = args[i]
+        i += 1
+    
+    # Check dependencies
+    if use_llm and not HAS_OPENAI:
+        print("⚠️  OpenAI package not installed. Run: pip install openai")
+        print("   Falling back to keyword rules...")
+        use_llm = False
     
     # Analyze
-    stats = analyze_daily_file(date_str)
+    stats = analyze_daily_file(date_str, use_llm, model)
     
     if stats:
-        print("\nDone!")
+        print("\n🎉 Done!")
+        sys.exit(0)
     else:
-        print("\nFailed to analyze papers.")
+        print("\n❌ Failed to analyze papers.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
