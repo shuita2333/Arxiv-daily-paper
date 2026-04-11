@@ -4,8 +4,6 @@
 
 > 未进入大模型主领域展示范围的其他研究。
 
-- [返回当日日报目录](./index.md)
-
 ---
 
 ### 1. [Contextual Earnings-22: A Speech Recognition Benchmark with Custom Vocabulary in the Wild](https://arxiv.org/abs/2604.07354)
@@ -2699,5 +2697,7 @@ In this paper, we take the first steps towards solving this open problem. We int
 
 ---
 
+
+- [返回当日日报目录](./index.md)
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*

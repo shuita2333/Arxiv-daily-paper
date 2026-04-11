@@ -4,8 +4,6 @@
 
 > 聚焦 LLM / MLLM / Agent / MoE 等大模型核心研究。
 
-- [返回当日日报目录](./index.md)
-
 ---
 
 ### 1. [BLEG: LLM Functions as Powerful fMRI Graph-Enhancer for Brain Network Analysis](https://arxiv.org/abs/2604.07361)
@@ -1905,5 +1903,7 @@ We propose data selection schemes based on the training loss alone that aim to l
 
 ---
 
+
+- [返回当日日报目录](./index.md)
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*

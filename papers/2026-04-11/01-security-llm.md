@@ -4,8 +4,6 @@
 
 > 聚焦大模型安全、对齐、可信与防护方向。
 
-- [返回当日日报目录](./index.md)
-
 ---
 
 ### 1. [RefineRAG: Word-Level Poisoning Attacks via Retriever-Guided Text Refinement](https://arxiv.org/abs/2604.07403)
@@ -106,5 +104,7 @@
 
 ---
 
+
+- [返回当日日报目录](./index.md)
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*
