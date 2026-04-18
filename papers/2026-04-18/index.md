@@ -4,9 +4,9 @@
 
 ## 📂 分类目录
 
-- 🔐 [大模型安全相关研究（5篇）](./01-security-llm.md)
-- 🧠 [大模型相关研究（143篇）](./02-llm-research.md)
-- 📦 [其他研究（234篇）](./04-other-research.md)
+- 🔐 [大模型安全相关研究（5篇）](./01-security-llm/index.md)
+- 🧠 [大模型相关研究（143篇）](./02-llm-research/part-01.md)
+- 📦 [其他研究（234篇）](./04-other-research/part-01.md)
 
 ## 📊 当日统计
 

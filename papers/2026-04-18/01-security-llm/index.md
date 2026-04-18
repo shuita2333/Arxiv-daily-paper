@@ -4,6 +4,9 @@
 
 > 聚焦大模型安全、对齐、可信与防护方向。
 
+> [!TIP]
+> - [返回当日日报目录](../index.md)
+
 ---
 
 ### 1. [Challenges and Future Directions in Agentic Reverse Engineering Systems](https://arxiv.org/abs/2604.14317)
@@ -61,6 +64,7 @@
 ---
 
 
-- [返回当日日报目录](./index.md)
+> [!TIP]
+> - [返回当日日报目录](../index.md)
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*
