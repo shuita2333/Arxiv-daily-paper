@@ -22,6 +22,7 @@
 
 | 日期 | LLM安全 | 大模型 | 其他 |
 |------|---------|--------|------|
+| [2026-06-15](papers/2026-06-15/index.md) | [查看](papers/2026-06-15/01-security-llm.md) | [查看](papers/2026-06-15/02-llm-research.md) | [查看](papers/2026-06-15/04-other-research.md) |
 | [2026-06-14](papers/2026-06-14/index.md) | [查看](papers/2026-06-14/01-security-llm.md) | [查看](papers/2026-06-14/02-llm-research.md) | [查看](papers/2026-06-14/04-other-research.md) |
 | [2026-06-13](papers/2026-06-13/index.md) | [查看](papers/2026-06-13/01-security-llm.md) | [查看](papers/2026-06-13/02-llm-research.md) | [查看](papers/2026-06-13/04-other-research.md) |
 | [2026-06-12](papers/2026-06-12/index.md) | [查看](papers/2026-06-12/01-security-llm.md) | [查看](papers/2026-06-12/02-llm-research.md) | [查看](papers/2026-06-12/04-other-research.md) |
