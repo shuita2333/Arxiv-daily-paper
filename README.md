@@ -22,6 +22,7 @@
 
 | 日期 | LLM安全 | 大模型 | 其他 |
 |------|---------|--------|------|
+| [2026-06-26](papers/2026-06-26/index.md) | [7篇](papers/2026-06-26/01-security-llm/part-01.md) | [112篇](papers/2026-06-26/02-llm-research/part-01.md) | [222篇](papers/2026-06-26/04-other-research/part-01.md) |
 | [2026-06-25](papers/2026-06-25/index.md) | [4篇](papers/2026-06-25/01-security-llm/part-01.md) | [118篇](papers/2026-06-25/02-llm-research/part-01.md) | [219篇](papers/2026-06-25/04-other-research/part-01.md) |
 | [2026-06-24](papers/2026-06-24/index.md) | [4篇](papers/2026-06-24/01-security-llm/part-01.md) | [118篇](papers/2026-06-24/02-llm-research/part-01.md) | [219篇](papers/2026-06-24/04-other-research/part-01.md) |
 | [2026-06-23](papers/2026-06-23/index.md) | [25篇](papers/2026-06-23/01-security-llm/index.md) | [328篇](papers/2026-06-23/02-llm-research/index.md) | [654篇](papers/2026-06-23/04-other-research/index.md) |
