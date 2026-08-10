@@ -1,17 +1,28 @@
 # 📦 其他研究 | 2026年08月10日
 
-> 本类共 **221** 篇论文
+> 本类共 **190** 篇论文
 
 > 未进入大模型主领域展示范围的其他研究。
 
 > [!TIP]
-> 当前位于：**1-50**（第 1/5 组）
+> 当前位于：**1-50**（第 1/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：**1-50** | [51-100](./part-02.md) | [101-150](./part-03.md) | [151-200](./part-04.md) | [201-221](./part-05.md)
+> - 分组跳转：**1-50** | [51-100](./part-02.md) | [101-150](./part-03.md) | [151-190](./part-04.md)
 
 ---
 
-### 1. [Mobile Interaction for Assessing Fatigue, Sleep, and Activity in Neurodegenerative and Chronic Diseases](https://arxiv.org/abs/2608.06380)
+### 1. [Multimodal Drivers' Emotion Recognition and Safety-Oriented Intervention for Intelligent Transportation Systems](https://arxiv.org/abs/2608.06378)
+
+**<font color=#1a73e8>作者：</font>** Chang Liu, Dalai Mengke, Hanbo Zhou 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
+
+**<font color=#5f6368>摘要：</font>**
+> Driver emotions can affect risk perception, decision-making, and vehicle control under complex road conditions. Existing studies mainly focus on driver emotion recognition, while limited attention has been given to context-aware intervention that jointly considers driver emotion and road perception. This paper proposes a safety-prioritized multimodal driver assistance framework that analyzes speech-derived emotional cues and visual road conditions to generate structured driving interventions. The framework first provides road safety reminders and then generates emotion-aligned verbal support. We construct a multimodal dataset by aligning emotional speech signals with structured road environment descriptors and introduce the CARE (Context-Aware Road-Emotion Evaluation) score to jointly evaluate emotion recognition, risk identification, and intervention generation. Experimental results show that the proposed framework balances environmental risk reporting and emotion-aware verbal regulation, providing a feasible safety-driven direction for intelligent transportation systems.
+
+---
+
+
+### 2. [Mobile Interaction for Assessing Fatigue, Sleep, and Activity in Neurodegenerative and Chronic Diseases](https://arxiv.org/abs/2608.06380)
 
 **<font color=#1a73e8>作者：</font>** Julian Fierrez, Alejandro Peña, Aythami Morales 等 16 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -22,7 +33,7 @@
 ---
 
 
-### 2. [Evaluating XAI Support From A Hierarchical Reinforcement Learning Policy in Human-Agent Collaboration](https://arxiv.org/abs/2608.06381)
+### 3. [Evaluating XAI Support From A Hierarchical Reinforcement Learning Policy in Human-Agent Collaboration](https://arxiv.org/abs/2608.06381)
 
 **<font color=#1a73e8>作者：</font>** Mateus Levi Simões Fernandes, Alberto Sardinha  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -33,7 +44,7 @@
 ---
 
 
-### 3. [DREAMS: Diverse Reactions of Engagement and Attention Mind States Dataset](https://arxiv.org/abs/2608.06382)
+### 4. [DREAMS: Diverse Reactions of Engagement and Attention Mind States Dataset](https://arxiv.org/abs/2608.06382)
 
 **<font color=#1a73e8>作者：</font>** Monisha Singh, Gulshan Sharma, Ximi Hoque 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -44,7 +55,7 @@
 ---
 
 
-### 4. [Beyond Routing Weights: Faithful Response-Level Interpretation of Mixture-of-Experts Reward Models via Contribution Contrast](https://arxiv.org/abs/2608.06400)
+### 5. [Beyond Routing Weights: Faithful Response-Level Interpretation of Mixture-of-Experts Reward Models via Contribution Contrast](https://arxiv.org/abs/2608.06400)
 
 **<font color=#1a73e8>作者：</font>** Yifan Wang, Jinyi Mu, Mayank Jobanputra 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -55,7 +66,7 @@
 ---
 
 
-### 5. [UAV3DCrop: Benchmarking 3D Reconstruction in Repeated Multi-Angle UAV Crop Surveys](https://arxiv.org/abs/2608.06404)
+### 6. [UAV3DCrop: Benchmarking 3D Reconstruction in Repeated Multi-Angle UAV Crop Surveys](https://arxiv.org/abs/2608.06404)
 
 **<font color=#1a73e8>作者：</font>** Junxiong Zhou, Xuechen Li, Chonghao Qiu 等 14 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -66,7 +77,18 @@
 ---
 
 
-### 6. [TransSLR: A Lightweight Transformer for Sign Language Recognition](https://arxiv.org/abs/2608.06407)
+### 7. [Deep Evidential Regression for Sparse Forest Height Estimation from Multimodal Satellite Imagery](https://arxiv.org/abs/2608.06406)
+
+**<font color=#1a73e8>作者：</font>** Laura Bader, Muhammad Ammar Ahmed, Xiao Xiang Zhu 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Accurate estimation of forest height from satellite imagery is essential for applications such as carbon accounting, biodiversity monitoring, and ecosystem management. While recent deep learning approaches provide accurate predictions, they typically do not quantify predictive uncertainty. This limitation is particularly relevant in geospatial settings characterized by sparse supervision and geographic distribution shift. In this work, we investigate Deep Evidential Regression (DER) for forest height estimation on the TreeUQ benchmark, a large-scale dataset designed for the joint estimation of tree count and average tree height at 10 m resolution, based on Sentinel-1/-2 data as well as tree inventory data over the federal state of Bavaria. To account for the extreme label sparsity of the tree inventory data, we introduce a masked evidential loss for dense geospatial prediction. Using a U-Net architecture with multimodal Sentinel-1 and Sentinel-2 inputs, the proposed approach jointly predicts tree height and associated uncertainty estimates in a single forward pass. Experimental results show that DER achieves predictive performance comparable to a deterministic U-Net while additionally providing well-calibrated uncertainty estimates. These findings demonstrate the potential of evidential learning as an efficient framework for uncertainty-aware forest structure estimation from Earth observation data.
+
+---
+
+
+### 8. [TransSLR: A Lightweight Transformer for Sign Language Recognition](https://arxiv.org/abs/2608.06407)
 
 **<font color=#1a73e8>作者：</font>** Lucia Yen Wanchi, Samuel Johnny, Victor Tolulope Olufemi 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -78,7 +100,18 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 7. [Risk-Aware Decision Policies for Agents Under Noisy Perception](https://arxiv.org/abs/2608.06420)
+### 9. [ADIAS: Automated Design of Interactive Agentic Systems](https://arxiv.org/abs/2608.06410)
+
+**<font color=#1a73e8>作者：</font>** Lekang Jiang, Bohan Tang, Stephan Goetz 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
+
+**<font color=#5f6368>摘要：</font>**
+> Automated agent design improves agent harnesses through iterative revision, evaluation, and feedback summarization. Existing methods are largely candidate-centric: cross-round experience is organized around candidate agents, which leaves the repair progress implicit. This causes inefficient repair targeting, slow consolidation of partial progress, and propagation of ineffective interventions across rounds. Therefore, we formulate issue-centric agent optimization, in which repair progress is carried forward as an explicit persistent issue state to guide optimization, rather than re-derived from candidate history in each round. We instantiate the formulation in ADIAS, a framework for automated full-code agent design with two mechanisms. A persistent issue state maintains stable issue identities, lifecycle status, supporting evidence, and intervention-outcome histories. Issue-guided optimization uses this state to jointly propose repair targets and revision directions for subsequent focused full-code modification. Across five interactive benchmarks, ADIAS outperforms the strongest baseline by 25.2% on average and achieves consistent gains across four backbone models. Controlled ablations further show that removing persistent issue state or replacing issue-centric revision with candidate-centric policies leads to performance drops of up to 40.7%.
+
+---
+
+
+### 10. [Risk-Aware Decision Policies for Agents Under Noisy Perception](https://arxiv.org/abs/2608.06420)
 
 **<font color=#1a73e8>作者：</font>** David Szczecina  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -89,18 +122,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 8. [NTDH: Complex Reasoning for Comprehensive Affective Analysis](https://arxiv.org/abs/2608.06425)
-
-**<font color=#1a73e8>作者：</font>** Tianlei Zhu, Zhiwei Liu, Yuyan Wang 等 5 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computation and Language
-
-**<font color=#5f6368>摘要：</font>**
-> Comprehensive affective analysis is challenging for two reasons: it spans heterogeneous prediction tasks with continuous, ordinal, and multi-label outputs, and affective meaning is context-dependent, requiring conflicting cues to be reconciled rather than mapped directly to labels. Existing methods learn this mapping directly and do not model the reconciliation explicitly. We recast the task as a complex-reasoning problem, which yields one output interface across heterogeneous label spaces and a trajectory over which a verifiable reward can be optimised; to our knowledge, this is the first such treatment covering both sentiment and emotion. The obstacle is on the data side: affective reasoning traces must be synthesised, and generic synthesis is misaligned with the targets, tolerances, and phenomena of affect, and discards or leaks its failure cases. We propose NTDH, which addresses these four failures. Naturalisation sets the training answer to the gold label, so it is correct by construction. A Tolerance-aware gate checks each answer against the task's own scoring margin. Domain-aware strategies refine the reasoning using ideas from affective science. Directional Hints report only the type and direction of an error, without exposing the target. We train Qwen3-8B with SFT and then GRPO under the same tolerance used for verification (up to a more permissive construction gate on the multi-label subtask), and a component ablation quantifies the data-quality effect of each part. Using 16,302 training records, about 14x fewer than comparable instruction-tuned systems, the final policy improves over its SFT checkpoint on five of six official-test metrics and achieves the strongest EI-reg result among the compared systems, at a Pearson correlation of 0.862.
-
----
-
-
-### 9. [Adversarial Causal Intervention Falsification](https://arxiv.org/abs/2608.06427)
+### 11. [Adversarial Causal Intervention Falsification](https://arxiv.org/abs/2608.06427)
 
 **<font color=#1a73e8>作者：</font>** Mojtaba Eslami  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -111,7 +133,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 10. [Fixed and Adaptive Topological DeepONets: Functional Measurements on Hausdorff Locally Convex Spaces](https://arxiv.org/abs/2608.06428)
+### 12. [Fixed and Adaptive Topological DeepONets: Functional Measurements on Hausdorff Locally Convex Spaces](https://arxiv.org/abs/2608.06428)
 
 **<font color=#1a73e8>作者：</font>** Khemraj Shukla, George Em Karniadakis  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -122,7 +144,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 11. [MiGHT-EHR: A Multi-task Graph Transformer for Heterogeneous Temporal Electronic Health Records](https://arxiv.org/abs/2608.06430)
+### 13. [MiGHT-EHR: A Multi-task Graph Transformer for Heterogeneous Temporal Electronic Health Records](https://arxiv.org/abs/2608.06430)
 
 **<font color=#1a73e8>作者：</font>** Anirudh Rayas, Yuan Wang, Pavan Turaga  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -133,7 +155,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 12. [SNI-GNN: SmartNIC-Assisted Full-Graph GNN Training with In-Network Embedding Prediction](https://arxiv.org/abs/2608.06441)
+### 14. [SNI-GNN: SmartNIC-Assisted Full-Graph GNN Training with In-Network Embedding Prediction](https://arxiv.org/abs/2608.06441)
 
 **<font color=#1a73e8>作者：</font>** Guofan Yu, Sitian Chen, Zhenheng Tang 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -144,7 +166,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 13. [ED-CSP: Crystal Structure Prediction from Electron Diffraction](https://arxiv.org/abs/2608.06448)
+### 15. [ED-CSP: Crystal Structure Prediction from Electron Diffraction](https://arxiv.org/abs/2608.06448)
 
 **<font color=#1a73e8>作者：</font>** Germain Poloudenny, Yaël Frégier, Arnaud Demortière  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -156,35 +178,13 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 14. [Test-Time Adaptation with Online Personalized Energy-Based Cache for Fine-Grained Video Expression Recognition](https://arxiv.org/abs/2608.06467)
-
-**<font color=#1a73e8>作者：</font>** Masoumeh Sharafi, Muhammad Osama Zeeshan, Soufiane Belharbi 等 6 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
-
-**<font color=#5f6368>摘要：</font>**
-> Facial expression recognition (FER) in videos is challenging because models must identify subtle, temporally evolving affective states that vary across individuals. Although vision-language models provide transferable visual-semantic representations, models trained on subject-independent data often degrade under subject-specific distribution shifts at inference time. Existing test-time adaptation (TTA) methods commonly update model parameters during inference, increasing computational cost and latency. Cache-based methods avoid parameter updates, but they usually require enough target samples to form reliable class prototypes, which is difficult early in adaptation and for rarely observed classes. We introduce Energy-Based Cache Personalization (EB-CaP), a subject-based online TTA method for video FER that generates class-specific prototypes personalized to each target video. EB-CaP uses a lightweight energy-based model to sample prototypes from the current unlabeled video and populate a personalized cache online, without accumulating large amounts of target data or storing diverse source prototypes. Its energy function relies only on pretrained CLIP: similarities between the target video embedding and class text embeddings guide prototype sampling. In parallel, positive and negative caches store reliable and uncertain target embeddings. An adaptive entropy gate controls cache updates according to the evolving confidence distribution, while a diversity gate limits redundant samples. Final predictions combine cache-derived scores with the current CLIP scores. Experiments on BioVid, StressID, and BAH show that EB-CaP outperforms state-of-the-art TTA methods while maintaining low computational and memory overhead. Code is available at this https URL.
-
----
-
-
-### 15. [Fairis: Fairness-Aware Aggregation with Provable Influence Containment against Fairness Poisoning Attacks in Collaborative Machine Learning](https://arxiv.org/abs/2608.06469)
+### 16. [Fairis: Fairness-Aware Aggregation with Provable Influence Containment against Fairness Poisoning Attacks in Collaborative Machine Learning](https://arxiv.org/abs/2608.06469)
 
 **<font color=#1a73e8>作者：</font>** Devharsh Trivedi, Nesrine Kaaniche, Nikos Triandopoulos 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
 
 **<font color=#5f6368>摘要：</font>**
 > Collaborative machine learning among financial institutions must be both group-fair and robust against deliberate adversarial manipulation. Existing fairness-aware aggregation methods remain formally vulnerable to fairness poisoning: a malicious client maximizing group disparity while preserving accuracy evades accuracy-based Byzantine defenses, and in our threat model FairFed's gap-based weighting can be gamed by an adversary who observes the global fairness score. We present Fairis, a server-side reweighting scheme in which each client's update receives the normalized weight $\omega_k = \bar{w}_k / \sum_j \bar{w}_j$ built from the unnormalized score $\bar{w}_k = \eta - \mathcal{F}_k$, with $\mathcal{F}_k \in [0,1]$ the local Equal Opportunity Difference and $\eta > 1$ a security parameter. We prove three properties, Monotone Weight Reduction (MWR), Demographic Participation, and Non-Gamesmanship, extend MWR to colluding minority coalitions, and show that combining MWR with server-side norm clipping bounds the adversary's displacement of the global model by $\omega_0 C$, strictly decreasing in its own reported disparity. Assuming honest score reporting, an assumption this paper does not discharge, Fairis is the only rule evaluated that guarantees every client strictly positive weight while provably reducing an adversary's weight monotonically in its bias; clipped FairFed can reach a lower weight but guarantees nothing and zeroes a client outright on Taiwan Credit. Against an adversary stealthy enough to evade accuracy-based defenses, within 0.04 accuracy of benign, Fairis cuts its weight by 41 to 54% below a size-blind control on Taiwan. On routine non-IID partitions no rule dominates, and a uniform-weighting ablation shows that containment tracks how far the adversary's score separates from the honest mean, providing none when the honest population is already unfair.
-
----
-
-
-### 16. [StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection](https://arxiv.org/abs/2608.06477)
-
-**<font color=#1a73e8>作者：</font>** Zhuoxin Zhan, Akbar Rafiey, Avery Ma 等 5 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
-
-**<font color=#5f6368>摘要：</font>**
-> Computer-use agents (CUAs) face a growing threat from indirect prompt injection, where adversarial instructions are planted in the environment such as web pages. In this paper, we introduce multi-step indirect prompt injection, a new attack class against CUAs in which the adversarial goal is decomposed into multiple innocuous-looking sub-steps and distributed across a chain of pages referenced along the agent's navigation path. We develop a pipeline to automatically decompose an adversarial goal under the constraint that the execution of the decomposed sub-steps must achieve the original goal while optimizing the innocuousness of each decomposed sub-step. With this pipeline, we build StepJack, a CUA safety benchmark with 480 test examples. On this benchmark, we evaluate six state-of-the-art CUAs and find that at a fixed decomposition depth, multi-step attacks raise attack success rate (ASR) on three of six CUAs, by up to 31.2 points (e.g., GPT-5.4-mini: 41.7% at single-step to 72.9% at three-step); averaged over the five CUAs that can reliably follow the reference chain (all but EvoCUA-32B), ASR rises from 31.3% at single-step to 36.9% at three-step. Dataset and code are available at this https URL.
 
 ---
 
@@ -200,18 +200,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 18. [ConstructCIE: A Dataset for Extracting Causal Information from Construction Accident Narratives](https://arxiv.org/abs/2608.06495)
-
-**<font color=#1a73e8>作者：</font>** Hung Nguyen, Jaehoon Lee, Namgyun Kim 等 4 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computation and Language
-
-**<font color=#5f6368>摘要：</font>**
-> Construction accident narratives contain rich causal information, but the evidence is often implicit, long-span, and distributed. We introduce ConstructCIE, a manually annotated dataset for Causal Information Extraction from OSHA construction accident reports. The dataset uses a hierarchical schema for accident types, causal factors, sub-causal factors, and supporting evidence spans. We evaluate supervised sequence taggers and instruction-tuned LLMs in an end-to-end hierarchical extraction setting. Results show that most evaluated models achieve strong accident-type prediction and recover broad causal meaning but remain limited in precise span-level extraction. JHE generally achieves stronger exact and soft matching, while IHE sometimes achieves higher keyword F1. Error distributions vary by extraction strategy, but evidence-selection and span-boundary errors remain common. These findings show that reliable Causal Information Extraction for construction accidents requires stronger domain grounding and more accurate evidence extraction.
-
----
-
-
-### 19. [Toward Reliable Context Compression for Long-Horizon Agents: An Empirical Study of Execution Instability](https://arxiv.org/abs/2608.06503)
+### 18. [Toward Reliable Context Compression for Long-Horizon Agents: An Empirical Study of Execution Instability](https://arxiv.org/abs/2608.06503)
 
 **<font color=#1a73e8>作者：</font>** Guanghui Min, Liang Wu, Mayank Darbari 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -222,7 +211,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 20. [Canonicalization Failures as a Recurring Vulnerability Class: Representation Divergence in Cryptographic Systems and Its Avoidance](https://arxiv.org/abs/2608.06508)
+### 19. [Canonicalization Failures as a Recurring Vulnerability Class: Representation Divergence in Cryptographic Systems and Its Avoidance](https://arxiv.org/abs/2608.06508)
 
 **<font color=#1a73e8>作者：</font>** Arslan Brömme  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -233,7 +222,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 21. [Unmasking Removal-Budget Confounding: A Matched Operating-Point Evaluation Framework for Adaptive Data Cleaning](https://arxiv.org/abs/2608.06511)
+### 20. [Unmasking Removal-Budget Confounding: A Matched Operating-Point Evaluation Framework for Adaptive Data Cleaning](https://arxiv.org/abs/2608.06511)
 
 **<font color=#1a73e8>作者：</font>** Wei-Hsiang Chen, Pin-Hsuan Yu, Chen-Hsuan Fang 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -244,13 +233,24 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 22. [Target-Weighted Neyman Allocation: Experimental Design for Heterogeneous Treatment Effects under Population Shift](https://arxiv.org/abs/2608.06512)
+### 21. [Target-Weighted Neyman Allocation: Experimental Design for Heterogeneous Treatment Effects under Population Shift](https://arxiv.org/abs/2608.06512)
 
 **<font color=#1a73e8>作者：</font>** Hoang Dang, Luan Pham, Minh Nguyen  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
 
 **<font color=#5f6368>摘要：</font>**
 > Randomized experiments are often run in one population to guide decisions in another. Allocating by experimental proportions wastes budget on groups that rarely appear in deployment, whereas allocating by deployment proportions under-samples groups that are hard to measure precisely. We propose \textbf{TWNA} (Target-Weighted Neyman Allocation), a two-stage stratified design that uses pilot estimates of group--arm outcome variances to allocate final-stage sample sizes and treatment probabilities for target-weighted group average treatment effect (GATE) precision. The oracle rule has a closed form and balances deployment importance with statistical difficulty; the plug-in rule recovers it as pilot variance estimates stabilize. We also extend TWNA to handle uncertainty about deployment composition, remaining robust whether the target mix is roughly known or entirely unknown. Finally, we distinguish this weight robustness from a pilot-robust variant for skewed, rare-event, or contaminated outcomes. Simulations and real-covariate benchmarks show the largest gains when groups are both deployment-important and difficult to measure.
+
+---
+
+
+### 22. [CertBind from Multimodal Connectivity to Certifiable Retrieval Decisions](https://arxiv.org/abs/2608.06516)
+
+**<font color=#1a73e8>作者：</font>** Shuheng Cao, Zhenhao Zhang, Ruiqi Chen 等 10 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Lightweight connectors make frozen multimodal encoders composable at the representation level. Deployment exposes a second problem at the level of task decisions. A connected route can expand cross-modal reach while changing an established native retrieval capability. We introduce CertBind, a multiscale theory of certifiable composition for frozen multimodal connector graphs. At the node scale, native anchors establish the exact task identification boundary under the stated chart model. At the edge scale, contract-aware conformal ranks provide graph-wide family-wise error control. At the path scale, an overlap-aware budget and clean calibration yield a finite-sample recovery radius under declared conditions. At the query scale, this radius yields a covered top-k candidate set that becomes a point certificate when its size equals k. CertBind therefore retains supported routes as Direct, sends only flagged routes to recovery, returns Certified for decisive recovery, and returns Abstain for unresolved queries. The evaluated C-MCR shared route reduced native CLIP R@1 from 0.524 to 0.290. The production fallback recovered 0.963 +- 0.002 of clean retrieval, while the passing branch recorded a no-harm value of 1.000. CertBind extends multimodal composability from connected representations to certifiable task decisions.
 
 ---
 
@@ -277,24 +277,25 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 25. [Don't `Well, Actually' Me Unless You Know What You're Talking About: Weak Presupposition Verification Degrades General QA Performance](https://arxiv.org/abs/2608.06539)
+### 25. [TaskSense: Focusing on What Matters in World Models](https://arxiv.org/abs/2608.06544)
 
-**<font color=#1a73e8>作者：</font>** Shenran Wang, Vered Shwartz, Hila Gonen  
-**<font color=#188038>arXiv所属领域：</font>** Computation and Language
+**<font color=#1a73e8>作者：</font>** SM Mazharul Islam, Manfred Huber  
+**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
 
 **<font color=#5f6368>摘要：</font>**
-> False-presupposition QA (FPQA) tests LLMs on their ability to identify false presuppositions in questions and abstain or correct them rather than reinforcing false assumptions. The common approach reduces the task to prompting LLMs to extract presuppositions and fact checking each presupposition. While the performance on dedicated benchmarks keeps improving, evaluation largely focuses on questions with false presuppositions (FPQs) while ignoring the performance on ``normal'' questions (TPQs). Since many benchmarks over-represent FPQs compared to their natural occurrence, the result is that performance on these benchmarks doesn't reflect real-world QA performance. Through extensive experiments across various model families, sizes, and benchmarks, we show that methods that perform better on FPQs tend to perform worse on TPQs. Our analysis reveals this is the result of weak fact checking modules that reject also true presuppositions. We hope our findings will help guide future work toward FPQA methods that generalize well to realistic settings.
+> World models for visual control typically learn compact latent states by reconstructing observations, implicitly encouraging representations to preserve information across the entire visual input. However, task-relevant content often occupies only a small fraction of the observation, while background clutter and distractors consume valuable representational capacity. This mismatch between visual reconstruction and control objectives biases latent representations to model task-irrelevant visual content, diluting learning signals for control-relevant features and severely degrading downstream performance under visual distractions. We introduce TaskSense, a task-centric world modeling framework that enforces task relevance before latent encoding through a differentiable stochastic spatial attention mechanism conditioned on the previous latent state. To steer attention toward control-relevant regions, we augment training with an auxiliary inverse-dynamics objective. Rather than reconstructing the full observation, the world model reconstructs only the attended regions, encouraging latent representations to preserve task-relevant information while discarding irrelevant visual content. The decoder is further conditioned on the sampled attention map, enabling consistent reconstruction despite stochastic attention. Compared with the DreamerV3 baseline, TaskSense maintains competitive performance on the DeepMind Control Suite while consistently outperforming DreamerV3 on the Distracting Control Suite, demonstrating substantially improved robustness to visual distractions. Qualitative analysis further confirms that the learned attention, guided by inverse-dynamics supervision, consistently localizes control-relevant regions while suppressing irrelevant visual content.
 
 ---
 
 
-### 26. [TradeVerse: A Longitudinal Benchmark of Political Negotiation in International Trade](https://arxiv.org/abs/2608.06549)
+### 26. [Robust Average-Reward Markov Decision Processes: Minimax-Optimal Learning via Plug-in Reductions](https://arxiv.org/abs/2608.06545)
 
-**<font color=#1a73e8>作者：</font>** Debodeep Banerjee, Amitangshu Dasgupta  
-**<font color=#188038>arXiv所属领域：</font>** Computation and Language
+**<font color=#1a73e8>作者：</font>** Yuepeng Yang, Yuxin Chen, Yuejie Chi  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
 
 **<font color=#5f6368>摘要：</font>**
-> LLMs are increasingly being applied to tasks involving institutional and political texts, but existing benchmarks evaluate them on isolated documents or single tasks. In realpolitik, negotiations are longitudinal data, where participating parties can align or argue over multiple iterations and each turn is an outcome of the previous turns, hence, understanding one turn requires tracking everything before it. We introduce TradeVerse, a benchmark built from the World Trade Organisation (WTO) specific trade concerns, where member states challenge one another and exchange arguments over multiple rounds, sometimes for years. We, in TradeVerse, reconstruct minutes of $1170$ meetings, spanning across 5 groups and $89$ product groups and define three tasks: first, the system has to analyze the longitudinal meeting records and predict the harmonized system codes (HS chapters) of the products under discussion in the particular meeting, second, we examine whether the system, upon analyzing the anonymized content of the meeting, can guess the name of the responding country and third, we ask the system to play the role of the responding country and provide the statement for the very last round. All labels are recovered directly from the proceedings, requiring no manual annotation. Our experiments highlight the challenges these tasks pose for current LLMs. To the best of our knowledge, TradeVerseis the first benchmark to investigate potential of LLMs in understanding longitudinal political trade negotiations.
+> Distributionally robust Markov decision processes provide a principled framework for sequential decision making under model uncertainty. We study how many samples are necessary and sufficient to learn an $\varepsilon$-optimal robust policy under the average-reward criterion. A generative model provides samples from the nominal transition kernel, whereas policy performance is evaluated over $(s,a)$-rectangular total-variation uncertainty sets of radius at most $\sigma$.
+Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respectively. We identify $\sigma H_0$ as the perturbation scale separating high- and low-tolerance regimes. Our matching upper and lower bounds show that, up to logarithmic factors, the minimax total sample complexity is $$ NSA \asymp \frac{SA}{\varepsilon^2}\begin{cases} \min\{H_0,H_\sigma\}, & \varepsilon\gtrsim\sigma H_0,\\ \min\{H_0,H_\sigma\}+\sigma H_\sigma^2, & \varepsilon\lesssim\sigma H_0. \end{cases} $$ Here $S$ and $A$ are the numbers of states and actions, and $N$ is the number of samples per state-action pair. The sample complexity consists of a linear-span term that resembles the nominal AMDP results and a robustness-specific term that appears only in the low-tolerance regime. We attain these rates using reduction-based plug-in procedures that select the reduction---nominal or robust---and its discount factor: a span-informed procedure that makes these choices using known span parameters, and a span-agnostic procedure that calibrates both choices from data.
 
 ---
 
@@ -321,29 +322,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 29. [Quantization Damage Is Multiplicative, Not Additive](https://arxiv.org/abs/2608.06564)
-
-**<font color=#1a73e8>作者：</font>** Zekun Wu, Swati Dhiman, Adriano Koshiyama  
-**<font color=#188038>arXiv所属领域：</font>** Machine Learning
-
-**<font color=#5f6368>摘要：</font>**
-> Quantization is how large language models are actually deployed, and below four bits it is known to hurt. What nobody can say is which of the model's decisions will change at a given bit-width. The damage is silent: a compressed agent stops calling its tools, then loses half its safety refusals, yet benchmark scores barely move. Prior work assumes quantization adds noise of a roughly fixed size, which would make confident decisions safe. We measure the decision itself instead. The margin of a two-way decision is the model's score for the option it picks minus the score of its best alternative; we track it before and after quantization across 16 models from 8 model families, three quantization methods, and bit-widths from 8 down to 2. Quantization does not add fixed-size noise to the margin. It multiplies the margin by a factor that collapses with bit-width (median 0.86 at 4 bits, 0.33 at 3, 0.00 at 2); we call this margin shrinkage. This contraction reduces the protection a large margin affords; the model's own small biases pick the direction of failure: at 3 bits the decision to call a tool collapses toward inaction while the choice of which tool is untouched. In fitted statistical comparison, additive-noise accounts never win on the damaged tool and safety decisions. The fitted relation predicts flip rates within a median of 1.8 percentage points on held-out decisions, though no flip was used in the fit; per decision, the predicted flip probabilities are calibrated uncertainty estimates (expected calibration error 0.004 over 131,758 predictions). The same form holds in every model we measure, but the constants are each model's own and do not transfer. A small paired margin set, measured per model and bit-width, estimates which decisions break without full generative evaluation; under our cost-matched tests, nothing repairs damage more cheaply than one more bit.
-
----
-
-
-### 30. [Model Confidence Under Answer-Preserving Attacks: An Informativeness-Manipulability Frontier](https://arxiv.org/abs/2608.06571)
-
-**<font color=#1a73e8>作者：</font>** Reza Khanmohammadi, Ivan Brugere, Simerjot Kaur 等 6 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
-
-**<font color=#5f6368>摘要：</font>**
-> Deployed vision-language systems often gate their answers on confidence, making confidence robustness relevant to oversight. We study confidence readouts under white-box, image-only attacks constrained to preserve the generated answer byte-identically. Under a reachability assumption, an unmovable readout cannot outperform the answer-string accuracy prior, whose pooled value is 0.617. Independently of that assumption, a uniform amplitude certificate below a measurable threshold guarantees adversarial discrimination above the same floor. Across four vision-language models, three visual question answering benchmarks, five deployed confidence channels and two defense estimators, direct or surrogate-aimed attacks produce itemwise feasible perturbations that refute this uniform certificate in all 84 estimator-by-cell combinations. Coordinated correctness-label-aware attacks drive adversarial discrimination to or below the answer-string floor in all sixty deployed-channel cells, including all fifty-nine that begin above it. Hidden-state interventions and an open-ended text-model activation-space replication show that comparable confidence movement can be induced at the representation level rather than only through adversarial images. None of four tested defense families establishes a robust alternative under the specific evaluation applied to it. In a confidence-gated simulation, a coordinated token-probability attack transferred to a hidden-state gate causes up to 84.8% of previously rejected wrong answers to become accepted. After reweighting to each benchmark's natural correctness prevalence, accepted accuracy falls below the no-gate baseline in eight of twelve cells under transfer and all twelve under a direct gate-aimed attack. Under the studied threat model and budget, confidence is therefore an integrity-sensitive rather than intrinsically robust oversight signal.
-
----
-
-
-### 31. [Improving Low-Resolution Face Recognition under Limited Data: How Synthetic Data Generation Can Close the Domain Gap](https://arxiv.org/abs/2608.06580)
+### 29. [Improving Low-Resolution Face Recognition under Limited Data: How Synthetic Data Generation Can Close the Domain Gap](https://arxiv.org/abs/2608.06580)
 
 **<font color=#1a73e8>作者：</font>** Luis S. Luevano, Ünsal Öztürk, Hatef Otroshi Shahreza 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -354,7 +333,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 32. [WhiteNet: Robust Identification of Overlapping IEEE 802.11 Signals Across Unseen Channels](https://arxiv.org/abs/2608.06581)
+### 30. [WhiteNet: Robust Identification of Overlapping IEEE 802.11 Signals Across Unseen Channels](https://arxiv.org/abs/2608.06581)
 
 **<font color=#1a73e8>作者：</font>** Ildi Alla, Vincent Lenders  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -365,7 +344,18 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 33. [Flowing Through States: Neural ODE Regularization for Reinforcement Learning](https://arxiv.org/abs/2608.06595)
+### 31. [CrystalGRPO: Target-Aligned and Coverage-Preserving Reinforcement Learning for Flow-Based Crystal Structure Prediction](https://arxiv.org/abs/2608.06582)
+
+**<font color=#1a73e8>作者：</font>** Kaixiang Su, Hongfei Xue, Qiang Zhu  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Flow-based generative models can efficiently produce candidate structures for crystal structure prediction (CSP), but their pretrained objectives do not directly optimize downstream target recovery. Reinforcement-learning post-training offers a flexible solution, yet existing approaches rely primarily on energy rewards and coordinate-only stochastic policies. Predicted energy does not identify the reference polymorph, while reward-driven concentration can reduce the candidate coverage required for Top-N recovery. We introduce CrystalGRPO, a CSP-aligned post-training framework that extends existing ODE-to-SDE policy constructions to the joint coordinate--lattice state. CrystalGRPO combines MACE-predicted energy with a StructureMatcher-based recovery score and provides two operating modes: CrystalGRPO-Q, which prioritizes single-draw recovery, and CrystalGRPO-C, which combines full-trajectory reference regularization with a coverage-aware group advantage to preserve finite-budget target recovery. Across MP-20 and MPTS-52 with PXRDGen and OMatG backbones, both variants reduce one- and twenty-sample RMSE relative to coordinate-only reinforcement in all four backbone--dataset settings. CrystalGRPO-Q consistently improves Top-1, whereas CrystalGRPO-C achieves a higher Top-20 across all settings.
+
+---
+
+
+### 32. [Flowing Through States: Neural ODE Regularization for Reinforcement Learning](https://arxiv.org/abs/2608.06595)
 
 **<font color=#1a73e8>作者：</font>** Mohamed Ghanem, Bernd Finkbeiner  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -376,7 +366,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 34. [Toward surface-based registration of a virtual preoperative cutting guide onto the mandible for reconstruction surgery](https://arxiv.org/abs/2608.06599)
+### 33. [Toward surface-based registration of a virtual preoperative cutting guide onto the mandible for reconstruction surgery](https://arxiv.org/abs/2608.06599)
 
 **<font color=#1a73e8>作者：</font>** Yue Yang, Jie Ying Wu  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -387,7 +377,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 35. [Pre-Inference Routing for Cost-Efficient Document Field Extraction](https://arxiv.org/abs/2608.06607)
+### 34. [Pre-Inference Routing for Cost-Efficient Document Field Extraction](https://arxiv.org/abs/2608.06607)
 
 **<font color=#1a73e8>作者：</font>** Sreerekha Rajendran  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -398,7 +388,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 36. [SLED: Scalable Location Encoding via Distillation](https://arxiv.org/abs/2608.06612)
+### 35. [SLED: Scalable Location Encoding via Distillation](https://arxiv.org/abs/2608.06612)
 
 **<font color=#1a73e8>作者：</font>** Kevin Lane, Zhongying Wang, Esther Rolf 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -409,7 +399,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 37. [Factorized Hypothesis Search for Evidence-to-Taxonomy Retrieval](https://arxiv.org/abs/2608.06614)
+### 36. [Factorized Hypothesis Search for Evidence-to-Taxonomy Retrieval](https://arxiv.org/abs/2608.06614)
 
 **<font color=#1a73e8>作者：</font>** Linhai Ma, Ethan F. Wei, Xueqing Peng 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -420,29 +410,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 38. [NxN E-valuation: Hypothesis Certification via a Conformal CRT Null](https://arxiv.org/abs/2608.06621)
-
-**<font color=#1a73e8>作者：</font>** Bin Wang, Yan Zhong  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> We propose NxN E-valuation, a handy, e-value-based hypothesis-certification algorithm that lets a hypothesis be verified without building any case-specific certification procedure---such as constructing a dedicated null hypothesis---as long as a large enough dataset is available. The method is especially suited to LLM-based exploration systems, where LLMs are remarkably good at proposing hypotheses but suffer badly from hallucination; this hallucination prevents us from harvesting LLM outputs directly, and existing remedies each fall short. The most common solutions include letting the LLM verify or correct itself circular verification and held-out testing (where false hypotheses can still pass via spurious correlations), among other remedies detailed in the introduction. To resolve this, NxN E-valuation exploits the naturally existing large training set and lets different samples serve as null hypotheses for one another. This design directly realizes a conditional randomization test (CRT) that certifies each hypothesis. The approach can be a universally better replacement for at least LLM circular verification and held-out-data testing, provided the LLM's generations are hypotheses that apply to each individual sample.
-
----
-
-
-### 39. [Cryptanalytic Extraction of Isolated Bias-Free GLU Feed-Forward Blocks by Antipodal Separation](https://arxiv.org/abs/2608.06631)
-
-**<font color=#1a73e8>作者：</font>** Chunhui Shi, Xinwen Fu  
-**<font color=#188038>arXiv所属领域：</font>** Machine Learning
-
-**<font color=#5f6368>摘要：</font>**
-> Cryptanalytic extraction has been demonstrated for ReLU networks, for networks using componentwise activations such as GELU or SiLU, and for a Transformer's final projection matrix. These methods do not recover the bias-free Gated Linear Unit (GLU) feed-forward blocks used in many modern language models. Such a block multiplies an activated linear projection by a second learned linear projection within each hidden unit, a two-branch structure absent from the network classes and final-layer setting addressed by those methods. We give a constructive, multi-stage forward-query recovery primitive for isolated bias-free GLU blocks. Finite-difference curvature supplies gate-direction candidates, and paired observations at x and -x separate gate magnitude, orientation, and value-branch coupling. Across high-precision targets, six Qwen layers, an 8,192-unit Llama subproblem, and a full-dimensional Gemma block all reach sub-percent median validation error. Four finite-precision configurations remain below 5 percent median error, but none reproduces every stored weight. These isolated-block experiments are not an end-to-end model-API attack: deriving the required internal block responses from final model outputs remains unsolved.
-
----
-
-
-### 40. [Bypassing Krum: Selection-Aware Backdoor Attacks in Federated Learning](https://arxiv.org/abs/2608.06637)
+### 37. [Bypassing Krum: Selection-Aware Backdoor Attacks in Federated Learning](https://arxiv.org/abs/2608.06637)
 
 **<font color=#1a73e8>作者：</font>** Srinivasan Subramanian, Md. Abdullah Al Hafiz Khan, Kazi Aminul Islam  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -453,7 +421,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 41. [Discovering Conceptual Metaphors Across Topics and Media Types](https://arxiv.org/abs/2608.06652)
+### 38. [Discovering Conceptual Metaphors Across Topics and Media Types](https://arxiv.org/abs/2608.06652)
 
 **<font color=#1a73e8>作者：</font>** Alexandria Leto, Rohan Das, Juan Vásquez 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -464,7 +432,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 42. [Dirichlet Follow-the-Leader Closes the Gap in Simultaneous Multiclass U-Calibration](https://arxiv.org/abs/2608.06656)
+### 39. [Dirichlet Follow-the-Leader Closes the Gap in Simultaneous Multiclass U-Calibration](https://arxiv.org/abs/2608.06656)
 
 **<font color=#1a73e8>作者：</font>** Pahan Dewasurendra  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -475,7 +443,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 43. [TRACE: A Multi-Layer Benchmark for Human AI Controller Coordination Under Drift and Failure](https://arxiv.org/abs/2608.06657)
+### 40. [TRACE: A Multi-Layer Benchmark for Human AI Controller Coordination Under Drift and Failure](https://arxiv.org/abs/2608.06657)
 
 **<font color=#1a73e8>作者：</font>** Joshua Zuniga, Srinivasan Subramanian, Ramya Madhuri Narapureddy 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -486,7 +454,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 44. [Vehicle routing problem using deep reinforcement learning - A case study about truck planning in the industry](https://arxiv.org/abs/2608.06668)
+### 41. [Vehicle routing problem using deep reinforcement learning - A case study about truck planning in the industry](https://arxiv.org/abs/2608.06668)
 
 **<font color=#1a73e8>作者：</font>** Siliang Lu, Dan Hu, Lili Wu  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -497,7 +465,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 45. [EpiFlow: A framework for improving the utility of wastewater signals for disease forecasting](https://arxiv.org/abs/2608.06671)
+### 42. [EpiFlow: A framework for improving the utility of wastewater signals for disease forecasting](https://arxiv.org/abs/2608.06671)
 
 **<font color=#1a73e8>作者：</font>** Aniruddha Adiga, Jingyuan Chou, Gursharn Kaur 等 11 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -510,18 +478,7 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 46. [When Semantics Saturate or Emerge: Adaptation-Conditional Semantic Utility in Source-Free Cross-Domain Few-Shot Learning](https://arxiv.org/abs/2608.06673)
-
-**<font color=#1a73e8>作者：</font>** Wei Liu, Xing Deng, Haijian Shao  
-**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
-
-**<font color=#5f6368>摘要：</font>**
-> Language descriptions in source-free cross-domain few-shot learning (SF-CDFSL) are often selected according to zero-shot accuracy obtained with a frozen vision--language model. This paper asks whether that ranking remains valid after target-domain visual adaptation. Under a strictly paired protocol, we compare a generic class-name template with fixed detailed class descriptions before and after visual Low-Rank Adaptation (LoRA) on EuroSAT, CropDisease, ISIC, and ChestX. Let $\deltazero$ and $\deltalora$ denote the Detailed-minus-Base accuracy before and after adaptation, respectively. Two recurring regimes emerge. In \emph{semantic saturation}, $\deltazero>0$ but $0<\deltalora\ll\deltazero$: on EuroSAT and CropDisease, initial gains of 8.13--21.54 percentage points contract to 0.69--2.96 points after LoRA. In \emph{semantic emergence}, $\deltazero\leq0$ but $\deltalora>0$: on ISIC and ChestX, detailed descriptions become more useful only after the visual representation is updated. Training trajectories and sample-level decomposition show that saturation is driven mainly by Base-LoRA recovering errors already solved by detailed semantics, whereas emergence is associated with prediction turnover and newly formed Detailed-only correct decisions. Fixed-point-free shuffled-semantic controls, a second CLIP backbone, and multiple random seeds support the broad pattern while identifying ChestX 1-shot as a weak boundary case. These findings establish that zero-shot prompt quality is an incomplete proxy for adaptation-anchor quality and motivate evaluating language on both sides of the adaptation boundary.
-
----
-
-
-### 47. [Corrupting Attention: Evasion-Based Adversarial Attacks on Encoder Attention in Detection Transformers](https://arxiv.org/abs/2608.06674)
+### 43. [Corrupting Attention: Evasion-Based Adversarial Attacks on Encoder Attention in Detection Transformers](https://arxiv.org/abs/2608.06674)
 
 **<font color=#1a73e8>作者：</font>** Ridma Jayasundara, Shaheer Mohamed, Tharindu Fernando 等 9 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -532,7 +489,7 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 48. [Octo's Adventure: At-home Deployment of a Pediatric Education Tool](https://arxiv.org/abs/2608.06684)
+### 44. [Octo's Adventure: At-home Deployment of a Pediatric Education Tool](https://arxiv.org/abs/2608.06684)
 
 **<font color=#1a73e8>作者：</font>** Crimson Olaleye, Neda Barbazi, Ji Youn Shin 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -543,7 +500,7 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 49. [CoDAT: Collaborative Dual-Attention Transformer with Low-Cost Temporal Modeling for Efficient Edge Action Recognition](https://arxiv.org/abs/2608.06691)
+### 45. [CoDAT: Collaborative Dual-Attention Transformer with Low-Cost Temporal Modeling for Efficient Edge Action Recognition](https://arxiv.org/abs/2608.06691)
 
 **<font color=#1a73e8>作者：</font>** Novendra Setyawan, Chi-Chia Sun, Mao-Hsiu Hsu 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -554,20 +511,64 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 50. [A Multi-Agent Framework for Automated Coarse-Grained Molecular Dynamics of Polymers](https://arxiv.org/abs/2608.06694)
+### 46. [A Transferable Autologistic Model for Predicting Rare Failures in Heterogeneous Equipment](https://arxiv.org/abs/2608.06695)
 
-**<font color=#1a73e8>作者：</font>** Joohee Choi, Junhyeong Lee, Seunghwa Ryu  
+**<font color=#1a73e8>作者：</font>** Islam Benamirouche, Djemel Ziou, Feriel Fass  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Predicting failures before they occur remains a major challenge in predictive maintenance, particularly when failures are rare, when equipment of the same family differ in sensor configurations, and when the goal is anticipation rather than diagnosis of an already observed fault. This paper proposes a common-to-target probabilistic model that learns shared failure-related patterns across a family of heterogeneous equipment and adapts parsimoniously to target equipment. The model explicitly accounts for sensor heterogeneity, operating context, and degradation dynamics to produce calibrated failureprobability estimates suitable for maintenance planning. Its performance is evaluated on a synthetic refrigerator dataset comprising 27 simulated refrigerators with varying sensor configurations, operating conditions, and failure types, providing a controlle
+
+---
+
+
+### 47. [Scalable Long-Horizon Planning with Staggered Updates for Lifelong MAPF](https://arxiv.org/abs/2608.06702)
+
+**<font color=#1a73e8>作者：</font>** Vaibhav Sanjay, Jiaoyang Li  
+**<font color=#188038>arXiv所属领域：</font>** Multiagent Systems
+
+**<font color=#5f6368>摘要：</font>**
+> Lifelong Multi-Agent Path Finding (LMAPF) requires generating collision-free paths for large agent fleets under strict real-time constraints. Reactive frameworks such as PIBT and Enhanced PIBT (EPIBT) scale effortlessly to thousands of agents through rule-based, step-by-step coordination but suffer from severe temporal myopia, making them ineffective in scenarios where long-horizon reasoning is essential. RHCR plans windowed paths over multi-step horizons but incurs substantial planning overheads that hinder scalability. TP tackles both challenges by planning only subsets of agents at each timestep, yet its applicability is restricted to highly structured maps. To achieve long-horizon planning at scale across general maps, we propose Path Updates over Staggered Horizons (PUSH), a LMAPF planner capable of coordinating thousands of agents in under a second while planning over multi-step horizons. PUSH combines the key advantages of PIBT, RHCR, and TP. Like TP, PUSH reduces computational complexity by planning only a subset of agents at each timestep using staggered planning windows. Unlike TP, however, PUSH plans RHCR-style windowed paths in general maps without relying on restrictive map assumptions. To maintain high throughput in congested environments, PUSH further integrates EPIBT-inspired priority inheritance, backtracking, and anytime improvements into its windowed planning. Empirical evaluations across two realistic MAPF scenarios requiring long-horizon reasoning show that PUSH scales to the same massive agent loads as EPIBT (e.g., 10k agents) while achieving significantly higher system throughput than all baselines.
+
+---
+
+
+### 48. [WebRider: Persona-Conditioned Intent Controllers for Live-Web Assistance](https://arxiv.org/abs/2608.06704)
+
+**<font color=#1a73e8>作者：</font>** Zhi Li, Tao Zhou, Yeqing Li 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
 
 **<font color=#5f6368>摘要：</font>**
-> Coarse-grained (CG) molecular dynamics extends polymer simulation beyond the scales accessible to all-atom (AA) methods, but bottom-up CG modeling is laborious. The CG resolution is a design choice, so a transferable parameter set is generally not available and the potentials are derived anew for each polymer mapping. Here we present CGMas, a multi-agent framework that automates topology construction, equilibration, mapping, potential derivation, and validation from a natural-language specification of the polymer and target resolution. A large-language-model (LLM) reasoning agent infers the AA topology from polymer name, while layered self-correction resolves physical errors common to unsaturated, heteroatom-containing, and polar polymers. Downstream agents equilibrate the system, map it onto CG representation, derive potentials through Boltzmann inversion, and benchmark the model against its atomistic reference. CGMas completed all 27 homopolymer and copolymer tasks, matched the AA density to within 5% in 22, and reduced simulation from 38-88 min to 1 min, establishing agentic LLMs as a route to automated polymer coarse-graining.
+> Delegating a web task involves more than asking a question; it requires transferring a policy: what to verify, how to handle uncertainty, which preferences matter, and when to stop. Yet, current live-web agents are evaluated solely on the final answer, ignoring the policy constraints that define the delegation. A plausible final answer can conceal violations of that policy. Our full live audit reveals this critical gap: a strong controller completes 99.2% of tasks but honors all policy constraints in only 38.8% of cases. Finishing does not imply fidelity. WebRider bridges this gap by formalizing the delegated policy as an intent contract---an operational record of goals, constraints, evidence obligations, answer form, and task-local persona controls that must hold even as web pages change. WebRider employs a hierarchical architecture: a top-layer controller maintains the contract, a middle layer realizes intentions as guarded executable actions, and a tool layer executes these actions via browser, search, and maps tools. Our benchmark, RiderBench, evaluates this design on 4,096 live-web contracts across 42 public websites, auditing both the internal contract state and the visible user experience to determine if a rollout preserved its policy and if the steps were persona-consistent. The guarded middle interface also serves as a high-quality training signal; an 8B action-policy model trained through this interface outperforms executable-only baselines under a fixed controller. By making the browsing path a first-class object, WebRider enables a system that is auditable, human-judgeable, and learnable without conflating action realization with final-answer decisions. Dataset URL: this http URL.
+
+---
+
+
+### 49. [Dueling World Models: Advantage-Style Action Channels for Common-Mode Distractor Rejection](https://arxiv.org/abs/2608.06706)
+
+**<font color=#1a73e8>作者：</font>** Jiazhuo Li, Yiming Fei, Zhiruo Zhou 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Latent world models plan by predicting future states from an action, but when a scene contains motion the agent does not control, they quietly go action-blind: predictions for different actions become indistinguishable even as the training loss keeps improving. Existing remedies suppress this distraction with reconstruction, task reward, or auxiliary objectives, each adding machinery or assumptions. We show that a minimal alternative suffices, borrowed from the dueling decomposition of value into a state baseline and an action advantage: in latent dynamics, subtracting a prediction's mean effect over actions cancels whatever the actions share--the action-independent variation where distractors live--leaving a clean, controllable channel, with no reward, no reconstruction, and no distractor-specific auxiliary loss. Because this is only a subtraction at readout time, it applies unchanged to any action-conditioned world model, including frozen pretrained ones. Across a gridworld, synthetic generators with known factors, distracting continuous control, and natural-pixel Atari, the isolated channel recovers the agent's own effect where entangled predictors fail, with nuisance leak indistinguishable from zero; applied post hoc it surfaces an action channel in off-the-shelf models that their raw readouts miss, and it converts into goal-reaching control in the gridworld. We prove the cancellation is exact in finite samples for both discrete and sampled action sets, and we state its measured boundary--distractors whose motion tracks the action--together with the remaining limitations in the appendix.
+
+---
+
+
+### 50. [Suppress and Diversify: Refining Robust Pathways for Corruption Robustness](https://arxiv.org/abs/2608.06712)
+
+**<font color=#1a73e8>作者：</font>** Jiangang Yang, Wenhui Shi, Xiaoran Xu 等 7 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Model robustness against natural image corruptions is essential for safety-critical applications. While existing methods primarily focus on implicit representation learning, we provide the first systematic exploration of computational pathways to explicitly characterize internal robustness. We identify a progressive decay of robust features across network layers and establish a functional dependency between the prevalence of these features and model performance. To exploit these insights, we propose Suppress and Diversify (S\&D), a non-intrusive refinement approach that enhances robustness by dynamically selecting robust pathways and diversifying them through symmetry-preserving transformations. S\&D is architecture-agnostic, parameter-free, and incurs zero test-time overhead. Extensive evaluations across eight benchmarks demonstrate that S\&D consistently improves performance across multiple vision tasks, diverse backbones, and complex real-world scenarios, highlighting its broad efficacy and scalability.
 
 ---
 
 
 > [!TIP]
-> 当前位于：**1-50**（第 1/5 组）
+> 当前位于：**1-50**（第 1/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：**1-50** | [51-100](./part-02.md) | [101-150](./part-03.md) | [151-200](./part-04.md) | [201-221](./part-05.md)
+> - 分组跳转：**1-50** | [51-100](./part-02.md) | [101-150](./part-03.md) | [151-190](./part-04.md)
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*

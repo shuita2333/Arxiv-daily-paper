@@ -1,172 +1,17 @@
 # 📦 其他研究 | 2026年08月10日
 
-> 本类共 **221** 篇论文
+> 本类共 **190** 篇论文
 
 > 未进入大模型主领域展示范围的其他研究。
 
 > [!TIP]
-> 当前位于：**101-150**（第 3/5 组）
+> 当前位于：**101-150**（第 3/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | **101-150** | [151-200](./part-04.md) | [201-221](./part-05.md)
+> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | **101-150** | [151-190](./part-04.md)
 
 ---
 
-### 101. [SkillEval: Decomposing Agent Skill Quality into Interpretable Signals](https://arxiv.org/abs/2608.06891)
-
-**<font color=#1a73e8>作者：</font>** Jiahui Han, Qinuo Li, Ziheng Peng 等 9 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Agent skills provide reusable procedural knowledge that helps agents solve specialized tasks. As their use expands, evaluating skill quality becomes increasingly important. Existing evaluations often measure skill quality by testing whether a skill improves performance on specific downstream tasks. However, a reusable skill may apply to multiple task scenarios. Downstream evaluation mainly reflects the compatibility between a skill and the evaluated task, provides only a partial view of skill quality, and does not identify which aspect of the skill should be improved. We find that general properties of the \texttt{this http URL} document play an important role in skill quality. To evaluate these properties, we propose \textbf{SkillEval}, an interpretable framework for document-level skill evaluation. SkillEval evaluates each property using a fixed and inspectable scoring direction, producing interpretable scores. It further measures and reduces the influence of unrelated document features, such as length and formatting, so that each score captures its intended semantic property more specifically. Specifically, SkillEval learns an interpretable direction for each quality property from controlled positive--negative skill pairs in the hidden representation space of the model, and scores a new skill by projecting its representation onto these fixed directions. We use SkillEval to evaluate skills in controlled quality tests and show that SkillEval reliably distinguishes skills of different quality. In addition, SkillEval scores closely reflect downstream task performance, providing an early indication of whether a skill is likely to help an agent complete a task. We further explore SkillEval for diagnosing weaknesses in skill documents and guiding targeted revisions. The revised skills improve the targeted properties and achieve higher pass rates on downstream tasks.
-
----
-
-
-### 102. [PRISM: Principled Reference Identification for Schrodinger Bridge Model](https://arxiv.org/abs/2608.06893)
-
-**<font color=#1a73e8>作者：</font>** Forouzan Fallah, Yezhou Yang  
-**<font color=#188038>arXiv所属领域：</font>** Machine Learning
-
-**<font color=#5f6368>摘要：</font>**
-> Schrödinger bridge models restore a clean signal from a degraded observation by following the conditional bridges of a reference process, yet this reference is chosen heuristically, typically white noise with a hand-tuned schedule. We develop PRISM, a theory of bridge reference design. We characterize the time-varying Gaussian references that remain exactly tractable with per-mode schedules: precisely those whose instantaneous covariances commute. We then prove an invisibility principle: with the exact drift and unlimited solver steps, every admissible reference recovers the true posterior. The choice of reference therefore matters only under finite computational resources. For a fixed step budget, we derive the finite-step objective in closed form and prove that every optimal noise spectrum is proportional to Pk, the spectrum of information destroyed by the sensor, with a mode-independent constant x*(T) = (2 ln T)^-1/2 (1 + o(1)). The analysis shows that noise color and temporal scheduling are interchangeable, and regularization provably shifts the optimal reference toward white noise. Experiments in Gaussian settings confirm the predicted orderings and the closed-form loss floors. On FFHQ, the distortion-- perception trade-off and spectral localization transfer, but white noise outperforms the matched reference; a pre-registered study that changes the training regime refutes ridge whitening as the explanation. A 2x2 mechanism study then traces the inversion to the non-Gaussian per-mode statistics of real images. PRISM turns reference design from a hyperparameter sweep into a calculation in the Gaussian regime, and locates exactly where real images break it.
-
----
-
-
-### 103. [From Points to Edges: Edge-Conditioned Spectral Operators for Physics-Sensitive PDE Learning](https://arxiv.org/abs/2608.06894)
-
-**<font color=#1a73e8>作者：</font>** Zhentao Tan, Ruijie Quan, Yi Yang  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Neural operators have become a central tool for solving partial differential equations (PDEs), with spectral operators offering efficient global mixing across spatial locations. However, many PDEs contain physics-sensitive local structures that are critical to the underlying physical behavior. For example, in Darcy flow, local material interfaces are often reflected by sharp changes in the permeability field and can strongly influence the solution. Existing spectral operators primarily adapt modal mixing based on center-point representations, making them insufficiently responsive to such localized structural variations. We propose the Edge-Conditioned Spectral Operator (ESO), a novel spectral operator framework that modulates global spectral mixing using local edge-wise variations. By incorporating the Pairwise-Variation Modal Mixer (PVMM) to inject local edge information into spectral mode selection, ESO preserves the global approximation capability of spectral neural operators while enabling the learned kernel to adapt to physics-sensitive local structures. Furthermore, we introduce a task-adaptive Physics-Aware Reweighting (PAR) that emphasizes physically important regions, identified by taskspecific physical quantities. Across nine PDE benchmarks, ESO consistently achieves state-of-the-art performance. Visual and region-wise analyses further demonstrate that ESO reduces solution errors near coefficient jumps, high-gradient flow structures, and other physically sensitive regions. The code is available at this https URL.
-
----
-
-
-### 104. [Recent advances in weakly supervised learning: New supervision paradigms, assumption relaxations, and practical solutions](https://arxiv.org/abs/2608.06896)
-
-**<font color=#1a73e8>作者：</font>** Wei Wang, Gang Niu, Masashi Sugiyama  
-**<font color=#188038>arXiv所属领域：</font>** Machine Learning
-
-**<font color=#5f6368>摘要：</font>**
-> Deep learning has achieved great success in recent years thanks to the availability of high-quality, well-annotated training data. However, this requirement is often not met in real-world applications. Weakly supervised learning aims to train an accurate model with incomplete, inexact, or inaccurate supervision. In this chapter, we will discuss recent advances in this field, including new supervision paradigms, relaxed assumptions, and practical solutions. First, we introduce a new weakly supervised binary classification problem called confidence-difference classification and propose consistent approaches to solve it. Next, we investigate complementary-label learning, a weakly supervised multi-class classification problem. Our proposed approaches are based on more relaxed assumptions about the data generation process than existing consistent approaches. Lastly, we present an evaluation framework for partial-label learning, another popular multi-class weakly supervised learning problem, in order to promote fair and realistic evaluation of algorithms in this field.
-
----
-
-
-### 105. [The Nocturnity Scale: Measuring the Sense of Being at Night in Virtual Urban Environments](https://arxiv.org/abs/2608.06904)
-
-**<font color=#1a73e8>作者：</font>** Anthony Le Gourri{é}rec, Etienne Peillard, Nicolas Houel 等 4 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
-
-**<font color=#5f6368>摘要：</font>**
-> Nighttime environments are increasingly used in virtual urban studies, yet darkness alone does not fully recreate the subjective sense of being at night. Prior work suggests that this experience depends not only on the absence of daylight, but also on lighting structure, low-light perception, human activity, soundscape, and self-related states. However, no existing tool directly assesses this scene-dependent subjective experience. This work introduces nocturnity as the feeling of being at night elicited by a scene and proposes a theory-driven framework structured into three subscales: perceptual, activity, and inner-state nocturnity. Based on this framework, we develop a first candidate questionnaire for virtual urban environments. Developed through a literature-informed process and reviewed by two urban lighting experts, the scale comprises 42 Likert-type items, including three diagnostic subscales and complementary global and time-related items. This work provides a first operational basis for comparing virtual urban scenes according to their perceived nocturnity and supports future empirical validation.
-
----
-
-
-### 106. [Calibrating WEAT Against Anisotropy: ZCA Whitening as a Geometric Pre-Processing Step for Embedding Association Tests](https://arxiv.org/abs/2608.06908)
-
-**<font color=#1a73e8>作者：</font>** Seitaro Ono, Senna Ross, Jun Saiki  
-**<font color=#188038>arXiv所属领域：</font>** Computation and Language
-
-**<font color=#5f6368>摘要：</font>**
-> We propose Zero-phase Component Analysis (ZCA) whitening as a geometric pre-processing step for the Word Embedding Association Test (WEAT). WEAT is a bias measurement method widely used in both computational social science and AI fairness research. It relies on cosine similarity as a measure of semantic association, which assumes that the embedding space is approximately isotropic. However, prior work has reported that many widely used language models do not satisfy this assumption, raising concerns about the reliability of bias measurements. ZCA whitening transforms the covariance of the embedding space into the identity matrix while minimizing perturbation to the original vectors. This transformation restores the isotropy condition on which WEAT relies. We evaluate our approach on ten standard WEAT test suites and seven models spanning three architectural families, yielding 70 model-task combinations. The results show that ZCA whitening substantially reduces the anisotropy of the embedding spaces across all models. Particularly for highly anisotropic models, we further observe improvements on standard semantic similarity benchmarks, indicating that the calibrated space better captures semantic associations. After calibration, over 30% of WEAT results change significance status, and effect sizes shift in both directions depending on bias category. These shifts suggest that uncalibrated measurements may both overestimate and underestimate the associations encoded in the embedding space. These findings indicate that previously reported bias measurements in anisotropic embedding spaces should be interpreted with caution and may benefit from re-evaluation with calibrated methods. Our approach contributes to restoring the measurement foundation of WEAT across both computational social science and AI fairness research.
-
----
-
-
-### 107. [Fast LapSum: Exact Differentiable Top-k at Million Scale](https://arxiv.org/abs/2608.06912)
-
-**<font color=#1a73e8>作者：</font>** Łukasz Struski, Joanna Wojciechowicz, Jakub Antczak 等 6 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> The top-$k$ operation is a fundamental building block of modern sparse computation, enabling token routing, expert activation, memory selection, and attention pruning. Yet standard hard top-$k$ blocks gradients, while existing continuous (soft) relaxations remain too costly for large-scale models. We introduce Fast LapSum, an exact-budget soft top-$k$ primitive whose GPU solver runs in linear time after sorting. Unlike prior linear-time methods such as DFTopK, which relax the normalization constraint, Fast LapSum is, to our knowledge, the first method to preserve an exact selection mass of $k$ while remaining fully differentiable end-to-end. Our solver combines a linear-time threshold computation with an analytical vector--Jacobian product, and for extreme scales employs probabilistic bracketing to sort only the uncertain middle band of kernel-noised scores. The resulting overhead is almost negligible: the solver processes $10^6$, $10^7$, and $10^8$ scores in $0.41$, $1.15$, and $5.23$\,ms, respectively. This makes exact soft top-$k$ practical for sparse routing, retrieval, and large-scale optimization. We demonstrate Fast LapSum on two demanding applications operating over millions of coordinates inside the training loop: generating megapixel sparse adversarial examples with an exact soft budget of ${\sim}0.02\%$ of an image's pixels, achieving an order-of-magnitude speedup over state-of-the-art methods, and training a fully differentiable sparse image coder from scratch.
-
----
-
-
-### 108. [RibAssist 3D: Biplanar Rib-Fracture Detection, Addressing, and Selective 3D Localization from CT-Derived Projections](https://arxiv.org/abs/2608.06914)
-
-**<font color=#1a73e8>作者：</font>** Kabila Haile Soboka  
-**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
-
-**<font color=#5f6368>摘要：</font>**
-> Rib fractures are common, clinically significant, and time-consuming to localize on computed tomography (CT). We ask whether fractures detected in two orthogonal projections (anteroposterior, AP, and lateral) can be paired across views and triangulated into reliable 3D fracture points at a controlled rate of false 3D outputs. We answer this with a staged diagnostic study. Biplanar geometry is exact: detector-predicted centers reconstruct to median 4.0 mm 3D error when correspondence is correct. On the sealed cohort, dual-view availability reaches 61.1% and the candidate graph contains a correct pair for 58.4% of fractures. The binding limitation is not geometry or localization but confidence-limited cross-view correspondence. Lateral-detector retraining lifts dual-view availability (0.52 to 0.76 in development) and moves the frontier from 0% to 2.44% recall at 10 mm. When the policy commits a correct pair, the emitted point is geometrically accurate (sealed median 1.49 mm, rib-exact 93%). A pre-specified pass on the untouched 55-case cohort promotes 15 of 601 fractures to correct 3D localizations at 0.436 false 3D points per case, yielding 2.50% end-to-end commitment yield. The contribution is validated biplanar reconstruction geometry with high conditional localization fidelity, a staged identification of cross-view correspondence confidence as the effective bottleneck, and a selective assistive workflow that preserves uncertain findings rather than a standalone automatic reconstructor.
-
----
-
-
-### 109. [MiCoPro: End-to-End Mixed Precision HW/SW Co-design with HW-aware Proxy Model](https://arxiv.org/abs/2608.06916)
-
-**<font color=#1a73e8>作者：</font>** Zijun Jiang, Yangdi Lyu  
-**<font color=#188038>arXiv所属领域：</font>** Machine Learning
-
-**<font color=#5f6368>摘要：</font>**
-> Quantized Neural Networks~(QNN) with low-bitwidth data have proven promising in efficient storage and computation on edge devices. To mitigate accuracy degradation while maximizing speedup, layer-wise mixed-precision quantization~(MPQ) becomes a popular solution. However, existing algorithms for exploring MPQ schemes are limited in flexibility and efficiency. Comprehending the complex impacts of different MPQ schemes on post-training quantization and quantization-aware training results is a challenge for conventional methods. Furthermore, an end-to-end framework for the optimization and deployment of MPQ models is missing in existing work.
-To address these challenges, we propose the MiCo framework, a holistic MPQ exploration and deployment framework for edge AI applications. The framework adopts a novel optimization algorithm to search for accuracy-optimal quantization configurations under strict latency constraints. We further extended the framework to MiCoPro, which introduces a robust Hardware-Aware Proxy (HAP) model to enhance prediction accuracy and hardware versatility. By leveraging target-specific latency modeling, MiCoPro enables rapid exploration and direct deployment from PyTorch models to bare-metal C code. We demonstrate the versatility of our framework on both the BitFusion accelerator and SIMD-extended RISC-V processors, achieving up to 40\% of latency reduction with less than 3\% of accuracy drop.
-
----
-
-
-### 110. [ReGraph: Learning to Generate Recipe Graphs from Food Images](https://arxiv.org/abs/2608.06917)
-
-**<font color=#1a73e8>作者：</font>** Guoshan Liu, Bin Zhu, Pengkun Jiao 等 6 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Recent Large Multimodal Models (LMMs) have achieved impressive performance in recipe generation from food this http URL, cooking is a structured transformation process in which ingredients undergo state changes through ordered actions,while free-form recipe language leaves the corresponding entities, intermediate states, and dependencies largely implicit and entangled.A graph representation makes this procedural knowledge explicit and compositional, providing a structured basis for assessing whether model outputs encode process-level knowledge rather than merely presenting plausible textual descriptions. To address this limitation, we present ReGraph, a large-scale recipe graph dataset that represents ingredients, cooking actions, and tools as entities, uses entity attributes to describe ingredient state changes, and employs typed relations to encode manipulation targets, destinations, and procedural ordering. ReGraph further incorporates explicit Recipe Reasoning Chain-of-Thought (RR-CoT) traces, providing auxiliary supervision for procedural decomposition and structured graph generation. Building on ReGraph, we propose Recipe Graph Learning (RGL), a two-stage framework that enables LMMs to generate a plausible fine-grained cooking workflow from a food image in the form of a structured recipe graph. Under a deterministic, schema-aware matching protocol, our experiments reveal a substantial gap between text-generation quality and recoverable procedural structure: recipes produced by existing approaches achieve competitive text-generation scores yet yield limited reference-aligned entity and relation structure under the ReGraph schema. In contrast, across two representative LMM backbones, RGL consistently improves the generation of cooking entities and procedural relations, while our analysis further shows that fine-grained ingredient-state capture remains the most challenging dimension.
-
----
-
-
-### 111. [Vernata: Self-Supervised Learning of LiDAR Point Representations](https://arxiv.org/abs/2608.06919)
-
-**<font color=#1a73e8>作者：</font>** Oliver Lemke, Alexander Liniger, Abel Gawel 等 4 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
-
-**<font color=#5f6368>摘要：</font>**
-> LiDAR serves as a primary sensing modality for robots operating in outdoor environments. However, the performance of deep learning models in this domain is severely limited by the scarcity of labeled data, a direct result of the high cost of 3D annotation. Self-supervised learning addresses this scarcity by learning general-purpose features from unlabeled data. In this work, we present a multi-modal, multi-teacher distillation framework for self-supervised learning on outdoor LiDAR point clouds. Building upon the Sonata architecture, we introduce Vernata, consisting of three extensions: sparse view augmentation to improve robustness against varying point densities, a memory bank mechanism to stabilize resource-constrained training, and cross-modal distillation utilizing dense, high-resolution 2D image features to enable fine-grained semantic guidance. We evaluate our method on the GrandTour, TartanGround, and Waymo datasets, as well as data collected from our own robotic platforms. Our experiments demonstrate a significant performance improvement over Sonata baselines, yielding mIoU scores of 54.7 on TartanGround (+5.9 points, +12.1%) and 57.1 on Waymo (+7.3 points, +14.7%). Finally, we show that the self-supervised approach maintains strong performance even in reduced-modality settings (lacking color or normals), achieving competitive mIoU scores of 49.4 and 50.2 on the respective datasets.
-
----
-
-
-### 112. [Deal Me Maybe: The Role of Emotions in Multi-Agent Negotiation](https://arxiv.org/abs/2608.06922)
-
-**<font color=#1a73e8>作者：</font>** Massimiliano Luca, Apoorva Singh, Bruno Lepri  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Negotiation is a demanding social task for LLM agents, requiring strategic reasoning, persuasion, and interpersonal adaptation. Yet existing benchmarks often treat agents as emotionally neutral, overlooking a key driver of human bargaining behavior. We study how prompt-conditioned emotions affect LLM-based price negotiation. In a controlled framework, buyer and seller agents are independently assigned one of six emotional states and negotiate over 350 real consumer products under two budget conditions. Across 36 emotion-pair settings and five widely used LLMs, we find that emotions strongly shape outcomes. Angry buyers almost never reach agreement (0.39% deal rate), while happy buyers agree most often (28.91%), but obtain worse prices than fearful buyers. Emotion effects are role-dependent: buyer emotion mainly drives acceptance and rejection, whereas seller emotion shapes concession dynamics. These effects influence not only language, but also termination behavior and price trajectories, raising concerns for emotion-conditioned agents in commerce.
-
----
-
-
-### 113. [TRIBE: Predicting Team Performance via Communication Behavior Ensembles](https://arxiv.org/abs/2608.06926)
-
-**<font color=#1a73e8>作者：</font>** Ali Jalal-Kamali, Nikolos Gurney, David V. Pynadath 等 4 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Designing autonomous agents that effectively assist human teams hinges on understanding team dynamics, often without task specific knowledge. We present TRIBE, a domain independent approach that reveals team behavioral dynamics invisible to traditional performance metrics. We show that communication patterns can categorize teams into performance predictive behavioral tribes, as early as 10% into the task, enabling timely interventions. We test TRIBE on four diverse datasets and demonstrate that communication patterns predict team performance while the prediction strength varies by the degree a task structure allows for behavioral freedom. Our temporal analysis reveals that AI agents significantly alter team behavioral trajectories while human advisors align with natural dynamics, and that teams maintain behavioral flexibility throughout collaboration. Further, we compare TRIBE to Llama and optimize the pipeline, achieving significant speedup with performance improvement.
-
----
-
-
-### 114. [MaskFlow: Precise, Consistent and Seamless Regional Image Editing](https://arxiv.org/abs/2608.06929)
-
-**<font color=#1a73e8>作者：</font>** Rui Xu, Yang Yong, Shunzi Yang 等 5 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
-
-**<font color=#5f6368>摘要：</font>**
-> Regional image editing has attracted considerable attention for its spatial controllability. Although instruction-based and mask-reference-based editing methods can achieve strong semantic alignment, reliable regional control remains challenging, where an edit must be accurately localized and naturally integrated with the preserved context. We propose \textbf{MaskFlow}, a training framework for precise localization, consistent background preservation, and seamless boundary transitions. MaskFlow incorporates the mask into the probability path and flow-matching objective, coordinating generation within the editable region with source preservation outside it. The proposed Soft-Poisson de-seaming module further refines the predicted vector field during both training and sampling to improve the smooth integration of the edited foreground with the preserved background. We also design a data synthesis pipeline to construct MEData, a mask-based image editing dataset for training regional image editing models and facilitating further research. Experiments on natural scenes and infographic images demonstrate consistent improvements over competing methods in both quantitative and qualitative evaluations.
-
----
-
-
-### 115. [AVCap: Reinforcing Audio-Video Joint Caption with Detail-Aware Reward](https://arxiv.org/abs/2608.06930)
+### 101. [AVCap: Reinforcing Audio-Video Joint Caption with Detail-Aware Reward](https://arxiv.org/abs/2608.06930)
 
 **<font color=#1a73e8>作者：</font>** Mingyang Wu, Kaituo Feng, Bohao Li 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -177,29 +22,18 @@ To address these challenges, we propose the MiCo framework, a holistic MPQ explo
 ---
 
 
-### 116. [Ask-E: An Environment for Calibrated Question Generation](https://arxiv.org/abs/2608.06933)
+### 102. [Walkable to Whom? Capturing Subjective Variability in Walkability Perception Using Multimodal Deep Learning](https://arxiv.org/abs/2608.06934)
 
-**<font color=#1a73e8>作者：</font>** Sarah Pratt, Jae Sung Park, Scott Geng 等 4 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computation and Language
+**<font color=#1a73e8>作者：</font>** Moloud Damandeh, Meead Saberi  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
 
 **<font color=#5f6368>摘要：</font>**
-> Today, we improve models by training and evaluating them on problems at the frontier of their abilities. Creating such problems is itself a demanding task, requiring the ability to probe model limits and generalize beyond existing question distributions. It also means placing problems at a precise difficulty level, which requires understanding what it takes to solve them. In short, generating problems calibrated to a model's current frontier demands capability beyond it, an increasingly burdensome constraint as models improve. Our key insight is that we can leverage this constraint to our advantage: a model that can generate problems consistently calibrated to a given frontier must possess capability beyond it. Accordingly, we present Ask-E, an environment that benchmarks and trains models on their ability to write questions at a given skill level, rather than answer them. Concretely, we define target skill levels as ranges bounded by the capabilities of two existing language models. A generated question is successfully calibrated if exactly one of the two models can solve it, placing it precisely within the target range and differentiating the capabilities of these models. Ask-E serves both as a benchmark and a training environment, where models generate problems calibrated to a variety of skill levels. We find that even frontier models achieve below 50% calibration on the benchmark, leaving significant headroom to measure future progress. We also show that training on this environment leads to improvements across a number of downstream math benchmarks even with no new math data, no interaction with stronger models, and no correctness-based reward.
+> Visual perception of walkability varies substantially across individuals, reflecting differences in personal characteristics, experiences, and preferences. Existing studies, however, often reduce these diverse judgements to aggregated scores, implicitly assuming uniform perception, and commonly rely on vehicle-mounted street-view imagery that does not reflect the pedestrian's visual experience. This paper introduces a dataset of 29,870 walkability ratings from 1,196 respondents, linking sidewalk-view imagery across urban, suburban, and regional Australian environments with individual rater attributes, and proposes the first user-conditioned multimodal deep learning framework for walkability perception, fusing visual features with respondent-level representations. A viewpoint-comparison study shows that sidewalk-view images receive significantly higher walkability ratings than matched street-view images, indicating that imagery source is a substantive design decision in perception surveys. The user-conditioned model improves rank agreement with observed ratings by 65% over an image-only baseline (quadratic weighted kappa 0.47 vs. 0.29), demonstrating that who is evaluating an environment carries predictive indication beyond image content alone. These findings support moving from aggregated, observer-independent walkability scores toward models that represent diverse users, enabling more inclusive assessment of pedestrian environments.
 
 ---
 
 
-### 117. [Blind to the Pivotal Vote: Aggregate Independence Metrics Miss Where Verification Actually Helps](https://arxiv.org/abs/2608.06940)
-
-**<font color=#1a73e8>作者：</font>** Yang Shu  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> LLM judge panels are a standard evaluation tool, but prior work reports highly correlated panel errors: nine judges provide roughly the effective information of two independent ones, and aggregation closes only a small fraction of the gap. A natural remedy--a signal from a different evidence source, e.g., executing a test suite--produced no distinguishable change in the panel's effective-vote count at scale (-0.04, 95\% CI [-0.10, +0.02]). Aggregate dependence and conditional decision utility are different questions. Elementary majority arithmetic fixes the affected set for single-ballot substitution: only decisions with a one-vote margin can change. The empirical question is whether panel error rates rise and useful substitutions concentrate there. They do: the entire accuracy gain concentrates on these pivotal queries, where it is large (+10.4 to +23.3 percentage points across three headline configurations), and is exactly zero elsewhere. We confirm the pattern across three code benchmarks and four panel sizes (a 9-judge extension and 56 dependent subsampling checks, gain +6.5 to +16.1 percentage points). On HumanEval+/MBPP+, a majority-side replacement rule raises overall accuracy from 82.44\% to 85.62\% while invoking the signal on 16.2\% of queries; signal-only remains stronger at 87.60\%. Thus population-level dependence diagnostics and margin-stratified utility are complementary, and the affected-set characterization yields a call-reduction rule for any specified single-ballot substitution policy.
-
----
-
-
-### 118. [ELMZip: Onboard Satellite Image Compression via Extreme Learning Machines for Efficient Downlink](https://arxiv.org/abs/2608.06942)
+### 103. [ELMZip: Onboard Satellite Image Compression via Extreme Learning Machines for Efficient Downlink](https://arxiv.org/abs/2608.06942)
 
 **<font color=#1a73e8>作者：</font>** Woojin Cho, Junghwan Park, Sangcheol Sim 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -210,7 +44,7 @@ To address these challenges, we propose the MiCo framework, a holistic MPQ explo
 ---
 
 
-### 119. [Dual-Space Modality Consistency Learning for Universal Cross-Modal Re-Identification](https://arxiv.org/abs/2608.06943)
+### 104. [Dual-Space Modality Consistency Learning for Universal Cross-Modal Re-Identification](https://arxiv.org/abs/2608.06943)
 
 **<font color=#1a73e8>作者：</font>** Yujian Zhao, Yukang Zhao, Hankun Liu 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -221,7 +55,7 @@ To address these challenges, we propose the MiCo framework, a holistic MPQ explo
 ---
 
 
-### 120. [LMM Modality Transfer: A Pre-requisite for Autonomous GIS Agents](https://arxiv.org/abs/2608.06948)
+### 105. [LMM Modality Transfer: A Pre-requisite for Autonomous GIS Agents](https://arxiv.org/abs/2608.06948)
 
 **<font color=#1a73e8>作者：</font>** Ivan Majic, Zexian Huang, Franziska Hübl 等 8 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -232,7 +66,7 @@ To address these challenges, we propose the MiCo framework, a holistic MPQ explo
 ---
 
 
-### 121. [A Rate Separation for Agnostic Direct Sums](https://arxiv.org/abs/2608.06951)
+### 106. [A Rate Separation for Agnostic Direct Sums](https://arxiv.org/abs/2608.06951)
 
 **<font color=#1a73e8>作者：</font>** Mihir More, Aritra Das, Debayan Gupta  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -243,7 +77,7 @@ To address these challenges, we propose the MiCo framework, a holistic MPQ explo
 ---
 
 
-### 122. [Casting the Net! Revisiting MasterFace Impersonation Attacks](https://arxiv.org/abs/2608.06952)
+### 107. [Casting the Net! Revisiting MasterFace Impersonation Attacks](https://arxiv.org/abs/2608.06952)
 
 **<font color=#1a73e8>作者：</font>** Seunghun Paik, Sunpill Kim, Chanwoo Hwang 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -254,7 +88,7 @@ To address these challenges, we propose the MiCo framework, a holistic MPQ explo
 ---
 
 
-### 123. [Explicit, Not Longer: What Makes Epistemic Stance Survive Memory Compression](https://arxiv.org/abs/2608.06953)
+### 108. [Explicit, Not Longer: What Makes Epistemic Stance Survive Memory Compression](https://arxiv.org/abs/2608.06953)
 
 **<font color=#1a73e8>作者：</font>** Alex Kwon  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -265,7 +99,7 @@ To address these challenges, we propose the MiCo framework, a holistic MPQ explo
 ---
 
 
-### 124. [How Molecular Generative Models Organize Molecular Identity](https://arxiv.org/abs/2608.06956)
+### 109. [How Molecular Generative Models Organize Molecular Identity](https://arxiv.org/abs/2608.06956)
 
 **<font color=#1a73e8>作者：</font>** Raul Ortega-Ochoa, Tejs Vegge, Jens S. Bakander 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -277,18 +111,18 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 125. [Summarize First, Download Later: Onboard VLMs for Bandwidth-Efficient Earth Observation](https://arxiv.org/abs/2608.06959)
+### 110. [CAi Copilot: Reducing Operational Workload in Molecular Design through Intent-Driven Agentic Workflows](https://arxiv.org/abs/2608.06961)
 
-**<font color=#1a73e8>作者：</font>** Junghwan Park, Sangcheol Sim, Woojin Cho 等 4 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+**<font color=#1a73e8>作者：</font>** Zhu Wang, Jiangyu Chen, Yingjun Shang 等 7 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
 
 **<font color=#5f6368>摘要：</font>**
-> Modern Earth observation (EO) satellites carry increasingly advanced sensors that produce vast volumes of high-resolution, multispectral data, yet downlink capacity remains a critical bottleneck -- often causing significant latency or the loss of valuable observations within limited contact windows. We propose a "Summarize First, Download Later" paradigm that exploits recent advances in onboard edge computing and Vision-Language Models (VLMs). Rather than indiscriminately downlinking raw imagery, the system follows a three-phase interaction protocol: the satellite first transmits concise natural language summaries generated by a quantized onboard VLM; ground operators then issue targeted Visual Question Answering (VQA) queries to verify scene relevance (e.g., wildfires or maritime anomalies); and full-resolution images are downloaded only when critical information is confirmed. This transforms the downlink from passive bulk transfer into an active, semantics-aware dialogue. We implement and evaluate the system on a resource-constrained NVIDIA Jetson platform, and experiments on diverse remote sensing scenes show that the proposed strategy substantially reduces bandwidth consumption while accelerating time-to-insight for time-sensitive missions.
+> Early-stage molecular design is an iterative process, not just a task of generating molecules. Researchers turn broad goals into design strategies, refine candidates, assess many properties, and gather evidence before synthesis and tests. AI methods can generate molecules, optimize several goals, predict properties, dock compounds, and account for synthesis. Yet these functions are spread across specialized tools. Experts must still coordinate each step, judge interim results, and integrate evidence. The central challenge is thus to turn research intent into adaptive, traceable runs grounded in scientific tools. We cast this challenge as intent-to-evidence molecular design workflow execution and present CAi Copilot, an expert-oriented agent with three linked layers. The Research Interface Layer turns intent into an executable plan. The Agent Reasoning Layer uses interim results to guide each run. The Execution Substrate supplies molecular tools, metrics, reusable utilities, and backend services. Across 45 tasks, CAi achieves the strongest overall performance, with an outcome score of 84.59, exceeding the next-best result by 18.07 points. Additional benchmarks test how CAi coordinates generation, screening, and multi-criteria evaluation, while exposing limits in long-horizon execution. These results show that CAi turns broad molecular-design intent into transparent, traceable workflows that connect interim decisions to candidate-level evidence.
 
 ---
 
 
-### 126. [Learning in Deep Networks under Dale's Constraint](https://arxiv.org/abs/2608.06963)
+### 111. [Learning in Deep Networks under Dale's Constraint](https://arxiv.org/abs/2608.06963)
 
 **<font color=#1a73e8>作者：</font>** Roy Abel, Shimon Ullman  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -299,7 +133,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 127. [Finding Usable Weight Mechanisms with Tiled SVD](https://arxiv.org/abs/2608.06969)
+### 112. [Finding Usable Weight Mechanisms with Tiled SVD](https://arxiv.org/abs/2608.06969)
 
 **<font color=#1a73e8>作者：</font>** Ash Manvi, Samreena Tajreen  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -310,29 +144,18 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 128. [Generative Embedding Benchmark: How Much Information Survives in a Dense Embedding?](https://arxiv.org/abs/2608.06972)
+### 113. [When One Modality Is Not Enough: Multimodal Sex and Life-Stage Classification of Red Deer from Aerial RGB-Thermal Video](https://arxiv.org/abs/2608.06973)
 
-**<font color=#1a73e8>作者：</font>** Yun Li, Biao Yang, Peixi Wu 等 8 位作者  
+**<font color=#1a73e8>作者：</font>** Hugo Markoff, Christoph Praschl, Ivan Ludoški 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
 
 **<font color=#5f6368>摘要：</font>**
-> Embeddings have emerged as a standard representational interface linking foundation models with downstream systems. Most embedding benchmarks assess representations through discriminative tasks or geometric criteria centered on separability in embedding space. However, strong performance on such evaluations does not establish whether content compressed into an embedding remains accessible to a downstream generator. To address this gap, we introduce the Generative Embedding Benchmark (GEB), in which a decoder answers questions using only a frozen embedding and question text, without access to the original image or intermediate visual features. Answer quality under this readout measures generative information: the answer-relevant content recoverable from an embedding. GEB includes a curated visual-question-answering dataset with a 1,800-item development split and a held-out 900-item test split covering natural images, scene text, and visual documents. Using a common decoder and training recipe, we evaluate seven public embedding models in visual-only and vision-language joint modes. On the test set, visual-only scores range from 28.25 to 33.21; with image-question joint encoding, all five VLM-based embedding models score higher, and the best reaches 65.56. Matched embeddings also outperform text-only inputs, zero embeddings, and shuffled embeddings. Natural-image information is much easier to recover than scene text or visual-document information, while a Qwen3-VL-2B reference with access to the original image reaches 84.30. Together, these results show that generative readout exposes information bottlenecks that separability-based evaluation does not capture.
+> Aerial drone surveys increasingly support wildlife population estimation, yet a useful census is more than a count: population dynamics are defined by species composition, sex ratios and age structure, that is, by which species are present and how a herd splits into adult males, adult females and juveniles. We use red deer ($\textit{Cervus elaphus}$) as a test case, because managers act on these dynamics and because the visible cue defining adult males, the antlers, is seasonally variable. Surveys are flown nadir, high enough not to disturb the animals, so each deer occupies only a small, low-resolution patch. The two recording modalities fail in opposite conditions: in color a deer under canopy blends into the ground, while in thermal it becomes a bright blob that loses fine detail. Rather than trust either modality alone, we fuse them at every stage using self-supervised DINOv3 features. Our pipeline tracks animals in both modalities, treats an animal as confirmed only when the two cameras agree, keeps only the clear, non-occluded frames, and assigns species and sex by a vote across them; life stage is read separately from geo-referenced body size, since at survey resolution a juvenile often only differs from an adult female in size. Across four flights spanning the antler season the fused pipeline correctly classifies 25 of the 26 detected individuals (7 of 8 adult males, all 16 adult females and 2 juveniles), against 20 of 26 for either sensor alone. Multimodal species classification reaches 96.0%, while for sex classification fusing the two sensors matters most: the combined RGB+thermal model is the most robust across environments and seasons. Automating the demographic classification turns a drone flight from a count into a repeatable reading of herd structure, so the sex ratios and age structure that managers already act on can be gathered as often as a survey can be flown.
 
 ---
 
 
-### 129. [PHASE-Tree: Modeling Character-State Evolution in Long-Horizon Role-Playing Dialogue](https://arxiv.org/abs/2608.06975)
-
-**<font color=#1a73e8>作者：</font>** Bo Tang, Jianan Yang, Junyi Zhu 等 10 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computation and Language
-
-**<font color=#5f6368>摘要：</font>**
-> Long-horizon role-playing demands that characters remain recognizable as they evolve with the narrative. Yet existing work falls short on two fronts: representations are typically static profiles that cannot be updated locally without destabilizing unchanged traits, and benchmarks mainly test persona preservation and memory recall rather than whether a model speaks from a character's currently evolved state. We address both. PHASE-Tree is a multi-timescale character-state tree with an immutable identity root and mutable persona, session, and moment layers, making each mutable field an addressable target for localized within- and cross-episode updates. It conditions generation through explicit textual provision or implicit parametric adaptation. To measure evolved-state generation, we introduce LongEvoRoleBench, which pairs four long-dialogue corpora for cross-episode evolution with four short-dialogue corpora as within-scene state-tracking checks, under a unified next-utterance protocol. On the long-dialogue core, textual PHASE-Tree ranks first in 11 of 12 dataset-metric cells against internal variants and all 12 cells against external textual baselines, improving character-level, semantic, and embedding scores by 19.7%, 12.4%, and 15.1% respectively. In a blinded 200-response study, human ratings correlate with the GPT-4.1 judge (Pearson r= 0.65); on descriptive n= 10 PT and NR prompt subsets, the Overall difference is +0.20. The long-dialogue Sem advantage persists across LLM judges and generation backbones.
-
----
-
-
-### 130. [Social Facilitation of Creative Reflection: AI-agents and Humans](https://arxiv.org/abs/2608.06980)
+### 114. [Social Facilitation of Creative Reflection: AI-agents and Humans](https://arxiv.org/abs/2608.06980)
 
 **<font color=#1a73e8>作者：</font>** Olga Sutskova, Corey Ford  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -343,7 +166,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 131. [Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration](https://arxiv.org/abs/2608.06981)
+### 115. [Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration](https://arxiv.org/abs/2608.06981)
 
 **<font color=#1a73e8>作者：</font>** Jiaqi Zhang, Zheng Pang, Rongrong Gao 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -354,7 +177,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 132. [HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses](https://arxiv.org/abs/2608.06984)
+### 116. [HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses](https://arxiv.org/abs/2608.06984)
 
 **<font color=#1a73e8>作者：</font>** Xiao Zhang, Yusheng Wang, Yuhao Fei 等 8 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -365,7 +188,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 133. [Switched Reading: Toward Seamless Visual-Auditory Switching When Reading Text in Augmented/Mixed Reality](https://arxiv.org/abs/2608.06985)
+### 117. [Switched Reading: Toward Seamless Visual-Auditory Switching When Reading Text in Augmented/Mixed Reality](https://arxiv.org/abs/2608.06985)
 
 **<font color=#1a73e8>作者：</font>** Kazuyuki Fujita, Yuto Matsui, Ikuru Sato 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -376,7 +199,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 134. [Density-aware Hierarchical Clustering Based on Element-Categorized Connection Subgraphs](https://arxiv.org/abs/2608.06990)
+### 118. [Density-aware Hierarchical Clustering Based on Element-Categorized Connection Subgraphs](https://arxiv.org/abs/2608.06990)
 
 **<font color=#1a73e8>作者：</font>** Yuning Yu, José Rodríguez-Piñeiro, Xuefeng Yin 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -387,7 +210,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 135. [HRDiT: Training-Free High-Resolution Image Generation with Off-the-Shelf Diffusion Transformer Models](https://arxiv.org/abs/2608.07003)
+### 119. [HRDiT: Training-Free High-Resolution Image Generation with Off-the-Shelf Diffusion Transformer Models](https://arxiv.org/abs/2608.07003)
 
 **<font color=#1a73e8>作者：</font>** Yu Xue, Haoxuan Qu, Zhuoling Li 等 8 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -398,7 +221,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 136. [FedLBW: A Loss-Based Weighting Strategy for Federated Learning on Non-IID Data in Wireless Networks](https://arxiv.org/abs/2608.07007)
+### 120. [FedLBW: A Loss-Based Weighting Strategy for Federated Learning on Non-IID Data in Wireless Networks](https://arxiv.org/abs/2608.07007)
 
 **<font color=#1a73e8>作者：</font>** Majid Kundroo, Tinku Singh, Taehong Kim  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -409,7 +232,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 137. [Scenix: Sparse-View 3D Scene Reconstruction via Executable Scene Programs](https://arxiv.org/abs/2608.07012)
+### 121. [Scenix: Sparse-View 3D Scene Reconstruction via Executable Scene Programs](https://arxiv.org/abs/2608.07012)
 
 **<font color=#1a73e8>作者：</font>** Kai Li, Lutao Jiang, Zhenyang Li 等 13 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -420,7 +243,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 138. [Understand Before Detect: Vision--Language Learning for Omni-Domain Infrared Small Target Detection](https://arxiv.org/abs/2608.07015)
+### 122. [Understand Before Detect: Vision--Language Learning for Omni-Domain Infrared Small Target Detection](https://arxiv.org/abs/2608.07015)
 
 **<font color=#1a73e8>作者：</font>** Haoyang Yuan, Boyang Li, Yingqian Wang 等 10 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -431,7 +254,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 139. [Effects of parental controls in the context of Digital Forensics](https://arxiv.org/abs/2608.07016)
+### 123. [Effects of parental controls in the context of Digital Forensics](https://arxiv.org/abs/2608.07016)
 
 **<font color=#1a73e8>作者：</font>** Selina Märchya, Mauro Vignatia, Frank Breitinger  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -442,7 +265,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 140. [Hyperbolic Graph Embedders for Link Prediction and Topology Reconstruction](https://arxiv.org/abs/2608.07029)
+### 124. [Hyperbolic Graph Embedders for Link Prediction and Topology Reconstruction](https://arxiv.org/abs/2608.07029)
 
 **<font color=#1a73e8>作者：</font>** Robert Jankowski, Maksim Kitsak, Dorota Celińska-Kopczyńska  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -453,7 +276,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 141. [Accounting Graph Transformer for Short-History Multi-KPI Forecasting in Small Businesses](https://arxiv.org/abs/2608.07037)
+### 125. [Accounting Graph Transformer for Short-History Multi-KPI Forecasting in Small Businesses](https://arxiv.org/abs/2608.07037)
 
 **<font color=#1a73e8>作者：</font>** Shrutendra Harsola, Vignesh Subrahmaniam  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -464,18 +287,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 142. [Not All Problems Are Best Modeled as MILP: A DSL-Centric Framework for Flexible and Accurate Optimization Modeling](https://arxiv.org/abs/2608.07040)
-
-**<font color=#1a73e8>作者：</font>** Shaofeng Zhang, Hongyuan Su, Qingwen Peng 等 7 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Solving combinatorial optimization problems (COPs) requires not only efficient algorithms but also carefully crafted formulations. While recent works have leveraged LLMs to automate optimization modeling, current frameworks predominantly rely on a rigid mixed-integer linear programming (MILP) paradigm. In this paper, we argue that not all problems are best modeled as MILP, as forcing complex domains into linear constraints can induce prohibitive modeling complexity and severely restrict solver flexibility. To address this, we propose OptiDSL, a framework that shifts the focus from rigid MILP formulations to domain-specific language (DSL) representations. By utilizing LLMs to map natural language onto standardized, domain-accepted structures, OptiDSL decouples problem formulation from execution. This paradigm enables seamless integration with a diverse library of specialized solvers, ranging from traditional heuristics to modern learning-based methods. Experimental results on the comprehensive benchmark of 44 COP types show that OptiDSL significantly surpasses MILP-based pipelines, yielding a 51.66% gain in formulation accuracy and a 91.71% decrease in modeling time. Notably, it also outperforms MILP-based pipelines on the existing benchmark, achieving a 23.09% higher formulation accuracy. Our code is available at this https URL.
-
----
-
-
-### 143. [BONSAI: Evolvability-Guided Tree Search over Skills](https://arxiv.org/abs/2608.07056)
+### 126. [BONSAI: Evolvability-Guided Tree Search over Skills](https://arxiv.org/abs/2608.07056)
 
 **<font color=#1a73e8>作者：</font>** Yash Priya Shastri, Anand Eswaran, Adnan Qidwai 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -486,7 +298,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 144. [KnifeHunter: Structured Local Representation Learning for Fine-Grained Knife Image Retrieval in Law Enforcement](https://arxiv.org/abs/2608.07057)
+### 127. [KnifeHunter: Structured Local Representation Learning for Fine-Grained Knife Image Retrieval in Law Enforcement](https://arxiv.org/abs/2608.07057)
 
 **<font color=#1a73e8>作者：</font>** Syed Sameed Husain, Eng-Jon Ong, Stephen Simpson 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -497,18 +309,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 145. [Explanation Stability of Test-Time Adaptation in Computational Pathology: A Large-Scale Benchmark](https://arxiv.org/abs/2608.07062)
-
-**<font color=#1a73e8>作者：</font>** R. G. Bahumanya, Harshith V. M., Shreyank N. Gowda 等 4 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
-
-**<font color=#5f6368>摘要：</font>**
-> Test-time adaptation (TTA) has become a practical way to adapt deployed models to unlabeled target data, a setting that is especially relevant in computational pathology where staining, scanner, and cohort shifts are routine. While most TTA methods are evaluated by their effect on accuracy, clinical use also depends on whether the model's explanations remain reliable after adaptation. In this paper, we take a closer look at this largely unmeasured effect. We study explanation stability under TTA across two histopathology benchmarks, Camelyon17 and NCT CRC-HE, using five architectures ranging from convolutional networks to vision transformers and a pathology foundation model, seventeen TTA methods, and four attribution families. Across 2,958 adaptation runs, we observe a clear and systematic pattern: TTA methods differ sharply in how much they move model explanations, with frozen-backbone methods leaving attributions almost unchanged and continual methods such as CoTTA and RoTTA causing the largest drift. This effect is not uniform. Convolutional networks are substantially more sensitive than transformer and foundation-model backbones, and explanation drift increases with adaptation strength while remaining largely insensitive to batch size. Surprisingly, explanation stability is only weakly coupled to adaptation quality. Some methods preserve explanations almost perfectly while degrading calibration or accuracy, producing silent failures that would be missed by accuracy-only or explanation-only evaluation. These findings show that explanation stability is a distinct reliability axis for TTA in computational pathology. We release the metric, protocol, and full benchmark to support future work on adaptation methods that are not only accurate, but also stable and clinically auditable. Code: this https URL
-
----
-
-
-### 146. [Soft Redaction of Image Provenance via Zero-Knowledge Proofs](https://arxiv.org/abs/2608.07063)
+### 128. [Soft Redaction of Image Provenance via Zero-Knowledge Proofs](https://arxiv.org/abs/2608.07063)
 
 **<font color=#1a73e8>作者：</font>** Muhammad Awan, John Collomosse  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -519,7 +320,7 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 147. [XGait: A Multi-Modality Wireless Sensing Dataset for Indoor Human Tracking and Identification](https://arxiv.org/abs/2608.07064)
+### 129. [XGait: A Multi-Modality Wireless Sensing Dataset for Indoor Human Tracking and Identification](https://arxiv.org/abs/2608.07064)
 
 **<font color=#1a73e8>作者：</font>** Wei Xu, Zhu Wang, Yifan Guo 等 8 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -530,7 +331,18 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 148. [DocMemo: Dynamic Evidence Discovery via Probabilistic Memory-Guided Retrieval for Multi-Modal Document Understanding](https://arxiv.org/abs/2608.07067)
+### 130. [PTQ4SNN: Membrane-Aware Post-Training Quantization for Spiking Neural Networks](https://arxiv.org/abs/2608.07066)
+
+**<font color=#1a73e8>作者：</font>** Hui Xie, Tong Shi, Haotong Qin 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
+
+**<font color=#5f6368>摘要：</font>**
+> Spiking neural networks (SNNs) enable sparse and event-driven computation, but their low-bit deployment remains incomplete because recurrent membrane states are commonly retained in floating point even after weight quantization. Quantizing these states is challenging because their distributions differ across channels and from the preceding weights, while small perturbations near the firing threshold may alter spike decisions and accumulate over time. We propose PTQ4SNN, a membrane-aware post-training quantization framework that jointly quantizes weights and recurrent membrane states using only a small calibration set. First, a channel-wise Unified Scale Bridge constrains the membrane scale as s_mem,c = s_w,c * 2^k_c, adapting to membrane distributions while enabling shift-compatible scale conversion. Second, Mixed-Precision Bit Allocation assigns 2/4/8-bit precision to membrane channels according to firing activity and quantization sensitivity under an average-bit budget. The framework operates on reusable projection-LIF pairs and supports both convolutional SNNs and spike-driven Transformers without backbone retraining. Experiments on static and event-based classification and semantic segmentation show that PTQ4SNN effectively preserves model accuracy under W4 quantization and approximately 4-bit membrane precision.
+
+---
+
+
+### 131. [DocMemo: Dynamic Evidence Discovery via Probabilistic Memory-Guided Retrieval for Multi-Modal Document Understanding](https://arxiv.org/abs/2608.07067)
 
 **<font color=#1a73e8>作者：</font>** Hanshu Yao, Janfeng Zhong, Niu Lian 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -541,7 +353,18 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 149. [Beyond Isolation: Unlocking Reinforcement Learning Component Synergy for Sample-Efficient Continuous Control](https://arxiv.org/abs/2608.07086)
+### 132. [MemOPD: On-Policy Distillation through Memory State Alignment for Long-Horizon Agents](https://arxiv.org/abs/2608.07068)
+
+**<font color=#1a73e8>作者：</font>** Zhiyuan Liu, Tinghong Ye, Chenghao Liu 等 5 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
+
+**<font color=#5f6368>摘要：</font>**
+> Long-horizon agents accumulate growing contexts during interaction, impairing performance and stability. Compact memory mitigates this problem by compressing and rewriting the history retained between model invocations. Learning what to retain typically relies on proximal policy optimization (PPO) with final task rewards, but sparse rewards provide little guidance for individual memory updates. This limitation motivates on-policy distillation (OPD), which supplies dense teacher supervision on student rollouts. For such supervision to be valid, the teacher must evaluate each sampled action under the same state in which it was generated. However, the context rewriting performed during memory compression can break this alignment. When sampled responses are retained and re-encoded for later invocations, flattening the interaction into a persistent history may cause the teacher to score the action under a state that the student never visited during rollout. The action therefore remains on-policy by provenance, but not necessarily by state. We therefore propose Memory-Aligned On-Policy Distillation (MemOPD). MemOPD records the inputs and sampled outputs of each model invocation, restores its original token positions and causal visibility, and packs the reconstructed invocations for efficient teacher scoring. The teacher provides full-vocabulary supervision at the sampled action positions, while PPO preserves the final task objective. Experiments verify state alignment across several context updates and show that it improves F1 by 7.0% over persistent-history teacher scoring in a matched control. Overall, MemOPD-3B improves F1 over PPO by up to 416.2%, while packing yields up to a 1.63x speedup in actor computation during training. The code for this work is publicly available at: this https URL.
+
+---
+
+
+### 133. [Beyond Isolation: Unlocking Reinforcement Learning Component Synergy for Sample-Efficient Continuous Control](https://arxiv.org/abs/2608.07086)
 
 **<font color=#1a73e8>作者：</font>** Qi Zhao, Guozheng Ma, Yilun Kong 等 12 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -552,20 +375,198 @@ Across three molecular generative architectures, we find that this repertoire is
 ---
 
 
-### 150. [UncertaintyVis: Preserving Linguistic Uncertainty in Automated Text-to-Chart Generation](https://arxiv.org/abs/2608.07093)
+### 134. [Synthetic LiDAR Data Generation and Deterministic Downsampling for Point Cloud Classification on the Edge](https://arxiv.org/abs/2608.07106)
 
-**<font color=#1a73e8>作者：</font>** Songheng Zhang, Emily Aurelia, Anthony Tang  
+**<font color=#1a73e8>作者：</font>** Niclas Meyer, Stefan Reitmann  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Deploying three-dimensional deep learning frameworks to low-power embedded processors is bottlenecked by the unstructured nature of spatial data and the resource-intensive distance sorting algorithms often used before neural network inference. To address this gap, this paper presents a hardware-constrained workflow optimized for native execution on the Raspberry Pi 5. To account for the reality gap between noiseless, clean computer-aided design (CAD) datasets and real-world sensor data, we use physics-based simulation to construct a synthetic LiDAR dataset. Cross-dataset evaluations demonstrate a substantial drop in classification accuracy when networks trained on clean CAD data are evaluated on synthetic LiDAR sensor data, highlighting the critical need for sensor-aware training. To address the latency bottleneck of traditional geometric preprocessing on edge CPUs, we integrate an isolated, feature-driven Critical Points Layer (CPL) as a frontend filter. Our results show that the pretrained CPL deterministically compresses raw 1024-point clouds to a subset of 40 to 60 unique coordinates. When profiled on the ARM Cortex-A76 processor, the complete pipeline achieves an inference throughput of approximately 50 FPS while maintaining an instance classification accuracy of 88.36%, demonstrating the viability of deterministic real-time 3D perception at the edge.
+
+---
+
+
+### 135. [MemWM: Memory-Augmented Text-Based World Model](https://arxiv.org/abs/2608.07107)
+
+**<font color=#1a73e8>作者：</font>** Yujun Wang, Tao Zhang, Jinhe Bi 等 12 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
+
+**<font color=#5f6368>摘要：</font>**
+> World models are increasingly used to support planning in agents by predicting how environment states evolve in response to agent actions. Yet fluent next-state predictions can still omit task-critical facts, corrupt product attributes, or apply incorrect transition rules. To address such systematic prediction errors, we introduce MemWM, a memory-augmented text-based world model. MemWM uses world memory, a curated memory bank of transition rules, state caches, and hard-to-predict facts, to condition next-state imagination. We evaluate factual state preservation with Structured State Fidelity (SSF), which scores predicted states through benchmark-specific facts and fields. Compared with SFT, memory-augmented training improves SSF by up to 206.3%. In the full planning setting, we keep the policy model frozen and provide policy-side world skill: retrieved task-level skills and step-wise corrective guidance for action selection. Across ALFWorld, WebShop, and ScienceWorld, memory-augmented agents improve downstream success over an SFT-trained world-model agent, with up to a 65.4% relative gain. Sensitivity analyses further show that retrieved memory improves task success and efficiency under different memory and action-budget settings.
+
+---
+
+
+### 136. [Modular TTT: Rethinking Test-Time Training as Composable Modules](https://arxiv.org/abs/2608.07110)
+
+**<font color=#1a73e8>作者：</font>** Bohao Tang, Zhen Qin, Yuqi Pan 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Test-time training (TTT) views sequence modeling as an online learning problem in which fast weights are updated by an internal learning rule. Despite the growing number of TTT variants, existing approaches typically hard-code each variant separately, which makes it difficult to design new TTT methods and to isolate the role of each component. To address this, we propose Modular TTT, a framework that represents the inner learner as a directed acyclic graph and exposes the fast-weight network, loss function, learning rate, weight decay, and normalization as explicit design dimensions. Modular TTT automatically composes primitive-level train-view forward, train-view backward, and causal query-view rules into the full graph-level TTT computation, including the fast-weight state transition. Using Modular TTT, we systematically ablate the components of TTT and find that small learning-rate initialization, weight decay, and a single-layer nonlinearity improve performance, while MSE and inner-product losses perform similarly. Deeper fast-weight networks and normalization tend to hurt performance because they induce excessively large activations, while residual connections and gating provide little measurable benefit. Guided by these findings, we train the best resulting variant as 410M- and 1.45B-parameter models on 100B tokens, and observe training loss and benchmark performance comparable to Gated DeltaNet.
+
+---
+
+
+### 137. [Geometry-Aware Camera Localization for Bronchoscopy](https://arxiv.org/abs/2608.07116)
+
+**<font color=#1a73e8>作者：</font>** Lumin Chen, Qingyao Tian, Jinpeng Li 等 8 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Camera localization in bronchoscopy remains a challenging problem due to stringent accuracy requirements, real-time constraints, and limited training data. Compared to natural scenes, the confined anatomical structures demand millimeter-level precision, while intraoperative guidance necessitates low-latency inference. However, existing methods often fail to effectively exploit preoperative geometric priors, limiting their robustness and accuracy. To address these limitations, we propose a unified geometry-aware bronchoscope localization framework (GABL) that effectively fuses preoperative structural priors with paired intraoperative video to estimate 6-DoF camera poses. Specifically, to address visual ambiguity in complex airways, we propose a graph-guided coarse-to-fine localization scheme that effectively leverages structural priors for precise pose estimation. Furthermore, to mitigate pose jitter and bridge the visual-structural gap, we integrate a Transformer-based tracking model with a novel RGB-depth matching objective, jointly enforcing spatio-temporal and geometric consistency. Extensive experiments demonstrate that our method yields remarkable reductions of 8.37% and 31.76% in translation and rotation errors over the prior state-of-the-art, alongside 4 times inference speedup (33.6 FPS) for robust real-time bronchoscope localization. Project website: this https URL.
+
+---
+
+
+### 138. [How Much, Then Where: Credit-Conserving Action-to-Token Allocation for Multi-Turn Agent Reinforcement Learning](https://arxiv.org/abs/2608.07118)
+
+**<font color=#1a73e8>作者：</font>** Lichao Ma, Yang Sun, Shuaitao Zhao 等 12 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
+
+**<font color=#5f6368>摘要：</font>**
+> Credit assignment in multi-turn agent reinforcement learning operates at two levels: assigning trajectory-level credit to actions and distributing each action's credit across its tokens. In this paper, we introduce FACTOR, which separates these decisions. FACTOR uses checkpoint-calibrated TD residuals to assign per-action credits that telescope to the trajectory advantage, and feedback-conditioned teacher-student likelihood gaps to allocate each credit across the realized action tokens. Per-action normalization preserves the action-average coefficient and prevents token-level sign flips. We pair this construction with an action-mean reduction, removing the implicit dependence of an action's scalar surrogate weight on its token length. At the behavior policy and before clipping, each action's inner action-mean surrogate equals its TD credit. FACTOR consistently improves over competitive baselines across ALFWorld, WebShop, and ScienceWorld, with every environment-seed comparison favoring FACTOR and the largest gains emerging on the longest-horizon environment. The same hyperparameters transfer without retuning to a larger backbone and to a different model family. Ablations identify TD action credit as the dominant driver of the improvement, with hindsight token allocation contributing complementary gains.
+
+---
+
+
+### 139. [Multiple Hypothesis Flow Estimation for Video Frame Interpolation under Matching Ambiguity](https://arxiv.org/abs/2608.07120)
+
+**<font color=#1a73e8>作者：</font>** Zibo Su, Jing Kong, Ruixing Wang 等 5 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Many flow-based video frame interpolation (VFI) methods synthesize an intermediate frame by estimating optical flow fields, warping the two input frames, and blending the warped observations. These latent flow fields are typically learned through image-level reconstruction supervision without direct flow annotations. In ambiguous regions containing repetitive or stochastic textures, rotating symmetric structures, or fast motion with blur, the matching evidence for a single query may contain multiple comparable and spatially separated peaks. Although the ground-truth intermediate frame provides indirect supervision, it may not uniquely identify the latent correspondence in ambiguous this http URL several locations provide multiple plausible matches, a single-flow estimator can retain only one displacement and discard the remaining candidates. If the selected match is incorrect or inconsistent with those of neighboring pixels, warping samples content from mismatched locations, producing ghosting, structural distortion, or this http URL address this limitation, we propose a multiple hypothesis flow estimation framework that preserves top-K candidate correspondences and selects one per location through a reliability-guided router. Each hypothesis is initialized from a coarse matching anchor and refined separately through anchor-centered local attention. Frame synthesis is thus conditioned on one selected flow-appearance hypothesis rather than a soft combination of candidate this http URL on the proposed MA-HD benchmark and public VFI benchmarks show that our method achieves the best LPIPS and DISTS among the compared methods.
+
+---
+
+
+### 140. [Thermodynamic Human-Computer Interaction](https://arxiv.org/abs/2608.07123)
+
+**<font color=#1a73e8>作者：</font>** Uzafir Ahmad Rafaq, Muaz Hassan, Ali Muzaffar  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
 
 **<font color=#5f6368>摘要：</font>**
-> Data-rich documents pair narrative text with quantitative claims, and authors routinely qualify those claims with linguistic uncertainty markers such as "nearly," "approximately," or "at least." Automated text-to-chart systems discard these markers, producing visualizations that appear definitive even when the source text expresses hedged or incomplete knowledge. Readers may then over-interpret precision and misjudge author intent. We present UncertaintyVis, a system that preserves linguistic uncertainty during automated chart generation. A formative corpus analysis of 211 uncertainty expressions across 12 documents and 8 domains yielded a four-category taxonomy: Surface Form Normalization, Precision Boundaries, Inferential Derivation, and Non-Inferable Gaps. We mapped each category to chart-specific visual encodings that signal uncertainty without disturbing the spatial integrity readers rely on, and implemented an end-to-end pipeline pairing large language model text analysis with uncertainty-aware rendering. In a two-part study with 12 participants, readers matched charts to source text with 85% accuracy and text to charts with 76%. Uncertainty-aware visualizations trended toward lower cognitive demand (effect sizes 0.460 and 0.769 for mental demand and effort), and 75% of participants preferred them to plain text, describing explicit uncertainty encodings as a basis for verifying data claims. Encoding effectiveness varied by chart type: bar and pie encodings performed consistently, while line chart encodings require redesign.
+> Traditional human-computer interaction models rely on domain-specific techniques to model target prediction; models designed for cursor interaction prediction fail to generalize to mobile interfaces and vice versa. We introduce a unifying framework grounded in thermodynamics, proposing that human interaction is composed of phases in thermodynamic equilibrium and non-equilibrium. To demonstrate this, we derive Fitts' law and the proposed target prediction model from equilibrium thermodynamics by assigning kinetic and potential energies to a moving agent and target. Subsequently, we analyze the shortcomings of the prediction model and Fitts' law in edge cases, such as predicting intent for large targets. This analysis demonstrates that large targets cannot be accurately modeled using equilibrium thermodynamics. The proposed model scales across interaction modalities without modification, requires zero training data, and evaluates in constant O(1) time. Furthermore, we show that design properties such as the color of a button act as independent parameters that influence the attractive force exerted on an agent. Applied to live web prefetching tasks, the framework achieved an efficient Fetch:Click ratio of 1.37 and predicted the user's target with an accuracy of 98.1%.
+
+---
+
+
+### 141. [Online Conformal Prediction Beyond Feedback](https://arxiv.org/abs/2608.07139)
+
+**<font color=#1a73e8>作者：</font>** Joar Skalse, Edoardo Pona, Osvaldo Simeone 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Uncertainty quantification is essential when deploying machine learning models in safety-critical applications. Online conformal prediction (OCP) provides theoretically principled uncertainty quantification for arbitrary black-box classifiers and non-i.i.d. data streams by constructing prediction sets that are guaranteed to contain the true label at a user-specified frequency. OCP usually updates prediction sets using feedback from previously deployed predictions. We instead study an OCP setting beyond feedback: on each round, the learner can either output a prediction set or query the correct label, but not both. Thus, no deployed prediction is ever evaluated directly. We reduce this problem to a partial monitoring game in which prediction actions return no observation and a separate query action reveals the label. The reward function is constructed in a way that encourages the learner to output small prediction sets while ensuring that the correct label is covered with a sufficiently high probability. To solve this game, we develop OCP with queries (OCPQ) by adapting the label efficient forecaster of Cesa-Bianchi, Lugosi, and Stoltz (2004) to our setting. For any black box classifier and any (non-i.i.d.) oblivious data stream of length $T$, OCPQ has $O(T^{2/3})$ expected regret and expected coverage at least $\beta-O(T^{-1/3})$ for a user-defined $\beta$, while querying only an expected $T^{-1/3}$ fraction of rounds. This provides coverage comparable to bandit-based OCP methods while requiring no feedback from deployed prediction sets. Experiments on real-world datasets further demonstrate the effectiveness of our approach.
+
+---
+
+
+### 142. ["Operator, can you hear me?" A Faithful Line into the UNISOC Baseband](https://arxiv.org/abs/2608.07143)
+
+**<font color=#1a73e8>作者：</font>** Eduard Vlad, Philipp Mao, Marcel Busch 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
+
+**<font color=#5f6368>摘要：</font>**
+> Baseband processors are reachable over the radio at all times. Their most security-relevant logic runs deep inside protocol state machines: the control-plane handlers that gate registration, authentication, and session setup. Analyzing that logic systematically requires introspecting the firmware as it runs, which makes re-hosting the baseband necessary. Existing re-hosting work approximates the execution environment and under-approximates the SoC complexity of the baseband processor together with its surrounding components, bringing this state practically out of reach. We instead model each surrounding component, co-processors, SIM, application processor, from what a real device does, and step them in lockstep with the baseband on one shared clock. That makes faithfulness checkable at component interfaces, rather than assumed.
+We call this method Unislop and demonstrate it on the UNISOC UDX710, a platform in an estimated 10-15% of cellular modems and in automotive systems, not systematically analyzed before. Starting from a Quectel RM500U-CNV module, we gain code execution, defeat its firmware-integrity check, instrument the baseband, and recover its peripheral environment from the running device. The resulting re-host reaches the same control-plane states as the real device, establishes a full PDU session, and carries real IP traffic on both ingress and egress. The recovered components are shared across UNISOC's baseband lineup, so with additional reverse-engineering effort the same design extends to further targets.
+
+---
+
+
+### 143. [InstanceSplat: Instance-Aware Feed-Forward 3D Gaussian Splatting for Scene Understanding](https://arxiv.org/abs/2608.07144)
+
+**<font color=#1a73e8>作者：</font>** Minchao Jiang, Xiaoxuan Ma, Shunyu Jia 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Feed-forward 3D Gaussian Splatting (3DGS) enables efficient and generalizable 3D reconstruction, but current feed-forward 3DGS methods for scene understanding remain largely category-oriented. In contrast, instance-aware 3DGS methods typically rely on per-scene optimization and often decouple reconstruction from instance and semantic learning, limiting reciprocal interactions among them. We present InstanceSplat, a unified feed-forward 3DGS framework for generalizable 3D reconstruction and instance-aware scene understanding from pose-free multi-view images. In a single forward pass, InstanceSplat constructs an instance-aware Gaussian representation that jointly encodes appearance, geometry, instance identity, and language-aligned semantics. Shared 3D Gaussians ground instance identities across views, producing renderable and cross-view-consistent instance features. To allow reconstruction and scene understanding to benefit from each other, we further design an instance-centric learning strategy that connects reconstruction, instance learning, and semantic learning through shared instance structure. Specifically, instance cues guide reconstruction, language-aligned semantics strengthen the discrimination of confusing same-category instances, and instance regions aggregate semantic evidence into coherent object-level predictions. Experiments on novel-view synthesis, instance segmentation, and open-vocabulary semantic understanding under varying input-view settings and on an unseen dataset demonstrate state-of-the-art performance, practical efficiency, and strong generalization.
+
+---
+
+
+### 144. [Interpretable reinforcement learning with decision-tree pruning](https://arxiv.org/abs/2608.07151)
+
+**<font color=#1a73e8>作者：</font>** Mark Leon Ringer, Michel Tokic  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Reinforcement learning policies are difficult to inspect, but interpreting them is a prerequisite for trustworthiness. Converting a trained policy into explicit decision-tree rules improves transparency and the resulting artifacts often remain too complex for human understanding. We present a pruning process that simplifies such rule-based policies while preserving task performance and making edits to the policy auditable. The process defines a small set of structural and usage-aware operators and evaluates candidate edits by re-executing the policy to measure return and interpretability proxies. This exposes an transformation process from complex to compact policy structures. We investigate this approach on classic control and MuJoCo benchmarks, where pruning traces reveal consistent interpretability improvements while maintaining high performance.
+
+---
+
+
+### 145. [Machine Learning-Based Inter-Crystal Scatter Recovery for Ultra-High Resolution PET Imaging](https://arxiv.org/abs/2608.07155)
+
+**<font color=#1a73e8>作者：</font>** Alexandre Bernier, Roger Lecomte, Jean-Baptiste Michaud  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Inter-crystal scatter (ICS) events pose a significant challenge in ultrahigh- resolution positron emission tomography (UHR-PET), especially as detector crystals become smaller and their readouts increasingly segmented. Current approaches either reject these events, reducing sensitivity, or accept them with suboptimal positioning algorithms, degrading image resolution. We present a feed forward neural network to optimize ICS event recovery by inferring the line-of-response belonging to the first Compton interaction. Our approach was validated using both Monte Carlo simulations and experimental data from the fully pixelated LabPET-IIbased preclinical and brain UHR-PET this http URL demonstrate a 70% to 106% increase in sensitivity while preserving sub-millimeter spatial resolvability (down to 1.6 mm) compared to conventional methods. This ICS recovery approach is an effective solution that compensates for the lower detection efficiency of small, pixelated detectors in UHR-PET, enabling reduced scan times and lower radiation doses while largely preserving image quality.
+
+---
+
+
+### 146. [Capacity Confounds and Coverage Guarantees in Adaptive Sub-model Federated Learning](https://arxiv.org/abs/2608.07157)
+
+**<font color=#1a73e8>作者：</font>** Alireza Moayedikia, Alicia Troncoso Lora  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Sub-model federated learning lets resource-constrained clients train width-reduced versions of a global model, but existing methods allocate capacity by device resources alone. A natural next step, allocating capacity by each client's data heterogeneity as estimated from the updates the server already observes, has been repeatedly suggested. We ask whether that step is possible, using HAS-FL, an adaptive capacity-allocation framework, as a test case. Our findings are threefold. First, validated against ground-truth label-distribution divergence on reproducible partitions, update-divergence estimates of client heterogeneity are dominated by capacity rather than data: across two corrected estimators, multiple datasets, and all seeds, the estimates correlate strongly and negatively with device capacity, and no data signal remains once capacity is controlled for. This previously undocumented confound affects any method estimating client statistics from sub-model updates. Second, adaptive allocation has a hidden failure mode: when every client is capped below full width, the uncovered parameters stay at random initialization and progressively corrupt the global model. A simple coverage guarantee removes the failure and explains why uniform allocation collapses. Third, a matched-budget control settles what adaptivity contributes: random allocation to the same average budget performs no differently on both image benchmarks, and on the naturally partitioned text benchmark the adaptive policy is the weakest of the three strategies while consuming the most capacity. Sub-model training remains valuable because it admits constrained clients at quadratically reduced cost, but what protects accuracy is parameter coverage rather than allocation intelligence. Its apparent benefits come from capacity budgeting and coverage, and future designs need heterogeneity signals separable from capacity effects.
+
+---
+
+
+### 147. [Edge Sparsification via Temporal Forman-Ricci Curvature for Dynamic Graph Learning](https://arxiv.org/abs/2608.07158)
+
+**<font color=#1a73e8>作者：</font>** Poupak Azad, Cuneyt Gurcan Akcora, Kiarash Shamsi  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Temporal graph learning has become essential for analyzing real-world systems whose interactions continuously evolve over time, including financial transaction networks, communication systems, and online social platforms. However, learning from large-scale temporal graphs remains computationally challenging when networks are dense and rapidly changing. To address this limitation, we propose a network-curvature-inspired edge sparsification framework for dynamic graph learning. Our proposed method, TRicci, extends classical Forman-Ricci curvature to directed weighted temporal graphs by capturing structural support, temporal recency, and local interaction competition.
+Experiments on 9 transaction networks and 3 temporal graph benchmark datasets demonstrate that the proposed framework preserves predictive performance across multiple graph-level prediction tasks. The results show that TRicci sparsifies temporal graphs by approximately 80% while reducing end-to-end downstream training and inference time by an average of 55.94%, without substantial degradation in predictive performance. Our findings suggest that temporal curvature can serve as a principled basis for scalable temporal graph learning by preserving predictive temporal-structural information under substantial sparsification.
+
+---
+
+
+### 148. [Fluid-DiT: Graph-Free Diffusion Transformers for Fluid Flow Simulations Learning](https://arxiv.org/abs/2608.07161)
+
+**<font color=#1a73e8>作者：</font>** Shentong Mo, Guolin Ke  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Simulating complex fluid flows requires capturing full equilibrium distributions rather than just mean trajectories, yet high-fidelity solvers remain computationally prohibitive. Recent advances, such as Diffusion Graph Networks (DGNs), have combined diffusion models with graph neural networks to sample equilibrium states directly from unstructured meshes, enabling distributional accuracy even from short simulations. However, graph-based diffusion approaches suffer from hand-crafted architectural constraints, limited receptive fields in message passing, and costly multi-scale designs, which restrict scalability to larger and more complex domains. We propose Fluid-DiT, a Graph-Free Diffusion Transformer that replaces graph message passing with attention-based denoising, eliminating explicit graph design while preserving the ability to model distributions of chaotic flows. Our framework introduces a latent-space formulation that disentangles geometric fidelity from distributional learning, reducing high-frequency artifacts and accelerating sampling. By leveraging the transformer's global receptive field, Fluid-DiT naturally captures both local flow structures and long-range correlations without requiring hierarchical graph coarsening. On canonical benchmarks including laminar cylinder wakes, ellipse-flow systems, and turbulent 3D wing experiments, Fluid-DiT consistently outperforms graph-based diffusion baselines in both sample quality and distributional accuracy, achieving higher $R^2$ correlations and lower Wasserstein distances. Moreover, it generalizes robustly from short, incomplete trajectories to unseen Reynolds numbers and geometries, demonstrating strong scalability.
+
+---
+
+
+### 149. [Momba: Network Modernization Improves Multi-Objective Reinforcement Learning](https://arxiv.org/abs/2608.07180)
+
+**<font color=#1a73e8>作者：</font>** Adam Štafa, Santeri Heiskanen, Petr Novotný 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Recent advances in deep reinforcement learning (RL) have shown that improving neural network architectures can yield substantial gains in sample efficiency and asymptotic performance without altering the underlying algorithms. In contrast, work on multi-objective reinforcement learning (MORL), which aims to discover a set of policies that balance trade-offs among conflicting objectives, has predominantly focused on algorithmic innovations, leaving the area of architectures underexplored. While the optimal policies and value functions can differ significantly depending on the trade-offs, MORL algorithms commonly represent them with simple feedforward networks conditioned on the trade-off. This raises the question of whether the performance of the algorithms could be improved with more expressive function approximators. In this paper, we integrate recent advances in neural network design: (i) observation and feature normalization, (ii) weight normalization, and (iii) modeling of distributional returns with an entropy-regularized MORL algorithm. The empirical results across standard continuous control benchmarks demonstrate that these changes substantially improve the quality of the produced solution sets without requiring major changes to the underlying algorithm.
+
+---
+
+
+### 150. [Conformal Fusion Under Missing Modalities](https://arxiv.org/abs/2608.07183)
+
+**<font color=#1a73e8>作者：</font>** Alireza Moayedikia  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Multimodal fusion architectures typically assume all modalities are available at inference, yet sensor failures, acquisition variability, and cost constraints routinely produce incomplete observations. Existing work treats modality absence as a prediction-accuracy problem, leaving a more basic question unanswered: whether a model's confidence estimates remain calibrated when an entire input stream is removed. We argue that missing-modality robustness and calibrated uncertainty are a single coupled property, and introduce Modality-Conditioned Conformal Fusion (MCCF), an architecture that addresses both at once. MCCF combines a multimodal bottleneck fusion backbone trained with modality dropout, per-modality evidential heads producing modality-decomposed Dirichlet distributions, and a Dempster-Shafer combination rule that fuses the per-modality evidence into a joint predictive distribution; an absent modality contributes vacuous evidence that is structurally ignored, so the fused uncertainty automatically reflects the reduced information without test-time imputation. A Mondrian conformal calibration module keyed on the modality-presence mask then provides finite-sample group-conditional coverage for every non-empty modality subset. MCCF is, to our knowledge, the first method with formal coverage guarantees under arbitrary modality availability through architectural integration rather than post-hoc recalibration, and the evidential decomposition yields per-modality vacuity scores that localise uncertainty to the absent modality responsible. Across a synthetic problem and three real multimodal benchmarks, MCCF holds its target coverage on every modality-presence subset, substantially narrows the coverage gap between full and partial modalities relative to a marginal split-conformal baseline, and imposes no measurable accuracy cost relative to temperature-scaled and evidential baselines.
 
 ---
 
 
 > [!TIP]
-> 当前位于：**101-150**（第 3/5 组）
+> 当前位于：**101-150**（第 3/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | **101-150** | [151-200](./part-04.md) | [201-221](./part-05.md)
+> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | **101-150** | [151-190](./part-04.md)
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*
