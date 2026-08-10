@@ -1,6 +1,6 @@
 # 🔐 大模型安全相关研究 | 2026年08月10日
 
-> 本类共 **9** 篇论文
+> 本类共 **10** 篇论文
 
 > 仅聚焦 LLM / MLLM / Agent 自身的攻击、防御、安全、隐私与对齐问题。
 
@@ -54,7 +54,18 @@ We introduce LoRAScan, the first adapter-aware defense that detects and rejects 
 ---
 
 
-### 5. [SynChain: Inducing Computer-Use Agent Systems to Construct Their Own Attack Chains](https://arxiv.org/abs/2608.06862)
+### 5. [Understanding and Improving Model Editing for Secure Code Generation](https://arxiv.org/abs/2608.06848)
+
+**<font color=#1a73e8>作者：</font>** Weifeng Sun, Quanjun Zhang, Yuchen Chen 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
+
+**<font color=#5f6368>摘要：</font>**
+> Large language models (LLMs) are widely used for code generation, yet they can reproduce vulnerable implementations learned from insecure training patterns. Prior work has mainly explored inference-time hardening, which reduces insecure generations without modifying the target model but relies on auxiliary components and adds runtime overhead. We conduct the first systematic study of model editing as a model-level hardening mechanism for secure code generation. We evaluate 3 state-of-the-art editing methods across diverse LLM families and compare them with CoSec, a representative inference-time approach, focusing on security, robustness, generalization, and functional correctness. Model editing yields larger security gains than CoSec on seen vulnerability types, improving security ratios by 15%-25% over vanilla models, with gains remaining stable under prompt perturbations. However, these improvements transfer unreliably to unseen vulnerabilities and can reduce functional correctness. To mitigate this trade-off, we propose SafeEdit, a post-edit refinement method combining functional tuning with edit-aware regularization. Across eight target LLMs, SafeEdit improves Pass@1 over UltraEdit by 11.73/13.70/15.50 percentage points at T=0.1/0.4/0.8 while largely preserving security. Compared with CoSec, it achieves relative security-ratio gains of 7.54%-12.04%. Additional evaluation on CodeGuard+ confirms improved joint secure-and-correct generation. SafeEdit and CoSec are also complementary, and their combination can further improve security while maintaining strong functional correctness. Overall, our results provide evidence-backed guidance for applying model editing to secure code generation.
+
+---
+
+
+### 6. [SynChain: Inducing Computer-Use Agent Systems to Construct Their Own Attack Chains](https://arxiv.org/abs/2608.06862)
 
 **<font color=#1a73e8>作者：</font>** Fuyao Zhang, Jiaming Zhang, Che Wang 等 10 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -65,7 +76,7 @@ We introduce LoRAScan, the first adapter-aware defense that detects and rejects 
 ---
 
 
-### 6. [When Context Bites: Detecting RAG Poisoning via Document-Level Attention Collapse](https://arxiv.org/abs/2608.06947)
+### 7. [When Context Bites: Detecting RAG Poisoning via Document-Level Attention Collapse](https://arxiv.org/abs/2608.06947)
 
 **<font color=#1a73e8>作者：</font>** Yingtao Ren, Ziyi Zhao, Yiwei Fu 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -76,7 +87,7 @@ We introduce LoRAScan, the first adapter-aware defense that detects and rejects 
 ---
 
 
-### 7. [HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses](https://arxiv.org/abs/2608.06984)
+### 8. [HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses](https://arxiv.org/abs/2608.06984)
 
 **<font color=#1a73e8>作者：</font>** Xiao Zhang, Yusheng Wang, Yuhao Fei 等 8 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -87,7 +98,7 @@ We introduce LoRAScan, the first adapter-aware defense that detects and rejects 
 ---
 
 
-### 8. [NiyamAI - An Intent-Bound AI Agent with Cryptographically Verifiable Guardrails using Zero-Knowledge Proofs](https://arxiv.org/abs/2608.07167)
+### 9. [NiyamAI - An Intent-Bound AI Agent with Cryptographically Verifiable Guardrails using Zero-Knowledge Proofs](https://arxiv.org/abs/2608.07167)
 
 **<font color=#1a73e8>作者：</font>** Aditya Katkar, Om Karkele, Kartik Mandhane 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -100,7 +111,7 @@ Proof generation adds 2260.6 +/- 218.4 ms per approved action, while verificatio
 ---
 
 
-### 9. [Diffusion LLMs as Targets and Adversaries: Mechanistic Safety Exploits](https://arxiv.org/abs/2608.07430)
+### 10. [Diffusion LLMs as Targets and Adversaries: Mechanistic Safety Exploits](https://arxiv.org/abs/2608.07430)
 
 **<font color=#1a73e8>作者：</font>** Elena Dumitrescu, Gert Lek, Lydia Y. Chen 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning

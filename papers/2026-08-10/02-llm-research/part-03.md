@@ -1,28 +1,17 @@
 # 🧠 大模型相关研究 | 2026年08月10日
 
-> 本类共 **171** 篇论文：已确认 **160** 篇，待复核 **11** 篇
+> 本类共 **170** 篇论文：已确认 **159** 篇，待复核 **11** 篇
 
 > 聚焦 LLM / MLLM / Agent / MoE 等大模型研究，并包含使用 LLM 完成网络安全任务的研究；待复核论文合并展示在本章末尾。
 
 > [!TIP]
 > 当前位于：**101-150**（第 3/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | **101-150** | [151-171](./part-04.md)
+> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | **101-150** | [151-170](./part-04.md)
 
 ---
 
-### 101. [Stable Curves, Unstable Items: Item-Level Scaling Heterogeneity in Video LLMs](https://arxiv.org/abs/2608.07014)
-
-**<font color=#1a73e8>作者：</font>** Wenzhang Sun, Chunfeng Wang, Xiangchen Yin 等 6 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
-
-**<font color=#5f6368>摘要：</font>**
-> Aggregate scaling curves suggest that Video LLMs improve smoothly or saturate as visual budgets grow. We show that this view can conceal large, opposing changes at the item level. We represent each frozen model--item pair by its response trajectory under controlled visual budgets and derive matched-grid measures of configuration complementarity, harmful transitions, and text overwrite. Across five open Video LLMs from three architecture families, four multiple-choice benchmark splits, open-ended QA and summarization, and fixed-history dialogue generation, no single budget serves all items. On the four-model matched MCQA grid, item-level oracle headroom spans $8.8$--$18.9$ accuracy points and $12.5$--$25.5\%$ of items are correct at a lower budget but wrong at a higher one. Task-appropriate continuous metrics show the same complementarity beyond multiple choice: Token-F1 oracle gaps are $2.7$--$3.7$ score points on MLVU generation and $3.8$--$4.8$ points on AVSD current-turn generation, even when mean quality improves with budget. The effect persists across frame count, spatial resolution, sampling policy, temporal--spatial allocation, and independently executed raw-video and cached pipelines, with per-item rates and membership tracking protocol choices. A controlled sampling intervention recovers $29.0\%$ of terminal regressions, and a structured frame audit identifies several recurring evidence pathways. We release per-item trajectories, protocol provenance, derived annotations, and reproducible analysis code as an auditing artifact. A confidence cascade matches fixed-$128f$ accuracy while reducing average shared frame cost by $31.7\%$, illustrating one operational use of the response matrix.
-
----
-
-
-### 102. [ReQuant: Fixed-Grid Discrete Refinement for Post-Training Quantization](https://arxiv.org/abs/2608.07019)
+### 101. [ReQuant: Fixed-Grid Discrete Refinement for Post-Training Quantization](https://arxiv.org/abs/2608.07019)
 
 **<font color=#1a73e8>作者：</font>** Yongge Ma, Guoan Wang, Feiyu Wang 等 8 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -33,7 +22,7 @@
 ---
 
 
-### 103. [An Agentic Hybrid Top-Down and Bottom-Up Approach to Knowledge Graph Generation](https://arxiv.org/abs/2608.07023)
+### 102. [An Agentic Hybrid Top-Down and Bottom-Up Approach to Knowledge Graph Generation](https://arxiv.org/abs/2608.07023)
 
 **<font color=#1a73e8>作者：</font>** Emma Jouffroy, Warren Jouanneau, Marc Palyart  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -44,7 +33,7 @@
 ---
 
 
-### 104. [Not All Problems Are Best Modeled as MILP: A DSL-Centric Framework for Flexible and Accurate Optimization Modeling](https://arxiv.org/abs/2608.07040)
+### 103. [Not All Problems Are Best Modeled as MILP: A DSL-Centric Framework for Flexible and Accurate Optimization Modeling](https://arxiv.org/abs/2608.07040)
 
 **<font color=#1a73e8>作者：</font>** Shaofeng Zhang, Hongyuan Su, Qingwen Peng 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -55,7 +44,7 @@
 ---
 
 
-### 105. [YOLO-PEFT: Parameter-Efficient Fine-Tuning on YOLO Family](https://arxiv.org/abs/2608.07051)
+### 104. [YOLO-PEFT: Parameter-Efficient Fine-Tuning on YOLO Family](https://arxiv.org/abs/2608.07051)
 
 **<font color=#1a73e8>作者：</font>** Xu Lin, WenJie Nie, Jinlong Peng 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -66,7 +55,7 @@
 ---
 
 
-### 106. [BONSAI: Evolvability-Guided Tree Search over Skills](https://arxiv.org/abs/2608.07056)
+### 105. [BONSAI: Evolvability-Guided Tree Search over Skills](https://arxiv.org/abs/2608.07056)
 
 **<font color=#1a73e8>作者：</font>** Yash Priya Shastri, Anand Eswaran, Adnan Qidwai 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -77,7 +66,7 @@
 ---
 
 
-### 107. [MemOPD: On-Policy Distillation through Memory State Alignment for Long-Horizon Agents](https://arxiv.org/abs/2608.07068)
+### 106. [MemOPD: On-Policy Distillation through Memory State Alignment for Long-Horizon Agents](https://arxiv.org/abs/2608.07068)
 
 **<font color=#1a73e8>作者：</font>** Zhiyuan Liu, Tinghong Ye, Chenghao Liu 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -88,7 +77,7 @@
 ---
 
 
-### 108. [Transformers Struggle to Use Their Emergent World Models: Revisiting the Tower of Hanoi, and the Illusion of Thinking](https://arxiv.org/abs/2608.07077)
+### 107. [Transformers Struggle to Use Their Emergent World Models: Revisiting the Tower of Hanoi, and the Illusion of Thinking](https://arxiv.org/abs/2608.07077)
 
 **<font color=#1a73e8>作者：</font>** Devin Pereira, Willem Zuidema  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -99,7 +88,7 @@
 ---
 
 
-### 109. [RoRA: Role-Oriented Regional Allocation for Visual Token Pruning in MLLMs](https://arxiv.org/abs/2608.07088)
+### 108. [RoRA: Role-Oriented Regional Allocation for Visual Token Pruning in MLLMs](https://arxiv.org/abs/2608.07088)
 
 **<font color=#1a73e8>作者：</font>** Qiyanhui Lu, Han Wu, Rongjian Xu 等 9 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -110,7 +99,7 @@
 ---
 
 
-### 110. [Human-Centered Explainable AI for TinyML Edge Devices: A Pareto-Based Selection Framework with LLM-Guided Design](https://arxiv.org/abs/2608.07091)
+### 109. [Human-Centered Explainable AI for TinyML Edge Devices: A Pareto-Based Selection Framework with LLM-Guided Design](https://arxiv.org/abs/2608.07091)
 
 **<font color=#1a73e8>作者：</font>** Zeinab Dehghani, Dhavalkumar Thakker, Koorosh Aslansefat 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -121,7 +110,7 @@
 ---
 
 
-### 111. [UncertaintyVis: Preserving Linguistic Uncertainty in Automated Text-to-Chart Generation](https://arxiv.org/abs/2608.07093)
+### 110. [UncertaintyVis: Preserving Linguistic Uncertainty in Automated Text-to-Chart Generation](https://arxiv.org/abs/2608.07093)
 
 **<font color=#1a73e8>作者：</font>** Songheng Zhang, Emily Aurelia, Anthony Tang  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -132,7 +121,7 @@
 ---
 
 
-### 112. [MemWM: Memory-Augmented Text-Based World Model](https://arxiv.org/abs/2608.07107)
+### 111. [MemWM: Memory-Augmented Text-Based World Model](https://arxiv.org/abs/2608.07107)
 
 **<font color=#1a73e8>作者：</font>** Yujun Wang, Tao Zhang, Jinhe Bi 等 12 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -143,7 +132,7 @@
 ---
 
 
-### 113. [Modular TTT: Rethinking Test-Time Training as Composable Modules](https://arxiv.org/abs/2608.07110)
+### 112. [Modular TTT: Rethinking Test-Time Training as Composable Modules](https://arxiv.org/abs/2608.07110)
 
 **<font color=#1a73e8>作者：</font>** Bohao Tang, Zhen Qin, Yuqi Pan 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -154,7 +143,7 @@
 ---
 
 
-### 114. [Beyond Fluency: A Clinical Benchmark and Anomaly-Enhanced Baseline for Spine MRI Report Generation](https://arxiv.org/abs/2608.07117)
+### 113. [Beyond Fluency: A Clinical Benchmark and Anomaly-Enhanced Baseline for Spine MRI Report Generation](https://arxiv.org/abs/2608.07117)
 
 **<font color=#1a73e8>作者：</font>** Bruno Palau, Franziska Vogt, Daria Laslo 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -165,7 +154,7 @@
 ---
 
 
-### 115. [How Much, Then Where: Credit-Conserving Action-to-Token Allocation for Multi-Turn Agent Reinforcement Learning](https://arxiv.org/abs/2608.07118)
+### 114. [How Much, Then Where: Credit-Conserving Action-to-Token Allocation for Multi-Turn Agent Reinforcement Learning](https://arxiv.org/abs/2608.07118)
 
 **<font color=#1a73e8>作者：</font>** Lichao Ma, Yang Sun, Shuaitao Zhao 等 12 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -176,7 +165,7 @@
 ---
 
 
-### 116. [PHOENIX: Fine-Tuned SLM-Powered Autonomous Satellite Lifetime Extension via Predictive Self-Healing and Multi-Agent AI Recovery](https://arxiv.org/abs/2608.07126)
+### 115. [PHOENIX: Fine-Tuned SLM-Powered Autonomous Satellite Lifetime Extension via Predictive Self-Healing and Multi-Agent AI Recovery](https://arxiv.org/abs/2608.07126)
 
 **<font color=#1a73e8>作者：</font>** Sumaiya Islam, Harsha Kumara Moraliyage  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -187,7 +176,7 @@
 ---
 
 
-### 117. [Human-AI Perceptual Alignment by Playing Hues and Cues](https://arxiv.org/abs/2608.07141)
+### 116. [Human-AI Perceptual Alignment by Playing Hues and Cues](https://arxiv.org/abs/2608.07141)
 
 **<font color=#1a73e8>作者：</font>** Nuria Alabau-Bosque, Jorge Vila-Tomás, Paula Daudén-Oliver 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -198,7 +187,7 @@
 ---
 
 
-### 118. [DiDPO: Diff-in-Diff Policy Optimization for Coding Agent Training](https://arxiv.org/abs/2608.07147)
+### 117. [DiDPO: Diff-in-Diff Policy Optimization for Coding Agent Training](https://arxiv.org/abs/2608.07147)
 
 **<font color=#1a73e8>作者：</font>** Xucong Wang, Zhe Zhao, Liheng Yu 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -209,7 +198,7 @@
 ---
 
 
-### 119. [A MARL Centered Reference Architecture for Large Language Model Augmentation in Smart Manufacturing](https://arxiv.org/abs/2608.07148)
+### 118. [A MARL Centered Reference Architecture for Large Language Model Augmentation in Smart Manufacturing](https://arxiv.org/abs/2608.07148)
 
 **<font color=#1a73e8>作者：</font>** Fouad Bahrpeyma, Dirk Reichelt  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -220,7 +209,7 @@
 ---
 
 
-### 120. [Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](https://arxiv.org/abs/2608.07169)
+### 119. [Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](https://arxiv.org/abs/2608.07169)
 
 **<font color=#1a73e8>作者：</font>** Taeil Kim, Kangsan Kim, Sung Ju Hwang  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -231,7 +220,7 @@
 ---
 
 
-### 121. [An AI4AI Framework for Visual Token Pruning](https://arxiv.org/abs/2608.07193)
+### 120. [An AI4AI Framework for Visual Token Pruning](https://arxiv.org/abs/2608.07193)
 
 **<font color=#1a73e8>作者：</font>** Zhen Liu, Wenli Huang, Wei Song 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -242,7 +231,7 @@
 ---
 
 
-### 122. [EMAS: Stabilizing Multi-Agent System Evolution through Evidence-Guided Revision](https://arxiv.org/abs/2608.07196)
+### 121. [EMAS: Stabilizing Multi-Agent System Evolution through Evidence-Guided Revision](https://arxiv.org/abs/2608.07196)
 
 **<font color=#1a73e8>作者：</font>** Chao Fei, Qingyi Si, Kaihua Liang 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -253,7 +242,7 @@
 ---
 
 
-### 123. [Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs](https://arxiv.org/abs/2608.07202)
+### 122. [Authoring and Management of Transparent Research Integrity Assessments of Randomised Clinical Trial Publications Using LLM-assisted Tools and Provenance Knowledge Graphs](https://arxiv.org/abs/2608.07202)
 
 **<font color=#1a73e8>作者：</font>** Milan Markovic, Goutham Indukuri, Somayajulu Sripada 等 10 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -264,7 +253,7 @@
 ---
 
 
-### 124. [Measuring Concept Content in Text from LLM Activations: ESG Evidence from Concept Vectors and Linear Probes](https://arxiv.org/abs/2608.07208)
+### 123. [Measuring Concept Content in Text from LLM Activations: ESG Evidence from Concept Vectors and Linear Probes](https://arxiv.org/abs/2608.07208)
 
 **<font color=#1a73e8>作者：</font>** Luc Hazenoot, Zhaochun Ren, Amirhossein Zohrehvand  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -275,7 +264,7 @@
 ---
 
 
-### 125. [From Test-Time Scaling to Reusable Memory: Measuring Crystallization in Text-to-SQL](https://arxiv.org/abs/2608.07213)
+### 124. [From Test-Time Scaling to Reusable Memory: Measuring Crystallization in Text-to-SQL](https://arxiv.org/abs/2608.07213)
 
 **<font color=#1a73e8>作者：</font>** Jiaqian Wang, Yutao Qi, Wenjin Hou 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -286,7 +275,7 @@
 ---
 
 
-### 126. [Skaling: Chinchilla's Exponents Meet Kaplan's Coupling](https://arxiv.org/abs/2608.07222)
+### 125. [Skaling: Chinchilla's Exponents Meet Kaplan's Coupling](https://arxiv.org/abs/2608.07222)
 
 **<font color=#1a73e8>作者：</font>** Mathurin Videau, Badr Youbi-Idrissi, David Lopez-Paz 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -297,7 +286,7 @@
 ---
 
 
-### 127. [Stochastic Autoregressive Learning](https://arxiv.org/abs/2608.07224)
+### 126. [Stochastic Autoregressive Learning](https://arxiv.org/abs/2608.07224)
 
 **<font color=#1a73e8>作者：</font>** Ilan Doron-Arad, Idan Mehalel, Elchanan Mossel  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -309,7 +298,7 @@ We show that stochastic autoregressive learning fundamentally differs from the d
 ---
 
 
-### 128. [Recipes for Creativity: Iterative Generation and Evaluation in Large Language Models](https://arxiv.org/abs/2608.07243)
+### 127. [Recipes for Creativity: Iterative Generation and Evaluation in Large Language Models](https://arxiv.org/abs/2608.07243)
 
 **<font color=#1a73e8>作者：</font>** Rens Anderson, Tessa Verhoef, Amirhossein Zohrehvand  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -320,7 +309,7 @@ We show that stochastic autoregressive learning fundamentally differs from the d
 ---
 
 
-### 129. [Stoicheia: Character-Level Masked Diffusion for Ancient Greek Textual Restoration, Parsing, and Metrical Scansion](https://arxiv.org/abs/2608.07249)
+### 128. [Stoicheia: Character-Level Masked Diffusion for Ancient Greek Textual Restoration, Parsing, and Metrical Scansion](https://arxiv.org/abs/2608.07249)
 
 **<font color=#1a73e8>作者：</font>** Eric Cullhed, Albin Thörn Cleland  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -331,7 +320,7 @@ We show that stochastic autoregressive learning fundamentally differs from the d
 ---
 
 
-### 130. [Why Knowing Both Hops Is Not Enough: Understanding Two-Hop Generalization in Language Models](https://arxiv.org/abs/2608.07261)
+### 129. [Why Knowing Both Hops Is Not Enough: Understanding Two-Hop Generalization in Language Models](https://arxiv.org/abs/2608.07261)
 
 **<font color=#1a73e8>作者：</font>** Zili Zhang, Yilin Wang, Heng Wang 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -344,7 +333,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 131. [WNM-3D: A World Navigation Model with 3D Scene Conditioning for Closed-Loop VLN](https://arxiv.org/abs/2608.07267)
+### 130. [WNM-3D: A World Navigation Model with 3D Scene Conditioning for Closed-Loop VLN](https://arxiv.org/abs/2608.07267)
 
 **<font color=#1a73e8>作者：</font>** Yuehao Huang, Yunzi Wu, Xiaotao Zhang 等 10 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -355,7 +344,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 132. [Gaze Behavior in Visual World Experiments Can be Modeled With Off-the-shelf Language-Vision Encoders](https://arxiv.org/abs/2608.07282)
+### 131. [Gaze Behavior in Visual World Experiments Can be Modeled With Off-the-shelf Language-Vision Encoders](https://arxiv.org/abs/2608.07282)
 
 **<font color=#1a73e8>作者：</font>** Rahul Murali Shankar, Titus von der Malsburg, Sebastian Padó  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -366,7 +355,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 133. [Grammar Engineering Meets LLMs: Development of Cantonese and Irish ParGram Treebanks](https://arxiv.org/abs/2608.07283)
+### 132. [Grammar Engineering Meets LLMs: Development of Cantonese and Irish ParGram Treebanks](https://arxiv.org/abs/2608.07283)
 
 **<font color=#1a73e8>作者：</font>** Chit-Fung Lam, Elaine Uí Dhonnchadha  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -377,7 +366,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 134. [Same Attention, Different Truths: Put Logit-Lens over Visual Attention to Detect and Mitigate LVLM Object Hallucination](https://arxiv.org/abs/2608.07302)
+### 133. [Same Attention, Different Truths: Put Logit-Lens over Visual Attention to Detect and Mitigate LVLM Object Hallucination](https://arxiv.org/abs/2608.07302)
 
 **<font color=#1a73e8>作者：</font>** Zichuan Wang, Songlin Yang, Bo Peng 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -388,7 +377,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 135. [Natural Language Processing Psychometrics](https://arxiv.org/abs/2608.07316)
+### 134. [Natural Language Processing Psychometrics](https://arxiv.org/abs/2608.07316)
 
 **<font color=#1a73e8>作者：</font>** Edoardo Sebastiano De Duro, Emma Franchino, Massimo Stella  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -399,7 +388,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 136. [Is SwiGLU's Open Positive Tail Necessary? Evidence from Closed-Tail Gating with MemGLU](https://arxiv.org/abs/2608.07323)
+### 135. [Is SwiGLU's Open Positive Tail Necessary? Evidence from Closed-Tail Gating with MemGLU](https://arxiv.org/abs/2608.07323)
 
 **<font color=#1a73e8>作者：</font>** Yuting Ge, Pengju Yang, Mingkai Nie  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -410,7 +399,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 137. [Zero Gap Is Not Restoration: Stratified Per-Question Probability Evaluation and Step-wise Mitigation of Benchmark Contamination](https://arxiv.org/abs/2608.07341)
+### 136. [Zero Gap Is Not Restoration: Stratified Per-Question Probability Evaluation and Step-wise Mitigation of Benchmark Contamination](https://arxiv.org/abs/2608.07341)
 
 **<font color=#1a73e8>作者：</font>** Ruijie Hou, Yueyang Jiao, Zhao Wang 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -421,7 +410,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 138. [An End-to-End Agent Auditing Engine](https://arxiv.org/abs/2608.07346)
+### 137. [An End-to-End Agent Auditing Engine](https://arxiv.org/abs/2608.07346)
 
 **<font color=#1a73e8>作者：</font>** Haoning Wang, Mingxun Zhang, Chenyue Yu 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -432,7 +421,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 139. [Geo-Spatial Concept Probing of Large Language Models: Abstraction, Compositionality, and Grounding](https://arxiv.org/abs/2608.07353)
+### 138. [Geo-Spatial Concept Probing of Large Language Models: Abstraction, Compositionality, and Grounding](https://arxiv.org/abs/2608.07353)
 
 **<font color=#1a73e8>作者：</font>** Karim Radouane, Jose G Moreno, Lynda Tamine  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -443,7 +432,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 140. [Curriculum as Code: An AI-Assisted Architecture for Instructional Design in STEM Education](https://arxiv.org/abs/2608.07364)
+### 139. [Curriculum as Code: An AI-Assisted Architecture for Instructional Design in STEM Education](https://arxiv.org/abs/2608.07364)
 
 **<font color=#1a73e8>作者：</font>** Henrique Mohallem Paiva  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -454,7 +443,7 @@ Driven by this insight, we propose a recurrent-style training strategy, which en
 ---
 
 
-### 141. [People Are Not Just Their Countries. Disentangling Social Determinants of LLM Value Alignment Across Europe](https://arxiv.org/abs/2608.07367)
+### 140. [People Are Not Just Their Countries. Disentangling Social Determinants of LLM Value Alignment Across Europe](https://arxiv.org/abs/2608.07367)
 
 **<font color=#1a73e8>作者：</font>** Maria-Louisa Wightman, Guillaume Bied, Tijl De Bie  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -466,7 +455,7 @@ Relying on the European Social Survey, we address this knowledge gap by consider
 ---
 
 
-### 142. [LitTraceQA: A Benchmark for Multi-Stage Grounding and Verification in Scientific Question Answering](https://arxiv.org/abs/2608.07370)
+### 141. [LitTraceQA: A Benchmark for Multi-Stage Grounding and Verification in Scientific Question Answering](https://arxiv.org/abs/2608.07370)
 
 **<font color=#1a73e8>作者：</font>** Xuye Liu, Yimu Wang, Peng Shi 等 10 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -477,7 +466,7 @@ Relying on the European Social Survey, we address this knowledge gap by consider
 ---
 
 
-### 143. [Trajectory-Relative Hindsight Distillation for Agentic Reinforcement Learning](https://arxiv.org/abs/2608.07371)
+### 142. [Trajectory-Relative Hindsight Distillation for Agentic Reinforcement Learning](https://arxiv.org/abs/2608.07371)
 
 **<font color=#1a73e8>作者：</font>** Haoyu Zheng, Yun Zhu, Qing Wang 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -488,7 +477,7 @@ Relying on the European Social Survey, we address this knowledge gap by consider
 ---
 
 
-### 144. [GeoBenchLLM: A Comprehensive Benchmark for Evaluating LLMs on Geo-Related Tasks](https://arxiv.org/abs/2608.07411)
+### 143. [GeoBenchLLM: A Comprehensive Benchmark for Evaluating LLMs on Geo-Related Tasks](https://arxiv.org/abs/2608.07411)
 
 **<font color=#1a73e8>作者：</font>** Rodrigo Ferreira Rodrigues, Karim Radouane, Jose G Moreno 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -499,7 +488,7 @@ Relying on the European Social Survey, we address this knowledge gap by consider
 ---
 
 
-### 145. [I Seek You in Videos: Identity-Conditioned Queries for Person-Centric Video Reasoning](https://arxiv.org/abs/2608.07417)
+### 144. [I Seek You in Videos: Identity-Conditioned Queries for Person-Centric Video Reasoning](https://arxiv.org/abs/2608.07417)
 
 **<font color=#1a73e8>作者：</font>** Shibo Gao, Chongxiao Wang, Chenglong Huang 等 13 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -510,7 +499,7 @@ Relying on the European Social Survey, we address this knowledge gap by consider
 ---
 
 
-### 146. [ResidencyRL: Reinforcement Learning in Simulated Clinical Environments](https://arxiv.org/abs/2608.07418)
+### 145. [ResidencyRL: Reinforcement Learning in Simulated Clinical Environments](https://arxiv.org/abs/2608.07418)
 
 **<font color=#1a73e8>作者：</font>** Valentin Liévin, Samuel Schmidgall, Tim Strother 等 35 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -521,7 +510,7 @@ Relying on the European Social Survey, we address this knowledge gap by consider
 ---
 
 
-### 147. [Beyond Post-Hoc Temperature Scaling: Bilevel Optimization for LLM Calibration](https://arxiv.org/abs/2608.07419)
+### 146. [Beyond Post-Hoc Temperature Scaling: Bilevel Optimization for LLM Calibration](https://arxiv.org/abs/2608.07419)
 
 **<font color=#1a73e8>作者：</font>** Ruochen Jin, Zhanliang Wang, Zongyu Dai 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -532,7 +521,7 @@ Relying on the European Social Survey, we address this knowledge gap by consider
 ---
 
 
-### 148. [CoBa: Cost-Effective Test-Time Scaling via Compute-Balanced Routing](https://arxiv.org/abs/2608.07424)
+### 147. [CoBa: Cost-Effective Test-Time Scaling via Compute-Balanced Routing](https://arxiv.org/abs/2608.07424)
 
 **<font color=#1a73e8>作者：</font>** Yan Zhou, Yue Ouyang, Kaiyang Zheng 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -543,7 +532,7 @@ Relying on the European Social Survey, we address this knowledge gap by consider
 ---
 
 
-### 149. [A Picture is Worth a Thousand Tokens: How Vision Language Models Cut AI Energy Costs While Improving Accuracy](https://arxiv.org/abs/2608.07427)
+### 148. [A Picture is Worth a Thousand Tokens: How Vision Language Models Cut AI Energy Costs While Improving Accuracy](https://arxiv.org/abs/2608.07427)
 
 **<font color=#1a73e8>作者：</font>** Bhavika Jalli, Nikhil Korati Prasanna, Jayanta Choudhury  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -554,7 +543,7 @@ Relying on the European Social Survey, we address this knowledge gap by consider
 ---
 
 
-### 150. [TEPA: Revoking Stale Memories for Conflict-Robust Language Agents](https://arxiv.org/abs/2608.07429)
+### 149. [TEPA: Revoking Stale Memories for Conflict-Robust Language Agents](https://arxiv.org/abs/2608.07429)
 
 **<font color=#1a73e8>作者：</font>** Yan Zhou, Yue Ouyang, Kaiyang Zheng 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -565,9 +554,20 @@ Relying on the European Social Survey, we address this knowledge gap by consider
 ---
 
 
+### 150. [Conformal Coverage Guarantees for Any Video Temporal Grounder](https://arxiv.org/abs/2608.07434)
+
+**<font color=#1a73e8>作者：</font>** Aseel Mohamed, Rasul Khanbayov, Erchin Serpedin 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Event boundaries in continuous video are ambiguous: re-annotate the same query-video pair and independent annotators mark moments that overlap by less than half on a large fraction of samples. The ground truth for video temporal grounding is therefore a distribution over intervals, yet every grounder returns a single interval with no statement of reliability, so at deployment a wrong interval is indistinguishable from a right one. COVER changes the output object: a post-hoc, model-agnostic wrapper that turns any grounder, a trained localizer or a black-box video--language model, into one that emits a temporal region containing the true moment with probability at least $1-\alpha$, by calibrating the quantile of a temporal nonconformity score on held-out labels and widening the base prediction by that amount. The guarantee is finite-sample and distribution-free under exchangeability, and requires neither retraining nor white-box access. We give two score families, a two-sided boundary-widening score for grounders that emit an interval and a super-level-set score for grounders that emit a relevance signal, and develop theory specific to grounding that bounds how large the certified region becomes, when coverage survives conditioning on event length, and how it degrades when moments from one video break exchangeability. Across three benchmarks and five grounders, realized coverage tracks the target, and calibration exposes what point metrics hide.
+
+---
+
+
 > [!TIP]
 > 当前位于：**101-150**（第 3/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | **101-150** | [151-171](./part-04.md)
+> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | **101-150** | [151-170](./part-04.md)
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*

@@ -1,13 +1,13 @@
 # 🧠 大模型相关研究 | 2026年08月10日
 
-> 本类共 **171** 篇论文：已确认 **160** 篇，待复核 **11** 篇
+> 本类共 **170** 篇论文：已确认 **159** 篇，待复核 **11** 篇
 
 > 聚焦 LLM / MLLM / Agent / MoE 等大模型研究，并包含使用 LLM 完成网络安全任务的研究；待复核论文合并展示在本章末尾。
 
 > [!TIP]
 > 当前位于：**51-100**（第 2/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：[1-50](./part-01.md) | **51-100** | [101-150](./part-03.md) | [151-171](./part-04.md)
+> - 分组跳转：[1-50](./part-01.md) | **51-100** | [101-150](./part-03.md) | [151-170](./part-04.md)
 
 ---
 
@@ -158,18 +158,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 64. [Understanding and Improving Model Editing for Secure Code Generation](https://arxiv.org/abs/2608.06848)
-
-**<font color=#1a73e8>作者：</font>** Weifeng Sun, Quanjun Zhang, Yuchen Chen 等 6 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
-
-**<font color=#5f6368>摘要：</font>**
-> Large language models (LLMs) are widely used for code generation, yet they can reproduce vulnerable implementations learned from insecure training patterns. Prior work has mainly explored inference-time hardening, which reduces insecure generations without modifying the target model but relies on auxiliary components and adds runtime overhead. We conduct the first systematic study of model editing as a model-level hardening mechanism for secure code generation. We evaluate 3 state-of-the-art editing methods across diverse LLM families and compare them with CoSec, a representative inference-time approach, focusing on security, robustness, generalization, and functional correctness. Model editing yields larger security gains than CoSec on seen vulnerability types, improving security ratios by 15%-25% over vanilla models, with gains remaining stable under prompt perturbations. However, these improvements transfer unreliably to unseen vulnerabilities and can reduce functional correctness. To mitigate this trade-off, we propose SafeEdit, a post-edit refinement method combining functional tuning with edit-aware regularization. Across eight target LLMs, SafeEdit improves Pass@1 over UltraEdit by 11.73/13.70/15.50 percentage points at T=0.1/0.4/0.8 while largely preserving security. Compared with CoSec, it achieves relative security-ratio gains of 7.54%-12.04%. Additional evaluation on CodeGuard+ confirms improved joint secure-and-correct generation. SafeEdit and CoSec are also complementary, and their combination can further improve security while maintaining strong functional correctness. Overall, our results provide evidence-backed guidance for applying model editing to secure code generation.
-
----
-
-
-### 65. [Autonomy-of-Heads: Data-Free Sparse Attention from Frozen Query-Key Geometry](https://arxiv.org/abs/2608.06849)
+### 64. [Autonomy-of-Heads: Data-Free Sparse Attention from Frozen Query-Key Geometry](https://arxiv.org/abs/2608.06849)
 
 **<font color=#1a73e8>作者：</font>** Yehan Yang, Junyuan Shang, Yang Li 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -180,7 +169,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 66. [Gated-BEPO: Confidence-Gated Bellman Credit Assignment for Large Language Model Agents](https://arxiv.org/abs/2608.06861)
+### 65. [Gated-BEPO: Confidence-Gated Bellman Credit Assignment for Large Language Model Agents](https://arxiv.org/abs/2608.06861)
 
 **<font color=#1a73e8>作者：</font>** Hongxi Yan, Ziyue Huang, Shichao Fan 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -191,7 +180,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 67. [Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection](https://arxiv.org/abs/2608.06865)
+### 66. [Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection](https://arxiv.org/abs/2608.06865)
 
 **<font color=#1a73e8>作者：</font>** Xuechao Zou, Shun Zhang, Kai Li 等 9 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -202,7 +191,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 68. [LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers](https://arxiv.org/abs/2608.06867)
+### 67. [LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers](https://arxiv.org/abs/2608.06867)
 
 **<font color=#1a73e8>作者：</font>** Tao Feng, Fangxu Yu, Haozhen Zhang 等 12 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -213,7 +202,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 69. [CEDAR: Agent-Orchestrated Tree Search for Goal-Directed Optimization of Complex Systems](https://arxiv.org/abs/2608.06871)
+### 68. [CEDAR: Agent-Orchestrated Tree Search for Goal-Directed Optimization of Complex Systems](https://arxiv.org/abs/2608.06871)
 
 **<font color=#1a73e8>作者：</font>** Yingtao Tian  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -224,7 +213,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 70. [FedVAR: Prototype-Aligned Federated Framework for Video Anomaly Recognition](https://arxiv.org/abs/2608.06876)
+### 69. [FedVAR: Prototype-Aligned Federated Framework for Video Anomaly Recognition](https://arxiv.org/abs/2608.06876)
 
 **<font color=#1a73e8>作者：</font>** Ghani Haider, Majid Kundroo, Boyun Eom 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -235,7 +224,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 71. [SkillAligner: Treating Retrieved Skills as Adaptable Drafts at Execution Time](https://arxiv.org/abs/2608.06880)
+### 70. [SkillAligner: Treating Retrieved Skills as Adaptable Drafts at Execution Time](https://arxiv.org/abs/2608.06880)
 
 **<font color=#1a73e8>作者：</font>** Qinfeng Li, Dalin He, Yuntai Bao 等 10 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -246,7 +235,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 72. [Georeferencing Non-Gazetteered Place Names using Biological Specimen Records](https://arxiv.org/abs/2608.06884)
+### 71. [Georeferencing Non-Gazetteered Place Names using Biological Specimen Records](https://arxiv.org/abs/2608.06884)
 
 **<font color=#1a73e8>作者：</font>** Aneesha Fernando, Surangika Ranathunga, Kristin Stock 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -257,7 +246,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 73. [SkillEval: Decomposing Agent Skill Quality into Interpretable Signals](https://arxiv.org/abs/2608.06891)
+### 72. [SkillEval: Decomposing Agent Skill Quality into Interpretable Signals](https://arxiv.org/abs/2608.06891)
 
 **<font color=#1a73e8>作者：</font>** Jiahui Han, Qinuo Li, Ziheng Peng 等 9 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -268,7 +257,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 74. [Prune Once: Retraining-Free Task-Agnostic Pruning for Vision-Language Models](https://arxiv.org/abs/2608.06901)
+### 73. [Prune Once: Retraining-Free Task-Agnostic Pruning for Vision-Language Models](https://arxiv.org/abs/2608.06901)
 
 **<font color=#1a73e8>作者：</font>** Minseok Kang, Hyunwoo Kim, Chanyoung Kim 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -279,7 +268,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 75. [Calibrating WEAT Against Anisotropy: ZCA Whitening as a Geometric Pre-Processing Step for Embedding Association Tests](https://arxiv.org/abs/2608.06908)
+### 74. [Calibrating WEAT Against Anisotropy: ZCA Whitening as a Geometric Pre-Processing Step for Embedding Association Tests](https://arxiv.org/abs/2608.06908)
 
 **<font color=#1a73e8>作者：</font>** Seitaro Ono, Senna Ross, Jun Saiki  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -290,7 +279,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 76. [Long-Horizon Agent Trajectory Attribution: A Unified Benchmark and Fine-Grained Annotation Framework](https://arxiv.org/abs/2608.06909)
+### 75. [Long-Horizon Agent Trajectory Attribution: A Unified Benchmark and Fine-Grained Annotation Framework](https://arxiv.org/abs/2608.06909)
 
 **<font color=#1a73e8>作者：</font>** Jing Chen, Yang Sun, Li Zhang 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -301,7 +290,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 77. [MuST-VAD: Mutual Structured Learning for Video Anomaly Detection](https://arxiv.org/abs/2608.06913)
+### 76. [MuST-VAD: Mutual Structured Learning for Video Anomaly Detection](https://arxiv.org/abs/2608.06913)
 
 **<font color=#1a73e8>作者：</font>** Satoshi Hashimoto, Hitoshi Nishimura, Mori Kurokawa  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -312,7 +301,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 78. [ReGraph: Learning to Generate Recipe Graphs from Food Images](https://arxiv.org/abs/2608.06917)
+### 77. [ReGraph: Learning to Generate Recipe Graphs from Food Images](https://arxiv.org/abs/2608.06917)
 
 **<font color=#1a73e8>作者：</font>** Guoshan Liu, Bin Zhu, Pengkun Jiao 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -323,7 +312,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 79. [Deal Me Maybe: The Role of Emotions in Multi-Agent Negotiation](https://arxiv.org/abs/2608.06922)
+### 78. [Deal Me Maybe: The Role of Emotions in Multi-Agent Negotiation](https://arxiv.org/abs/2608.06922)
 
 **<font color=#1a73e8>作者：</font>** Massimiliano Luca, Apoorva Singh, Bruno Lepri  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -334,7 +323,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 80. [TRIBE: Predicting Team Performance via Communication Behavior Ensembles](https://arxiv.org/abs/2608.06926)
+### 79. [TRIBE: Predicting Team Performance via Communication Behavior Ensembles](https://arxiv.org/abs/2608.06926)
 
 **<font color=#1a73e8>作者：</font>** Ali Jalal-Kamali, Nikolos Gurney, David V. Pynadath 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -345,7 +334,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 81. [AVCap: Reinforcing Audio-Video Joint Caption with Detail-Aware Reward](https://arxiv.org/abs/2608.06930)
+### 80. [AVCap: Reinforcing Audio-Video Joint Caption with Detail-Aware Reward](https://arxiv.org/abs/2608.06930)
 
 **<font color=#1a73e8>作者：</font>** Mingyang Wu, Kaituo Feng, Bohao Li 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -356,7 +345,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 82. [Science Edge Evaluation: SEE the Missing Step Toward Real Scientific Discovery](https://arxiv.org/abs/2608.06931)
+### 81. [Science Edge Evaluation: SEE the Missing Step Toward Real Scientific Discovery](https://arxiv.org/abs/2608.06931)
 
 **<font color=#1a73e8>作者：</font>** Taolin Han, Yuchen Zhang, Jinghang Wang 等 25 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -367,7 +356,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 83. [Ask-E: An Environment for Calibrated Question Generation](https://arxiv.org/abs/2608.06933)
+### 82. [Ask-E: An Environment for Calibrated Question Generation](https://arxiv.org/abs/2608.06933)
 
 **<font color=#1a73e8>作者：</font>** Sarah Pratt, Jae Sung Park, Scott Geng 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -378,7 +367,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 84. [Debias in Text, Believe Your Eyes: Text-Anchored Cross-Modal Transfer for Visual Counter-Commonsense Reasoning](https://arxiv.org/abs/2608.06938)
+### 83. [Debias in Text, Believe Your Eyes: Text-Anchored Cross-Modal Transfer for Visual Counter-Commonsense Reasoning](https://arxiv.org/abs/2608.06938)
 
 **<font color=#1a73e8>作者：</font>** Chen Ling, Hanqian Li, Dongnan Liu 等 12 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -389,7 +378,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 85. [Degradation-Aware Prompt Learning with Cross-Modal Compensation for Adverse Weather Removal](https://arxiv.org/abs/2608.06939)
+### 84. [Degradation-Aware Prompt Learning with Cross-Modal Compensation for Adverse Weather Removal](https://arxiv.org/abs/2608.06939)
 
 **<font color=#1a73e8>作者：</font>** Wanshu Fan, Yunzhe Zhang, Yue Shen 等 8 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -400,7 +389,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 86. [Blind to the Pivotal Vote: Aggregate Independence Metrics Miss Where Verification Actually Helps](https://arxiv.org/abs/2608.06940)
+### 85. [Blind to the Pivotal Vote: Aggregate Independence Metrics Miss Where Verification Actually Helps](https://arxiv.org/abs/2608.06940)
 
 **<font color=#1a73e8>作者：</font>** Yang Shu  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -411,7 +400,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 87. [LMM Modality Transfer: A Pre-requisite for Autonomous GIS Agents](https://arxiv.org/abs/2608.06948)
+### 86. [LMM Modality Transfer: A Pre-requisite for Autonomous GIS Agents](https://arxiv.org/abs/2608.06948)
 
 **<font color=#1a73e8>作者：</font>** Ivan Majic, Zexian Huang, Franziska Hübl 等 8 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -422,7 +411,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 88. [Does Splitting a Triage Decision Across Agents Hide Bias or Help Catch It? A Multi-Agent Simulation Study of LLM-Based Resource Allocation Under Audit Capacity Constraints](https://arxiv.org/abs/2608.06949)
+### 87. [Does Splitting a Triage Decision Across Agents Hide Bias or Help Catch It? A Multi-Agent Simulation Study of LLM-Based Resource Allocation Under Audit Capacity Constraints](https://arxiv.org/abs/2608.06949)
 
 **<font color=#1a73e8>作者：</font>** Paul-Peter Arslan  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -433,7 +422,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 89. [Explicit, Not Longer: What Makes Epistemic Stance Survive Memory Compression](https://arxiv.org/abs/2608.06953)
+### 88. [Explicit, Not Longer: What Makes Epistemic Stance Survive Memory Compression](https://arxiv.org/abs/2608.06953)
 
 **<font color=#1a73e8>作者：</font>** Alex Kwon  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -444,7 +433,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 90. [Critical Acclaim Orientation in Large Language Models: Evidence from Film Preference Elicitation](https://arxiv.org/abs/2608.06955)
+### 89. [Critical Acclaim Orientation in Large Language Models: Evidence from Film Preference Elicitation](https://arxiv.org/abs/2608.06955)
 
 **<font color=#1a73e8>作者：</font>** Jonghyun Jee, Aaron Shaw  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -455,7 +444,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 91. [Summarize First, Download Later: Onboard VLMs for Bandwidth-Efficient Earth Observation](https://arxiv.org/abs/2608.06959)
+### 90. [Summarize First, Download Later: Onboard VLMs for Bandwidth-Efficient Earth Observation](https://arxiv.org/abs/2608.06959)
 
 **<font color=#1a73e8>作者：</font>** Junghwan Park, Sangcheol Sim, Woojin Cho 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -466,7 +455,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 92. [CAi Copilot: Reducing Operational Workload in Molecular Design through Intent-Driven Agentic Workflows](https://arxiv.org/abs/2608.06961)
+### 91. [CAi Copilot: Reducing Operational Workload in Molecular Design through Intent-Driven Agentic Workflows](https://arxiv.org/abs/2608.06961)
 
 **<font color=#1a73e8>作者：</font>** Zhu Wang, Jiangyu Chen, Yingjun Shang 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -477,7 +466,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 93. [Can Language Models Imagine Without Seeing? Ekphrasis: Measuring Visual Creative Ideation in Text-Only LLMs](https://arxiv.org/abs/2608.06967)
+### 92. [Can Language Models Imagine Without Seeing? Ekphrasis: Measuring Visual Creative Ideation in Text-Only LLMs](https://arxiv.org/abs/2608.06967)
 
 **<font color=#1a73e8>作者：</font>** Hongyu Luo, He Wang, Huihao Jing 等 9 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -488,7 +477,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 94. [Finding Usable Weight Mechanisms with Tiled SVD](https://arxiv.org/abs/2608.06969)
+### 93. [Finding Usable Weight Mechanisms with Tiled SVD](https://arxiv.org/abs/2608.06969)
 
 **<font color=#1a73e8>作者：</font>** Ash Manvi, Samreena Tajreen  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -499,7 +488,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 95. [Generative Embedding Benchmark: How Much Information Survives in a Dense Embedding?](https://arxiv.org/abs/2608.06972)
+### 94. [Generative Embedding Benchmark: How Much Information Survives in a Dense Embedding?](https://arxiv.org/abs/2608.06972)
 
 **<font color=#1a73e8>作者：</font>** Yun Li, Biao Yang, Peixi Wu 等 8 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -510,7 +499,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 96. [PHASE-Tree: Modeling Character-State Evolution in Long-Horizon Role-Playing Dialogue](https://arxiv.org/abs/2608.06975)
+### 95. [PHASE-Tree: Modeling Character-State Evolution in Long-Horizon Role-Playing Dialogue](https://arxiv.org/abs/2608.06975)
 
 **<font color=#1a73e8>作者：</font>** Bo Tang, Jianan Yang, Junyi Zhu 等 10 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -521,7 +510,7 @@ For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant r
 ---
 
 
-### 97. [Confirming Our Biases? Evaluating the Capabilities, Risks, and Societal Impact of Large Language Models](https://arxiv.org/abs/2608.06977)
+### 96. [Confirming Our Biases? Evaluating the Capabilities, Risks, and Societal Impact of Large Language Models](https://arxiv.org/abs/2608.06977)
 
 **<font color=#1a73e8>作者：</font>** Mudar Adas, Polina Tsvilodub, Michael Franke 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -533,7 +522,7 @@ We evaluate six LLMs using 160 distinct prompts spanning ten topics across opini
 ---
 
 
-### 98. [GPTKB 2.0: Browsing, Querying, and Auditing a Disambiguated LLM-Derived Knowledge Base](https://arxiv.org/abs/2608.06992)
+### 97. [GPTKB 2.0: Browsing, Querying, and Auditing a Disambiguated LLM-Derived Knowledge Base](https://arxiv.org/abs/2608.06992)
 
 **<font color=#1a73e8>作者：</font>** Yujia Hu, Tuan-Phong Nguyen, Simon Razniewski  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -544,7 +533,7 @@ We evaluate six LLMs using 160 distinct prompts spanning ten topics across opini
 ---
 
 
-### 99. [Every Cache Entry Earns Its Place: Global Allocation of Resolution and Coverage for KV Cache Compression](https://arxiv.org/abs/2608.07001)
+### 98. [Every Cache Entry Earns Its Place: Global Allocation of Resolution and Coverage for KV Cache Compression](https://arxiv.org/abs/2608.07001)
 
 **<font color=#1a73e8>作者：</font>** Haolin Tian, Yuzhe Liu, Tonghan Wang  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -555,7 +544,7 @@ We evaluate six LLMs using 160 distinct prompts spanning ten topics across opini
 ---
 
 
-### 100. [Does More Retrieved Evidence Help Visual Retrieval-Augmented Generation with Diffusion Language Models?](https://arxiv.org/abs/2608.07006)
+### 99. [Does More Retrieved Evidence Help Visual Retrieval-Augmented Generation with Diffusion Language Models?](https://arxiv.org/abs/2608.07006)
 
 **<font color=#1a73e8>作者：</font>** Jiankun Wang, Yisen Gao, Ziwei Zhang 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -566,9 +555,20 @@ We evaluate six LLMs using 160 distinct prompts spanning ten topics across opini
 ---
 
 
+### 100. [Stable Curves, Unstable Items: Item-Level Scaling Heterogeneity in Video LLMs](https://arxiv.org/abs/2608.07014)
+
+**<font color=#1a73e8>作者：</font>** Wenzhang Sun, Chunfeng Wang, Xiangchen Yin 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Aggregate scaling curves suggest that Video LLMs improve smoothly or saturate as visual budgets grow. We show that this view can conceal large, opposing changes at the item level. We represent each frozen model--item pair by its response trajectory under controlled visual budgets and derive matched-grid measures of configuration complementarity, harmful transitions, and text overwrite. Across five open Video LLMs from three architecture families, four multiple-choice benchmark splits, open-ended QA and summarization, and fixed-history dialogue generation, no single budget serves all items. On the four-model matched MCQA grid, item-level oracle headroom spans $8.8$--$18.9$ accuracy points and $12.5$--$25.5\%$ of items are correct at a lower budget but wrong at a higher one. Task-appropriate continuous metrics show the same complementarity beyond multiple choice: Token-F1 oracle gaps are $2.7$--$3.7$ score points on MLVU generation and $3.8$--$4.8$ points on AVSD current-turn generation, even when mean quality improves with budget. The effect persists across frame count, spatial resolution, sampling policy, temporal--spatial allocation, and independently executed raw-video and cached pipelines, with per-item rates and membership tracking protocol choices. A controlled sampling intervention recovers $29.0\%$ of terminal regressions, and a structured frame audit identifies several recurring evidence pathways. We release per-item trajectories, protocol provenance, derived annotations, and reproducible analysis code as an auditing artifact. A confidence cascade matches fixed-$128f$ accuracy while reducing average shared frame cost by $31.7\%$, illustrating one operational use of the response matrix.
+
+---
+
+
 > [!TIP]
 > 当前位于：**51-100**（第 2/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：[1-50](./part-01.md) | **51-100** | [101-150](./part-03.md) | [151-171](./part-04.md)
+> - 分组跳转：[1-50](./part-01.md) | **51-100** | [101-150](./part-03.md) | [151-170](./part-04.md)
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*
