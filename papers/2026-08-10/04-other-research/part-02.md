@@ -1,85 +1,17 @@
 # 📦 其他研究 | 2026年08月10日
 
-> 本类共 **190** 篇论文
+> 本类共 **167** 篇论文
 
 > 未进入大模型主领域展示范围的其他研究。
 
 > [!TIP]
 > 当前位于：**51-100**（第 2/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：[1-50](./part-01.md) | **51-100** | [101-150](./part-03.md) | [151-190](./part-04.md)
+> - 分组跳转：[1-50](./part-01.md) | **51-100** | [101-150](./part-03.md) | [151-167](./part-04.md)
 
 ---
 
-### 51. [The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows](https://arxiv.org/abs/2608.06714)
-
-**<font color=#1a73e8>作者：</font>** Junbo Li, Boyi Liu, Canwen Xu 等 8 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Recent systems for optimizing prompts, programs, and ML workflows typically rely on explicit outer-loop controllers such as evolutionary search, bandits, or textual-gradient methods. We ask a fundamentally different question: how much of this search policy can be internalized by a single tool-using agent? We present ReASearch, a unified framework for reasoning-driven optimization in which the agent autonomously decides what to evaluate, how to diagnose failures, which edits to make, and when to verify or restart. Rather than serving only as a proposal generator guided by hand-designed heuristics, the agent actively analyzes outcomes, allocates budget, and refines its strategy over long horizons through persistent memory. With a shared agent loop and domain-specific tools, ReASearch instantiates the exact same scaffold to optimize prompts, programs, and ML workflows. Across 14 diverse tasks, it is competitive with and mostly better than specialized optimization systems, achieving gains of 2% to 40% over strong domain-specific baselines, and in some cases discovering solutions that improve on prior human best-known results. Crucially, we observe that complex search behaviors, which are typically implemented by explicit controllers, emerge naturally from the agent's reasoning process.
-
----
-
-
-### 52. [WaveFreqAnchor: Wave-Structural Anchoring and Frequency Correction Diffusion for Training-Free Face Restoration](https://arxiv.org/abs/2608.06717)
-
-**<font color=#1a73e8>作者：</font>** Zelin Du, Wenjie Li, Zhengxue Wang 等 6 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
-
-**<font color=#5f6368>摘要：</font>**
-> Diffusion-based face restoration that adjusts the sampling trajectory of pre-trained diffusion models has achieved remarkable progress. However, existing approaches provide insufficient constraints during reverse diffusion, causing identity-related structural drift and degraded fidelity under severe degradations. To address this, we propose WaveFreqAnchor, a training-free framework based on Wave-Structural Anchoring and Frequency Correction Diffusion. Specifically, Anchor-Space Wave-Structural Guidance (ASWG) constrains facial structures through anisotropic wave-response consistency, while Multi-scale Wavelet-Fourier Injection (MWFI) aligns the predicted low-frequency subband with the observation by replacing its phase, correcting inconsistencies accumulated during reverse diffusion. For real-world scenes, we further introduce Subband High-Frequency Enhancement (SHE), which performs bounded, spatially masked refinement on the predicted high-frequency subbands to recover fine facial details under unknown compound degradations. Together, these designs effectively preserve facial identity while restoring sharp and realistic facial details. Extensive experiments show that our method consistently outperforms existing methods, achieving high-quality and high-fidelity face restoration.
-
----
-
-
-### 53. [Tight Security for BBS Signatures](https://arxiv.org/abs/2608.06724)
-
-**<font color=#1a73e8>作者：</font>** Rutchathon Chairattana-Apirom, Dennis Hofheinz, Stefano Tessaro  
-**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
-
-**<font color=#5f6368>摘要：</font>**
-> This paper studies the concrete security of BBS signatures (Boneh, Boyen, Shacham, CRYPTO '04; Camenisch and Lysyanskaya, CRYPTO '04), a popular algebraic construction of digital signatures which underlies practical privacy-preserving authentication systems and is undergoing standardization by the W3C and IRTF.
-Schäge (Journal of Cryptology '15) gave a tight standard-model security proof under the q-SDH assumption for a less efficient variant of the scheme, called BBS+--here, q is the number of issued signatures. In contrast, the security proof for BBS (Tessaro and Zhu, EUROCRYPT '23), also under the q-SDH assumption, is \emph{not} tight. Nonetheless, this recent proof shifted both standardization and industry adoption towards the more efficient BBS, instead of BBS+, and for this reason, it is important to understand whether this tightness gap is inherent. Recent cryptanalysis by Chairattana-Apirom and Tessaro (ASIACRYPT '25) also shows that a tight reduction to q-SDH is the best we can hope for.
-This paper closes this gap in two different ways. On the positive end, we show a novel tight reduction for BBS in the case where each message is signed at most once--this case covers in particular the common practical use case which derandomizes signing. On the negative end, we use a meta-reduction argument to prove that if we allow generating multiple signatures for the same message, then {\em no} algebraic reduction to q-SDH (and its variants) can be tight.
-
----
-
-
-### 54. [bioMoR: Biology-Guided Mixture-of-Recursions for Effective Genomic Learning](https://arxiv.org/abs/2608.06727)
-
-**<font color=#1a73e8>作者：</font>** Koushik Howlader, Tirtho Roy, Md Tauhidul Islam 等 4 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Transformer models for high-dimensional omics analysis process thousands of genes or pathways, although only a subset requires deep computation. Mixture-of-Recursions (MoR) improves efficiency through adaptive token-choice or expert-choice routing. We propose bioMoR, which, to the best of our knowledge, is the first framework to apply MoR to gene-level and pathway-level learning. Our contributions include identifying three locations for integrating structured biological knowledge within an MoR backbone: graph-based information sharing refines token embeddings, a structural bias guides self-attention toward biologically related tokens, and a graph-aware router uses neighborhood information to determine each token's recursion depth. These techniques are centered on our insight that additional knowledge of token interaction can effectively help models construct embeddings and select which tokens should be learned more deeply. Across eight benchmarks spanning diverse omics data types and evaluated under a unified five-fold cross-validation protocol, bioMoR improves average macro-F1 by 8.2 percentage points and balanced accuracy by 7.1 percentage points over the strongest biology-agnostic MoR baseline while using 75 percent fewer parameters and up to 58 percent fewer FLOPs than a non-recursive Transformer. The selected marker genes or pathways provide biological interpretability, while their token-specific recursion depths reveal how computation is allocated.
-
----
-
-
-### 55. [From Cheap Fakes to Pure Synthesis: Addressing the New Era of T2V Fake News Videos](https://arxiv.org/abs/2608.06732)
-
-**<font color=#1a73e8>作者：</font>** Yifeng Luo, Yupeng Li, Liang Lan 等 4 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Recent text-to-video (T2V) generation models enable fake news videos to be synthesized from scratch, shifting the threat beyond cheap fakes assembled from existing footage. Such news videos can closely match fabricated narratives, creating a modality alignment trap for existing detectors. Existing datasets lack pure synthesis fake news videos. Although directly prompting T2V models with descriptions of fake news videos can yield perfectly aligned samples, it reduces the fake news video detection (FNVD) to unimodal shortcuts and causes semantic-visual degeneration. To counter this, we formulate T2V-FNVD as a novel ternary classification task with three labels (real, cheap fake, and pure synthesis fake) and construct the first pure synthesis fake news video dataset (PS-FNVD). PS-FNVD includes fabricated events with aligned deception (Type 1) and true events with false visual provenance (Type 2), preventing models from exploiting unimodal shortcuts. Furthermore, we propose the Reasoning-guided T2V-FNVD (R-T2V) framework. Trained through conditioned rationale generation and supervised fine-tuning, R-T2V integrates high-level semantic logic with low-level physical generative traces to predict the ternary veracity label. Extensive experiments across 10 prevailing baselines show that R-T2V achieves the state-of-the-art performance, outperforming the second-best baseline by 12.20 percentage points in accuracy and 8.46 percentage points in macro $F_1$.
-
----
-
-
-### 56. [MemPrism: Task-Conditioned Relational Memory Views for Long-Horizon Agents](https://arxiv.org/abs/2608.06745)
-
-**<font color=#1a73e8>作者：</font>** Zhisheng Chen, Bingfan Zeng, Bangde Cao 等 11 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Long-horizon agents rely on memory to reuse experiences, yet existing memory systems often assume that evidence can be directly consumed through a fixed representation. This leads to representation mismatch, where relevant information is available but not organized for the current decision. To this end, we propose MemPrism, a task-conditioned relational memory framework that separates persistent experience storage from decision-time working memory. MemPrism records interactions as the event stream and dynamically constructs relational views according to the current task context. A lightweight view policy selects the relation structure, evidence range, outcome condition, and granularity, while a deterministic composer and render transform historical facts into a temporary optical working-memory view for a frozen task policy. Experiments on long-horizon embodied and web-agent benchmarks show that MemPrism consistently improves the task performance, especially as trajectories become longer, while reducing memory token consumption. Furthermore, the learned view policy transfers across different VLMs without additional adaptation, demonstrating the effectiveness of task-conditioned relational views as a general memory interface for agents.
-
----
-
-
-### 57. [KReF: Training-Free Retrieval for Long-Term Time-Series Forecasting and Predictive Uncertainty](https://arxiv.org/abs/2608.06748)
+### 51. [KReF: Training-Free Retrieval for Long-Term Time-Series Forecasting and Predictive Uncertainty](https://arxiv.org/abs/2608.06748)
 
 **<font color=#1a73e8>作者：</font>** Yang Zhang, Rui Su  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -90,7 +22,7 @@ This paper closes this gap in two different ways. On the positive end, we show a
 ---
 
 
-### 58. [Beyond Starry Night: Shortcut-Aware Control-State Planning for Artist-Grounded Text to Image Generation](https://arxiv.org/abs/2608.06751)
+### 52. [Beyond Starry Night: Shortcut-Aware Control-State Planning for Artist-Grounded Text to Image Generation](https://arxiv.org/abs/2608.06751)
 
 **<font color=#1a73e8>作者：</font>** Kuan Xing, Ye Wang, Changyi Gan 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -101,18 +33,7 @@ This paper closes this gap in two different ways. On the positive end, we show a
 ---
 
 
-### 59. [Stockmark-Nemotron-3-Nano-Omni-JapanDocReader: Structured Document Parsing via Capability Injection and Forgetting Control](https://arxiv.org/abs/2608.06758)
-
-**<font color=#1a73e8>作者：</font>** Shi Chen, Hayato Aida, Makoto Morinaga 等 5 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computation and Language
-
-**<font color=#5f6368>摘要：</font>**
-> We present Stockmark-Nemotron-3-Nano-Omni-JapanDocReader, a Japanese document understanding model built from Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16. The central goal of this work is structured document parsing via capability injection and forgetting control: we inject Japanese structured document parsing capability into a reasoning-oriented multimodal model while preserving its document VQA capability as much as possible. We study parsing-centric SFT, which uses only structured document parsing data; mixed SFT, which combines structured document parsing and VQA data; and parsing-centric RL, which optimizes structured parsing with a task-level reward. Our experiments show that parsing-centric SFT substantially improves structured document parsing performance but causes measurable VQA forgetting. Mixed SFT mitigates this forgetting while preserving nearly the same structured parsing performance. Applying DAPO-based parsing-centric RL on top of the mixed SFT checkpoint further improves structured document parsing beyond the SFT ceiling, producing the final released model. The training data is constructed with a data engine consisting of two complementary synthetic streams: a Japanese Document VQA Stream and a programmatic structured document parsing stream. We also discuss reward design and variance-based prompt filtering for continuous structured document parsing rewards, highlighting their importance for making RL effective in long-reasoning structured document parsing tasks.
-
----
-
-
-### 60. [Sub-Quadratic Bisimulation Metrics via Approximate Nearest Neighbors: Coverage-Augmented Guarantees and Computable Two-Sided Certificates](https://arxiv.org/abs/2608.06762)
+### 53. [Sub-Quadratic Bisimulation Metrics via Approximate Nearest Neighbors: Coverage-Augmented Guarantees and Computable Two-Sided Certificates](https://arxiv.org/abs/2608.06762)
 
 **<font color=#1a73e8>作者：</font>** Ibne Farabi Shihab, Joyanta Jyoti Mondal  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -123,7 +44,7 @@ This paper closes this gap in two different ways. On the positive end, we show a
 ---
 
 
-### 61. [LiFTER: A Grounded Neuro-Symbolic Microscope for Continuous-Time Dynamic Graph Forecasting](https://arxiv.org/abs/2608.06765)
+### 54. [LiFTER: A Grounded Neuro-Symbolic Microscope for Continuous-Time Dynamic Graph Forecasting](https://arxiv.org/abs/2608.06765)
 
 **<font color=#1a73e8>作者：</font>** Minwoo Yu, Young-guk Ha  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -134,7 +55,7 @@ This paper closes this gap in two different ways. On the positive end, we show a
 ---
 
 
-### 62. [Hidden Gauge Controls Feature Specialization in ReLU Networks](https://arxiv.org/abs/2608.06766)
+### 55. [Hidden Gauge Controls Feature Specialization in ReLU Networks](https://arxiv.org/abs/2608.06766)
 
 **<font color=#1a73e8>作者：</font>** Tongxi Wang  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -145,7 +66,7 @@ This paper closes this gap in two different ways. On the positive end, we show a
 ---
 
 
-### 63. [Explore or Converge? Stage-Guided Per-Step Optimization for Diffusion Models](https://arxiv.org/abs/2608.06768)
+### 56. [Explore or Converge? Stage-Guided Per-Step Optimization for Diffusion Models](https://arxiv.org/abs/2608.06768)
 
 **<font color=#1a73e8>作者：</font>** Renye Yan, Jikang Cheng, You Wu 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -158,7 +79,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 64. [Surg-UniWorld: A Unified Surgical World Model with Multimodal Control Experts](https://arxiv.org/abs/2608.06770)
+### 57. [Surg-UniWorld: A Unified Surgical World Model with Multimodal Control Experts](https://arxiv.org/abs/2608.06770)
 
 **<font color=#1a73e8>作者：</font>** Rulin Zhou, Wanhao Liu, Guoheng Ma 等 11 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -169,7 +90,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 65. [ArchEGraph: A Large-Scale Graph Dataset for Geometry-Topology-Physics Aligned Building Energy Modeling](https://arxiv.org/abs/2608.06772)
+### 58. [ArchEGraph: A Large-Scale Graph Dataset for Geometry-Topology-Physics Aligned Building Energy Modeling](https://arxiv.org/abs/2608.06772)
 
 **<font color=#1a73e8>作者：</font>** Yihui Li, Yihui Chen, Kaidi Zha 等 10 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -180,7 +101,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 66. [AnyTrack: Unifying Visual Object Tracking with Any Modalities](https://arxiv.org/abs/2608.06773)
+### 59. [AnyTrack: Unifying Visual Object Tracking with Any Modalities](https://arxiv.org/abs/2608.06773)
 
 **<font color=#1a73e8>作者：</font>** Hao Li, Yunzhi Zhuge, Wenning Hao 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -191,18 +112,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 67. [Faster Query-Key Learning Sharpens Attention in Self-Attention Models](https://arxiv.org/abs/2608.06776)
-
-**<font color=#1a73e8>作者：</font>** Rahul Vashisht, Harish G. Ramaswamy  
-**<font color=#188038>arXiv所属领域：</font>** Machine Learning
-
-**<font color=#5f6368>摘要：</font>**
-> A standard self-attention layer consists of two interacting circuits: the query-key circuit that governs attention allocation, and the output-value circuit that maps attended representations to predictions. Collapsed and factorized parameterizations of the query-key and output-value circuits lead to qualitatively different attention patterns. In particular, some parameterizations give sharper attention to task-relevant tokens, at a similar training loss. We analyze how the parameterizations of these circuits shape the parameter trajectories in single-layer self-attention models trained for next-token prediction. Through gradient-flow analysis, we show that factorization induces implicit rescaling of the two circuits' learning rates. We derive closed-form dynamics showing that output-value and query-key parameters move along a line, with relative speeds determined by their learning rates. Faster query-key learning relative to output-value learning thus produces sharper attention, as the model compensates for slower output-value learning by increasing attention mass on relevant tokens. Experiments show that differences in the relative learning rates of the two circuits govern attention concentration. This improves attention interpretability proxies while maintaining comparable predictive performance.
-
----
-
-
-### 68. [UniCycleFlow: Bidirectional Unpaired Image Translation with a Shared Rectified Flow](https://arxiv.org/abs/2608.06784)
+### 60. [UniCycleFlow: Bidirectional Unpaired Image Translation with a Shared Rectified Flow](https://arxiv.org/abs/2608.06784)
 
 **<font color=#1a73e8>作者：</font>** Xianhao Zhou, Jianghao Wu, Shaoting Zhang 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -213,7 +123,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 69. [PAST: Prompt-Adaptive Sampling Termination for Efficient Diffusion Model](https://arxiv.org/abs/2608.06794)
+### 61. [PAST: Prompt-Adaptive Sampling Termination for Efficient Diffusion Model](https://arxiv.org/abs/2608.06794)
 
 **<font color=#1a73e8>作者：</font>** Renye Yan, Jikang Cheng, You Wu 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -224,7 +134,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 70. [AdvTiles: Physical Adversarial Camouflage Clothing against Person Detectors via Learnable Tiles](https://arxiv.org/abs/2608.06801)
+### 62. [AdvTiles: Physical Adversarial Camouflage Clothing against Person Detectors via Learnable Tiles](https://arxiv.org/abs/2608.06801)
 
 **<font color=#1a73e8>作者：</font>** Jinlei Wang, Jiahuan Long, Mingkai Sun 等 12 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -235,18 +145,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 71. [Simple-OPD: Demystifying Warm-up for On-policy Distillation](https://arxiv.org/abs/2608.06802)
-
-**<font color=#1a73e8>作者：</font>** Tao Liu, Taiqiang Wu, Mao Zheng 等 8 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computation and Language
-
-**<font color=#5f6368>摘要：</font>**
-> On-policy distillation (OPD) trains a student on its own rollouts with token-level supervision from teacher models, but its effectiveness can depend strongly on the warm-up stage before OPD. In this paper, we demystify warm-up for OPD from both data and training perspectives. For data, we find that effective warm-up relies on teacher-compatible chain-of-thought supervision, and that even incorrect teacher rollouts can provide comparable benefits to correct ones. This suggests that warm-up primarily transfers a teacher-compatible thinking pattern rather than merely correct answers. For training, we show that low-rank adaptation (LoRA) with a near-saturation training duration better balances in-domain adaptation and out-of-distribution generalization than full-parameter SFT. Based on these findings, we propose Simple-OPD, a plug-and-play initialization method that warms up the student on teacher-generated CoT with LoRA before OPD. Experiments across diverse settings demonstrate the effectiveness and robustness of Simple-OPD.
-
----
-
-
-### 72. [Fact-Check Your Information (FYI): A Design Probe to Understand How People Actually Fact-Check Data-Driven Articles](https://arxiv.org/abs/2608.06804)
+### 63. [Fact-Check Your Information (FYI): A Design Probe to Understand How People Actually Fact-Check Data-Driven Articles](https://arxiv.org/abs/2608.06804)
 
 **<font color=#1a73e8>作者：</font>** Nguyen-Truong Thinh, Yuxuan Du, Phongsakon Mark Konrad 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -257,7 +156,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 73. [On a General Theoretical Framework for Radio Frequency Fingerprint-Based Authentication](https://arxiv.org/abs/2608.06805)
+### 64. [On a General Theoretical Framework for Radio Frequency Fingerprint-Based Authentication](https://arxiv.org/abs/2608.06805)
 
 **<font color=#1a73e8>作者：</font>** Yuanyu Zhang, Jianing Wang, Shuangrui Zhao 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -268,7 +167,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 74. [Understanding Differentiable Embeddings Through Differential and Integral Geometry](https://arxiv.org/abs/2608.06809)
+### 65. [Understanding Differentiable Embeddings Through Differential and Integral Geometry](https://arxiv.org/abs/2608.06809)
 
 **<font color=#1a73e8>作者：</font>** Xinyu Zhang, Klaus Mueller  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -279,7 +178,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 75. [Multiscale Reward Hedging from Correct Demonstrations](https://arxiv.org/abs/2608.06825)
+### 66. [Multiscale Reward Hedging from Correct Demonstrations](https://arxiv.org/abs/2608.06825)
 
 **<font color=#1a73e8>作者：</font>** Pahan Dewasurendra  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -290,7 +189,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 76. [POKEx: Performance analysis of POKE-key exchange and SIDH-variants](https://arxiv.org/abs/2608.06826)
+### 67. [POKEx: Performance analysis of POKE-key exchange and SIDH-variants](https://arxiv.org/abs/2608.06826)
 
 **<font color=#1a73e8>作者：</font>** Hyeonhak Kim, Suhri Kim  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -301,7 +200,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 77. [Bend the Basics: Degradation-Aware Deformable Tokenization for All-in-One Image Restoration](https://arxiv.org/abs/2608.06832)
+### 68. [Bend the Basics: Degradation-Aware Deformable Tokenization for All-in-One Image Restoration](https://arxiv.org/abs/2608.06832)
 
 **<font color=#1a73e8>作者：</font>** Zihao He, Yunfeng Wu, Xinchao Wang 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -312,7 +211,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 78. [Graph Machine: Exploring Edge Mechanisms as an Inductive Bias](https://arxiv.org/abs/2608.06834)
+### 69. [Graph Machine: Exploring Edge Mechanisms as an Inductive Bias](https://arxiv.org/abs/2608.06834)
 
 **<font color=#1a73e8>作者：</font>** Lintai Hou  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -323,7 +222,7 @@ In the late stage, the latent's core structure is largely fixed, and preference 
 ---
 
 
-### 79. [GOPI: Generation-Oriented 3D Pose Inference for Furniture Insertion from Single-View RGB-D Indoor Scenes](https://arxiv.org/abs/2608.06836)
+### 70. [GOPI: Generation-Oriented 3D Pose Inference for Furniture Insertion from Single-View RGB-D Indoor Scenes](https://arxiv.org/abs/2608.06836)
 
 **<font color=#1a73e8>作者：</font>** Ruifeng Zhai, Renjie Liu, Guangrun Wang 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -336,7 +235,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 80. [MIFA: An MILP-based Framework for Improving Differential Fault Attacks](https://arxiv.org/abs/2608.06837)
+### 71. [MIFA: An MILP-based Framework for Improving Differential Fault Attacks](https://arxiv.org/abs/2608.06837)
 
 **<font color=#1a73e8>作者：</font>** Hanbeom Shin, Insung Kim, Sunyeop Kim 等 9 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -347,7 +246,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 81. [Mathematical Principles and Experimental Discoveries of the Emergence of Symbolic Patterns in Artificial Neural Networks](https://arxiv.org/abs/2608.06839)
+### 72. [Mathematical Principles and Experimental Discoveries of the Emergence of Symbolic Patterns in Artificial Neural Networks](https://arxiv.org/abs/2608.06839)
 
 **<font color=#1a73e8>作者：</font>** Quanshi Zhang, Qihan Ren, Siyu Lou  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -358,7 +257,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 82. [ECAD: Expanding Class-Agnostic Detection Beyond Thing-Centric Objectness](https://arxiv.org/abs/2608.06841)
+### 73. [ECAD: Expanding Class-Agnostic Detection Beyond Thing-Centric Objectness](https://arxiv.org/abs/2608.06841)
 
 **<font color=#1a73e8>作者：</font>** Liang Wan, Zixin Ren, Yupeng Zhang 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -369,7 +268,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 83. [Not Always Top-Left: Untangling the Signals that Guide Dashboard Reading Order](https://arxiv.org/abs/2608.06845)
+### 74. [Not Always Top-Left: Untangling the Signals that Guide Dashboard Reading Order](https://arxiv.org/abs/2608.06845)
 
 **<font color=#1a73e8>作者：</font>** Nicole Sultanum, Vidya Setlur  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -380,7 +279,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 84. [RegionDet: A Benchmark for Region Detection Beyond Object Instances](https://arxiv.org/abs/2608.06850)
+### 75. [RegionDet: A Benchmark for Region Detection Beyond Object Instances](https://arxiv.org/abs/2608.06850)
 
 **<font color=#1a73e8>作者：</font>** Liang Wan, Yuhan Wang, Yupeng Zhang 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -391,7 +290,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 85. [Bridging the Gap Between Hyperdimensional Computing and Kernel Methods via the Nyström Method](https://arxiv.org/abs/2608.06860)
+### 76. [Bridging the Gap Between Hyperdimensional Computing and Kernel Methods via the Nyström Method](https://arxiv.org/abs/2608.06860)
 
 **<font color=#1a73e8>作者：</font>** Quanling Zhao, Anthony Hitchcock Thomas, Ari Brin 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -402,7 +301,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 86. [DAEP: Difficulty-Aware Evidence Planning for Medical Video Corpus Temporal Answer Grounding](https://arxiv.org/abs/2608.06869)
+### 77. [DAEP: Difficulty-Aware Evidence Planning for Medical Video Corpus Temporal Answer Grounding](https://arxiv.org/abs/2608.06869)
 
 **<font color=#1a73e8>作者：</font>** Tianjian He, Yujie Liu, Zhiping Huang 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -413,7 +312,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 87. [ControlRef: Efficient Layout-Guided Multi-Instance Generation via Anchored 4D-RoPE](https://arxiv.org/abs/2608.06878)
+### 78. [ControlRef: Efficient Layout-Guided Multi-Instance Generation via Anchored 4D-RoPE](https://arxiv.org/abs/2608.06878)
 
 **<font color=#1a73e8>作者：</font>** Yunkai Yang, Yudong Zhang, Xinying Chen 等 10 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -424,7 +323,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 88. [Rigid-Covert GNSS Spoofing of UAV Swarms: A Structural Blind Spot, Its Detection Limit, and Absolute-Anchor Defenses](https://arxiv.org/abs/2608.06885)
+### 79. [Rigid-Covert GNSS Spoofing of UAV Swarms: A Structural Blind Spot, Its Detection Limit, and Absolute-Anchor Defenses](https://arxiv.org/abs/2608.06885)
 
 **<font color=#1a73e8>作者：</font>** Minseok Park, Joon Soo Yoo  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -435,7 +334,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 89. [HazeSpikeMamba: Coupling Spiking-Inspired and State-Space Features for Self-Supervised Real-World Dehazing](https://arxiv.org/abs/2608.06886)
+### 80. [HazeSpikeMamba: Coupling Spiking-Inspired and State-Space Features for Self-Supervised Real-World Dehazing](https://arxiv.org/abs/2608.06886)
 
 **<font color=#1a73e8>作者：</font>** Haoran Liu, Huibin Li, Mingzhe Liu 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -446,18 +345,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 90. [SkillEval: Decomposing Agent Skill Quality into Interpretable Signals](https://arxiv.org/abs/2608.06891)
-
-**<font color=#1a73e8>作者：</font>** Jiahui Han, Qinuo Li, Ziheng Peng 等 9 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Agent skills provide reusable procedural knowledge that helps agents solve specialized tasks. As their use expands, evaluating skill quality becomes increasingly important. Existing evaluations often measure skill quality by testing whether a skill improves performance on specific downstream tasks. However, a reusable skill may apply to multiple task scenarios. Downstream evaluation mainly reflects the compatibility between a skill and the evaluated task, provides only a partial view of skill quality, and does not identify which aspect of the skill should be improved. We find that general properties of the \texttt{this http URL} document play an important role in skill quality. To evaluate these properties, we propose \textbf{SkillEval}, an interpretable framework for document-level skill evaluation. SkillEval evaluates each property using a fixed and inspectable scoring direction, producing interpretable scores. It further measures and reduces the influence of unrelated document features, such as length and formatting, so that each score captures its intended semantic property more specifically. Specifically, SkillEval learns an interpretable direction for each quality property from controlled positive--negative skill pairs in the hidden representation space of the model, and scores a new skill by projecting its representation onto these fixed directions. We use SkillEval to evaluate skills in controlled quality tests and show that SkillEval reliably distinguishes skills of different quality. In addition, SkillEval scores closely reflect downstream task performance, providing an early indication of whether a skill is likely to help an agent complete a task. We further explore SkillEval for diagnosing weaknesses in skill documents and guiding targeted revisions. The revised skills improve the targeted properties and achieve higher pass rates on downstream tasks.
-
----
-
-
-### 91. [PRISM: Principled Reference Identification for Schrodinger Bridge Model](https://arxiv.org/abs/2608.06893)
+### 81. [PRISM: Principled Reference Identification for Schrodinger Bridge Model](https://arxiv.org/abs/2608.06893)
 
 **<font color=#1a73e8>作者：</font>** Forouzan Fallah, Yezhou Yang  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -468,7 +356,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 92. [From Points to Edges: Edge-Conditioned Spectral Operators for Physics-Sensitive PDE Learning](https://arxiv.org/abs/2608.06894)
+### 82. [From Points to Edges: Edge-Conditioned Spectral Operators for Physics-Sensitive PDE Learning](https://arxiv.org/abs/2608.06894)
 
 **<font color=#1a73e8>作者：</font>** Zhentao Tan, Ruijie Quan, Yi Yang  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -479,7 +367,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 93. [Recent advances in weakly supervised learning: New supervision paradigms, assumption relaxations, and practical solutions](https://arxiv.org/abs/2608.06896)
+### 83. [Recent advances in weakly supervised learning: New supervision paradigms, assumption relaxations, and practical solutions](https://arxiv.org/abs/2608.06896)
 
 **<font color=#1a73e8>作者：</font>** Wei Wang, Gang Niu, Masashi Sugiyama  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -490,7 +378,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 94. [The Nocturnity Scale: Measuring the Sense of Being at Night in Virtual Urban Environments](https://arxiv.org/abs/2608.06904)
+### 84. [The Nocturnity Scale: Measuring the Sense of Being at Night in Virtual Urban Environments](https://arxiv.org/abs/2608.06904)
 
 **<font color=#1a73e8>作者：</font>** Anthony Le Gourri{é}rec, Etienne Peillard, Nicolas Houel 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -501,7 +389,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 95. [Fast LapSum: Exact Differentiable Top-k at Million Scale](https://arxiv.org/abs/2608.06912)
+### 85. [Fast LapSum: Exact Differentiable Top-k at Million Scale](https://arxiv.org/abs/2608.06912)
 
 **<font color=#1a73e8>作者：</font>** Łukasz Struski, Joanna Wojciechowicz, Jakub Antczak 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -512,7 +400,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 96. [RibAssist 3D: Biplanar Rib-Fracture Detection, Addressing, and Selective 3D Localization from CT-Derived Projections](https://arxiv.org/abs/2608.06914)
+### 86. [RibAssist 3D: Biplanar Rib-Fracture Detection, Addressing, and Selective 3D Localization from CT-Derived Projections](https://arxiv.org/abs/2608.06914)
 
 **<font color=#1a73e8>作者：</font>** Kabila Haile Soboka  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -523,7 +411,7 @@ Experimental results validate the proposed framework from both 3D pose estimatio
 ---
 
 
-### 97. [MiCoPro: End-to-End Mixed Precision HW/SW Co-design with HW-aware Proxy Model](https://arxiv.org/abs/2608.06916)
+### 87. [MiCoPro: End-to-End Mixed Precision HW/SW Co-design with HW-aware Proxy Model](https://arxiv.org/abs/2608.06916)
 
 **<font color=#1a73e8>作者：</font>** Zijun Jiang, Yangdi Lyu  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -535,18 +423,7 @@ To address these challenges, we propose the MiCo framework, a holistic MPQ explo
 ---
 
 
-### 98. [ReGraph: Learning to Generate Recipe Graphs from Food Images](https://arxiv.org/abs/2608.06917)
-
-**<font color=#1a73e8>作者：</font>** Guoshan Liu, Bin Zhu, Pengkun Jiao 等 6 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Recent Large Multimodal Models (LMMs) have achieved impressive performance in recipe generation from food this http URL, cooking is a structured transformation process in which ingredients undergo state changes through ordered actions,while free-form recipe language leaves the corresponding entities, intermediate states, and dependencies largely implicit and entangled.A graph representation makes this procedural knowledge explicit and compositional, providing a structured basis for assessing whether model outputs encode process-level knowledge rather than merely presenting plausible textual descriptions. To address this limitation, we present ReGraph, a large-scale recipe graph dataset that represents ingredients, cooking actions, and tools as entities, uses entity attributes to describe ingredient state changes, and employs typed relations to encode manipulation targets, destinations, and procedural ordering. ReGraph further incorporates explicit Recipe Reasoning Chain-of-Thought (RR-CoT) traces, providing auxiliary supervision for procedural decomposition and structured graph generation. Building on ReGraph, we propose Recipe Graph Learning (RGL), a two-stage framework that enables LMMs to generate a plausible fine-grained cooking workflow from a food image in the form of a structured recipe graph. Under a deterministic, schema-aware matching protocol, our experiments reveal a substantial gap between text-generation quality and recoverable procedural structure: recipes produced by existing approaches achieve competitive text-generation scores yet yield limited reference-aligned entity and relation structure under the ReGraph schema. In contrast, across two representative LMM backbones, RGL consistently improves the generation of cooking entities and procedural relations, while our analysis further shows that fine-grained ingredient-state capture remains the most challenging dimension.
-
----
-
-
-### 99. [Vernata: Self-Supervised Learning of LiDAR Point Representations](https://arxiv.org/abs/2608.06919)
+### 88. [Vernata: Self-Supervised Learning of LiDAR Point Representations](https://arxiv.org/abs/2608.06919)
 
 **<font color=#1a73e8>作者：</font>** Oliver Lemke, Alexander Liniger, Abel Gawel 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -557,7 +434,7 @@ To address these challenges, we propose the MiCo framework, a holistic MPQ explo
 ---
 
 
-### 100. [MaskFlow: Precise, Consistent and Seamless Regional Image Editing](https://arxiv.org/abs/2608.06929)
+### 89. [MaskFlow: Precise, Consistent and Seamless Regional Image Editing](https://arxiv.org/abs/2608.06929)
 
 **<font color=#1a73e8>作者：</font>** Rui Xu, Yang Yong, Shunzi Yang 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -568,9 +445,131 @@ To address these challenges, we propose the MiCo framework, a holistic MPQ explo
 ---
 
 
+### 90. [Walkable to Whom? Capturing Subjective Variability in Walkability Perception Using Multimodal Deep Learning](https://arxiv.org/abs/2608.06934)
+
+**<font color=#1a73e8>作者：</font>** Moloud Damandeh, Meead Saberi  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Visual perception of walkability varies substantially across individuals, reflecting differences in personal characteristics, experiences, and preferences. Existing studies, however, often reduce these diverse judgements to aggregated scores, implicitly assuming uniform perception, and commonly rely on vehicle-mounted street-view imagery that does not reflect the pedestrian's visual experience. This paper introduces a dataset of 29,870 walkability ratings from 1,196 respondents, linking sidewalk-view imagery across urban, suburban, and regional Australian environments with individual rater attributes, and proposes the first user-conditioned multimodal deep learning framework for walkability perception, fusing visual features with respondent-level representations. A viewpoint-comparison study shows that sidewalk-view images receive significantly higher walkability ratings than matched street-view images, indicating that imagery source is a substantive design decision in perception surveys. The user-conditioned model improves rank agreement with observed ratings by 65% over an image-only baseline (quadratic weighted kappa 0.47 vs. 0.29), demonstrating that who is evaluating an environment carries predictive indication beyond image content alone. These findings support moving from aggregated, observer-independent walkability scores toward models that represent diverse users, enabling more inclusive assessment of pedestrian environments.
+
+---
+
+
+### 91. [ELMZip: Onboard Satellite Image Compression via Extreme Learning Machines for Efficient Downlink](https://arxiv.org/abs/2608.06942)
+
+**<font color=#1a73e8>作者：</font>** Woojin Cho, Junghwan Park, Sangcheol Sim 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> The acquisition of multispectral imagery via small satellites (e.g., CubeSats) presents significant data downlink challenges due to high data volumes and restricted communication windows. While onboard image compression is critical to address this bottleneck, traditional methods often struggle to adapt to the nonlinear statistics of multi-band, multi-resolution data. To overcome these limitations, we propose ELMZip, a novel framework based on Extreme Learning Machines (ELM) and domain decomposition strategies for efficient, resolution-free onboard neural representation. ELMZip formulates the fitting process as a convex least-squares problem using random-feature single-layer networks, thereby eliminating the need for computationally expensive backpropagation. By adopting an asymmetric transmission protocol that sends only the compact output weights, the proposed method significantly reduces the downlink payload. Unlike previous neural representation approaches that rely on iterative optimization and require transmitting full network parameters, ELMZip achieves significant compression efficiency while maintaining high reconstruction fidelity. This capability enables immediate image reconstruction for analysis, allowing resource-constrained platforms to maximize data return and advancing real-time AI-powered Earth observation.
+
+---
+
+
+### 92. [Dual-Space Modality Consistency Learning for Universal Cross-Modal Re-Identification](https://arxiv.org/abs/2608.06943)
+
+**<font color=#1a73e8>作者：</font>** Yujian Zhao, Yukang Zhao, Hankun Liu 等 7 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Cross-modal Re-Identification (ReID) aims to retrieve the same identity across heterogeneous imaging modalities and has been widely studied in visible-infrared person ReID and cross-modal ship ReID. Existing methods have achieved promising performance by learning modality consistency in the spatial embedding space, yet often overlook frequency-domain modality discrepancy, particularly in high-frequency representations that are both highly discriminative and modality-sensitive. In addition, most approaches are tailored to specific modality settings, limiting their applicability across diverse cross-modal scenarios. To address these challenges, we propose a Dual-Space Modality Consistency Learning (DSMCL) framework for universal cross-modal ReID. Specifically, DSMCL jointly models spatial feature distribution consistency and frequency-domain discriminative consistency. A Spatial Modality Consistency Learning (SMCL) branch performs Gaussian-based feature alignment, while a Frequency-aware Discriminative Consistency Learning (FDCL) strategy regularizes high-frequency representations through identity-aware cross-modal contrastive learning. By jointly capturing modality-specific characteristics and modality-shared identity cues, DSMCL learns robust representations and establishes a unified framework capable of accommodating diverse heterogeneous modality settings. Moreover, DSMCL is a plug-and-play framework that can be readily integrated into existing cross-modal ReID architectures. Extensive experiments on SYSU-MM01, RegDB, LLCM, HOSS-ReID, and CMShipReID across seventeen evaluation protocols show that DSMCL consistently improves multiple representative baselines.
+
+---
+
+
+### 93. [A Rate Separation for Agnostic Direct Sums](https://arxiv.org/abs/2608.06951)
+
+**<font color=#1a73e8>作者：</font>** Mihir More, Aritra Das, Debayan Gupta  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Hanneke, Moran, and Waknine \cite{HannekeMoranWaknine2024} asked how the agnostic PAC learning curve of the direct sum $C^r$ depends on the single-instance learning curve $\epsagn(n\mid C)$ and on $r$. We show that the single-instance learning rate does not determine the direct-sum rate. Let $\F$ be the class of the two constant binary functions and let $\G$ consist of the zero function and the identity function. Both classes have agnostic learning curve of order $n^{-1/2}$.
+
+---
+
+
+### 94. [Casting the Net! Revisiting MasterFace Impersonation Attacks](https://arxiv.org/abs/2608.06952)
+
+**<font color=#1a73e8>作者：</font>** Seunghun Paik, Sunpill Kim, Chanwoo Hwang 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
+
+**<font color=#5f6368>摘要：</font>**
+> Impersonation is a fundamental security threat in face recognition systems (FRSs). While the security of FRSs has been challenged by various attack vectors, under realistic adversarial capabilities, e.g., a limited number of decision-only authentication trials and no internal system knowledge, most attack techniques become infeasible. As a result, impersonation by zero-effort impostors, characterized by false match rate (FMR), is commonly regarded as a standalone baseline. A few years ago, impersonation attacks based on MasterFaces emerged as a notable security threat that could break the barrier of the FMR-based baseline under such realistic constraints. However, they were believed not to yield impersonation above the standard FMR in modern FRSs, as discussed by multiple follow-up studies. In this paper, we demonstrate that even legitimate access to public commercial APIs allows an adversary to amplify impersonation rates through MasterFaces, resulting in a non-trivial impersonation attack beyond FMR on downstream applications built on top of these APIs. We observe that several real-world FRS deployments are implemented using commercial APIs, and that the backend service provider is publicly disclosed or trivially inferable. As a result, the adversary can purchase these pay-as-you-go API services without requiring any additional privilege over the target FRS. From this observation, we formalize the MasterFaces attack as a maximum coverage problem over the biometric representation space, which we call a NET, and show that the adversary can construct an API-tailored NET by leveraging the geometric structure of the representation space. We demonstrate that our attack amplifies the impersonation rates of several open-source and commercial API-based FRSs by up to 9.5$\times$ within at most 30 authentication trials, compared to those expected from the standard FMR.
+
+---
+
+
+### 95. [How Molecular Generative Models Organize Molecular Identity](https://arxiv.org/abs/2608.06956)
+
+**<font color=#1a73e8>作者：</font>** Raul Ortega-Ochoa, Tejs Vegge, Jens S. Bakander 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Machine Learning
+
+**<font color=#5f6368>摘要：</font>**
+> Generative models for matter are often evaluated as samplers over output representations, and their latent spaces are commonly used as proxies for navigating chemical space. Much less is known about how these models internally arrange discrete chemical identities within those representations. We study this arrangement by making molecular identity explicit and pulling it back through the generative process. Through these pullbacks we probe the regions that generate the same object, exposing the trained model's internal repertoire: a fixed partition that determines which objects (novel or not) the model can produce.
+Across three molecular generative architectures, we find that this repertoire is arranged into piecewise-constant regions separated by recurring coarse-to-fine boundaries. Its organization depends on the representation probed, the identity convention, decoder stochasticity, and the metric used to compare coordinates. During training, local chemical organization stabilizes while the number of distinct molecular identities represented within each neighborhood continues to change. Internal organization must therefore be characterized, rather than assumed, before a generative space can be treated as chemically navigable.
+
+---
+
+
+### 96. [Learning in Deep Networks under Dale's Constraint](https://arxiv.org/abs/2608.06963)
+
+**<font color=#1a73e8>作者：</font>** Roy Abel, Shimon Ullman  
+**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
+
+**<font color=#5f6368>摘要：</font>**
+> Biologically plausible learning models aim to explain how neural circuits can implement effective learning under the constraints of real neurons. Although significant progress has been made, a major remaining challenge is that existing models often allow neurons or synapses to represent mixed-sign values, both positive and negative, in violation of a basic aspect of cortical circuitry -- Dale's constraint: biological neurons are either excitatory or inhibitory, but not both, and synapses cannot change sign. In this work, we address this discrepancy by introducing a biologically motivated neural architecture in which both neural activations and learning signals are represented by non-negative activity, and synapses have fixed sign, while still supporting backpropagation-like learning. Our approach uses two complementary interacting non-negative channels to represent positive and negative contributions, inspired by evidence of on-off representations in the brain. These channels are implemented through a simple neural circuit motif, which is repeated throughout the network in both bottom-up and top-down pathways. Combined with a local Hebbian learning rule, the resulting model propagates learning signals and updates weights using only local interactions between neurons. We show theoretically that our learning scheme can exactly recover the backpropagation update despite relying solely on non-negative error signals. Empirically, beyond satisfying stronger biological constraints, the on-off architecture learns efficient representations, yielding substantial gains over comparable vanilla networks on the Tiny ImageNet benchmark. These results demonstrate that effective learning can emerge from biologically plausible mechanisms without requiring mixed-sign signals, providing a step toward more realistic models of neural computation.
+
+---
+
+
+### 97. [When One Modality Is Not Enough: Multimodal Sex and Life-Stage Classification of Red Deer from Aerial RGB-Thermal Video](https://arxiv.org/abs/2608.06973)
+
+**<font color=#1a73e8>作者：</font>** Hugo Markoff, Christoph Praschl, Ivan Ludoški 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Aerial drone surveys increasingly support wildlife population estimation, yet a useful census is more than a count: population dynamics are defined by species composition, sex ratios and age structure, that is, by which species are present and how a herd splits into adult males, adult females and juveniles. We use red deer ($\textit{Cervus elaphus}$) as a test case, because managers act on these dynamics and because the visible cue defining adult males, the antlers, is seasonally variable. Surveys are flown nadir, high enough not to disturb the animals, so each deer occupies only a small, low-resolution patch. The two recording modalities fail in opposite conditions: in color a deer under canopy blends into the ground, while in thermal it becomes a bright blob that loses fine detail. Rather than trust either modality alone, we fuse them at every stage using self-supervised DINOv3 features. Our pipeline tracks animals in both modalities, treats an animal as confirmed only when the two cameras agree, keeps only the clear, non-occluded frames, and assigns species and sex by a vote across them; life stage is read separately from geo-referenced body size, since at survey resolution a juvenile often only differs from an adult female in size. Across four flights spanning the antler season the fused pipeline correctly classifies 25 of the 26 detected individuals (7 of 8 adult males, all 16 adult females and 2 juveniles), against 20 of 26 for either sensor alone. Multimodal species classification reaches 96.0%, while for sex classification fusing the two sensors matters most: the combined RGB+thermal model is the most robust across environments and seasons. Automating the demographic classification turns a drone flight from a count into a repeatable reading of herd structure, so the sex ratios and age structure that managers already act on can be gathered as often as a survey can be flown.
+
+---
+
+
+### 98. [Social Facilitation of Creative Reflection: AI-agents and Humans](https://arxiv.org/abs/2608.06980)
+
+**<font color=#1a73e8>作者：</font>** Olga Sutskova, Corey Ford  
+**<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
+
+**<font color=#5f6368>摘要：</font>**
+> Social collaboration can support people's reflection and is a crucial component of creativity. Creative technologies have been designed to support more collaborative ways of working, including using AI to simulate social partners. As human-AI creative collaborations increase, further investigation is needed into how different social interactions influence creative reflection and at which stage a social intervention is crucial to improve creative outcomes. Considering that non-verbal communication is the bedrock of human cognition and influence, non-verbal social dynamics should be examined in detail in the age of AI-companionship. For example, during social interaction, the social facilitation effect describes how the mere presence or observation of others influences how a person behaves and feels in the context. Whether changes in technology-mediated social environments influence how people reflect on their creative work needs further exploration, as does whether social AI-companionship elicits similar effects as humans. This paper discusses how theoretical mechanisms relating to social facilitation could influence creative practice and reflection, proposing ways of further testing these effects.
+
+---
+
+
+### 99. [Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration](https://arxiv.org/abs/2608.06981)
+
+**<font color=#1a73e8>作者：</font>** Jiaqi Zhang, Zheng Pang, Rongrong Gao 等 5 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Diffusion models have demonstrated remarkable effectiveness in image restoration tasks. However, when guiding image reconstruction, existing Diffusion Model-based Image Restoration (DMIR) methods typically rely on fixed data constraints and uniform step sizes, thereby overlooking the dynamic nature of the generative process. Such rigid designs render the models vulnerable to spatially non-uniform degradations, thus resulting in structural distortions and loss of fine details. Meanwhile, uniform step sizes introduce computational redundancy, whereas naïve step reduction strategies tend to accumulate approximation errors. To address these limitations, we propose a Local Epistemic Uncertainty Guided Active Sampling framework (LEADer). In the spatial domain, LEADer leverages pixel-wise uncertainty to dynamically modulate the prior strength within the null space, which effectively balances detail preservation and artifact suppression. In the temporal domain, it quantifies sampling stability via the uncertainty trace to enable adaptive trajectory pruning, thereby accelerating convergence. Theoretical proofs demonstrate that our framework achieves strict data consistency, while the trajectory pruning strategy admits a deterministic error bound, thereby guaranteeing stable convergence under skip sampling. Notably, our plug-and-play method can be seamlessly integrated into various DMIR baselines. Extensive experiments show that LEADer improves the performance of multiple state-of-the-art DMIR methods, while significantly reducing sampling time with negligible memory overhead. Code is available at this https URL.
+
+---
+
+
+### 100. [Switched Reading: Toward Seamless Visual-Auditory Switching When Reading Text in Augmented/Mixed Reality](https://arxiv.org/abs/2608.06985)
+
+**<font color=#1a73e8>作者：</font>** Kazuyuki Fujita, Yuto Matsui, Ikuru Sato 等 5 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
+
+**<font color=#5f6368>摘要：</font>**
+> Augmented/mixed reality (AR/MR) wearable glasses now permit information interaction anywhere, but visual displays can be inappropriate when real-world awareness is essential. We propose Switched Reading, a novel interaction framework for reading text in AR/MR that supports switching between visual and auditory modalities as needed. Specifically, we explore two key interaction techniques within this framework: (1) gaze-based voice playback and (2) a correspondence-aware transition effect. We implemented them on an MR headset through a parameter-tuning user test. Next, we conducted a user study (N=16) to investigate the impact of the two techniques on reading performance and overall user experience with simulated modality switching in virtual reality. The results show that the condition combining both techniques was the most preferred among four conditions. Moreover, we found that the gaze-based voice playback reduced gaze offsets when switching modalities and improved reading speed over the baseline condition using scroll position. Finally, we implemented a Switched Reading application for reading while walking and collected user feedback, yielding further design implications for practical use.
+
+---
+
+
 > [!TIP]
 > 当前位于：**51-100**（第 2/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：[1-50](./part-01.md) | **51-100** | [101-150](./part-03.md) | [151-190](./part-04.md)
+> - 分组跳转：[1-50](./part-01.md) | **51-100** | [101-150](./part-03.md) | [151-167](./part-04.md)
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*

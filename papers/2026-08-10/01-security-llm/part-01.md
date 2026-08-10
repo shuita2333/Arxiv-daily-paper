@@ -1,6 +1,6 @@
 # 🔐 大模型安全相关研究 | 2026年08月10日
 
-> 本类共 **5** 篇论文
+> 本类共 **9** 篇论文
 
 > 仅聚焦 LLM / MLLM / Agent 自身的攻击、防御、安全、隐私与对齐问题。
 
@@ -31,7 +31,18 @@
 ---
 
 
-### 3. [LoRAScan: Detecting Backdoor Prompts in Low-Rank Adapters for Large Language Models via Down-Projection Activation Spikes](https://arxiv.org/abs/2608.06795)
+### 3. [Model Confidence Under Answer-Preserving Attacks: An Informativeness-Manipulability Frontier](https://arxiv.org/abs/2608.06571)
+
+**<font color=#1a73e8>作者：</font>** Reza Khanmohammadi, Ivan Brugere, Simerjot Kaur 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
+
+**<font color=#5f6368>摘要：</font>**
+> Deployed vision-language systems often gate their answers on confidence, making confidence robustness relevant to oversight. We study confidence readouts under white-box, image-only attacks constrained to preserve the generated answer byte-identically. Under a reachability assumption, an unmovable readout cannot outperform the answer-string accuracy prior, whose pooled value is 0.617. Independently of that assumption, a uniform amplitude certificate below a measurable threshold guarantees adversarial discrimination above the same floor. Across four vision-language models, three visual question answering benchmarks, five deployed confidence channels and two defense estimators, direct or surrogate-aimed attacks produce itemwise feasible perturbations that refute this uniform certificate in all 84 estimator-by-cell combinations. Coordinated correctness-label-aware attacks drive adversarial discrimination to or below the answer-string floor in all sixty deployed-channel cells, including all fifty-nine that begin above it. Hidden-state interventions and an open-ended text-model activation-space replication show that comparable confidence movement can be induced at the representation level rather than only through adversarial images. None of four tested defense families establishes a robust alternative under the specific evaluation applied to it. In a confidence-gated simulation, a coordinated token-probability attack transferred to a hidden-state gate causes up to 84.8% of previously rejected wrong answers to become accepted. After reweighting to each benchmark's natural correctness prevalence, accepted accuracy falls below the no-gate baseline in eight of twelve cells under transfer and all twelve under a direct gate-aimed attack. Under the studied threat model and budget, confidence is therefore an integrity-sensitive rather than intrinsically robust oversight signal.
+
+---
+
+
+### 4. [LoRAScan: Detecting Backdoor Prompts in Low-Rank Adapters for Large Language Models via Down-Projection Activation Spikes](https://arxiv.org/abs/2608.06795)
 
 **<font color=#1a73e8>作者：</font>** Doniyorkhon Obidov, Honggang Yu, Xiaolong Guo 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -43,7 +54,40 @@ We introduce LoRAScan, the first adapter-aware defense that detects and rejects 
 ---
 
 
-### 4. [NiyamAI - An Intent-Bound AI Agent with Cryptographically Verifiable Guardrails using Zero-Knowledge Proofs](https://arxiv.org/abs/2608.07167)
+### 5. [SynChain: Inducing Computer-Use Agent Systems to Construct Their Own Attack Chains](https://arxiv.org/abs/2608.06862)
+
+**<font color=#1a73e8>作者：</font>** Fuyao Zhang, Jiaming Zhang, Che Wang 等 10 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
+
+**<font color=#5f6368>摘要：</font>**
+> Computer-use agents~(CUAs) have transformed large language models into persistent execution systems capable of generating, storing, and reusing artifacts like skills and memory entries. However, existing security defenses largely treat attacks as externally triggered or temporally bounded, leaving a critical gap in addressing how compromise can propagate internally through an agent's own persistent state. We reveal that malicious influence can be covertly embedded into the structural redundancies of autonomously synthesized artifacts, allowing it to survive internal state updates and bypass standard vetting mechanisms. To formalize this threat, we introduce SynChain, a self-synthesized attack paradigm utilizing persistence-aware directed supervised fine-tuning to induce agents to create poisoned yet benign-looking artifacts. To systematically evaluate this propagation, we construct CUAChain, a dataset comprising 30 benign task chains and three attack objectives. SynChain enables dormant payloads to seamlessly reactivate in future workflows as trusted context, operating entirely without new malicious exogenous inputs. Extensive experiments on OpenClaw, Codex, and Claude Code under four defense settings demonstrate that SynChain achieves high attack success and outperforms adapted baselines, proving that securing CUAs requires provenance-aware reasoning over cross-task execution trajectories.
+
+---
+
+
+### 6. [When Context Bites: Detecting RAG Poisoning via Document-Level Attention Collapse](https://arxiv.org/abs/2608.06947)
+
+**<font color=#1a73e8>作者：</font>** Yingtao Ren, Ziyi Zhao, Yiwei Fu 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
+
+**<font color=#5f6368>摘要：</font>**
+> Retrieval-augmented generation (RAG) is indispensable for enhancing large language models. However, RAGs are increasingly susceptible to poisoning attacks, in which adversarial documents are injected to manipulate generator outputs. Previous methods rely on output-side signals such as perplexity and consistency checks to detect such attacks. Nevertheless, our analysis reveals that deliberate attacks often induce false confidence, where poisoned outputs exhibit even lower perplexity than benign ones, rendering uncertainty-based detection ineffective. To address this challenge, we explore the internal dynamics of the generator and identify a distinctive signature termed \textit{Attention Collapse}. Unlike the dispersed attention in benign generations, attacked generations exhibit a decrease in entropy as attention concentrates on poisoned documents. Building on these findings, we propose \texttt{D-SCAN} (Document-level Signal Collapse Analysis), a lightweight detection framework that monitors attention dynamics to identify attacked generations. Extensive experiments on multiple attack benchmarks demonstrate the effectiveness of our method. Moreover, D-SCAN can detect attacks even when they fail to alter the final answer. Code is available at this https URL.
+
+---
+
+
+### 7. [HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses](https://arxiv.org/abs/2608.06984)
+
+**<font color=#1a73e8>作者：</font>** Xiao Zhang, Yusheng Wang, Yuhao Fei 等 8 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
+
+**<font color=#5f6368>摘要：</font>**
+> Modern agent harnesses persist state across tasks and sessions through persistent carriers like memory, skills, tools, and shared artifacts. However, this capability creates delayed safety risks: attacker-influenced content can cross system boundaries and later affect the execution of a benign request. Existing benchmarks typically focus on a few carriers or harnesses, while end-to-end attack-success rates reveal little about how risks propagate. To this end, we present HarnessSafe, a benchmark comprising 328 executable cases across seven persistent-carrier families and evaluated on most mainstream agent harnesses. Each case is specified as a Persistent-Risk Lifecycle that traces attacker influence from its initial entry, through persistence across carriers and system boundaries, to a later benign trigger and an observable violation. We further introduce a multi-stage, trace-based evaluation that uses observable execution evidence to determine how far each attack chain progresses and where it is stopped. Experiments show that containment is carrier-specific and strongly depends on the harness-model configuration. Both the harness and model backend substantially shape containment outcomes, while attack success rates cannot reflect distinct lifecycle progression patterns.
+
+---
+
+
+### 8. [NiyamAI - An Intent-Bound AI Agent with Cryptographically Verifiable Guardrails using Zero-Knowledge Proofs](https://arxiv.org/abs/2608.07167)
 
 **<font color=#1a73e8>作者：</font>** Aditya Katkar, Om Karkele, Kartik Mandhane 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -56,7 +100,7 @@ Proof generation adds 2260.6 +/- 218.4 ms per approved action, while verificatio
 ---
 
 
-### 5. [Diffusion LLMs as Targets and Adversaries: Mechanistic Safety Exploits](https://arxiv.org/abs/2608.07430)
+### 9. [Diffusion LLMs as Targets and Adversaries: Mechanistic Safety Exploits](https://arxiv.org/abs/2608.07430)
 
 **<font color=#1a73e8>作者：</font>** Elena Dumitrescu, Gert Lek, Lydia Y. Chen 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning

@@ -1,13 +1,13 @@
 # 📦 其他研究 | 2026年08月10日
 
-> 本类共 **190** 篇论文
+> 本类共 **167** 篇论文
 
 > 未进入大模型主领域展示范围的其他研究。
 
 > [!TIP]
 > 当前位于：**1-50**（第 1/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：**1-50** | [51-100](./part-02.md) | [101-150](./part-03.md) | [151-190](./part-04.md)
+> - 分组跳转：**1-50** | [51-100](./part-02.md) | [101-150](./part-03.md) | [151-167](./part-04.md)
 
 ---
 
@@ -55,18 +55,7 @@
 ---
 
 
-### 5. [Beyond Routing Weights: Faithful Response-Level Interpretation of Mixture-of-Experts Reward Models via Contribution Contrast](https://arxiv.org/abs/2608.06400)
-
-**<font color=#1a73e8>作者：</font>** Yifan Wang, Jinyi Mu, Mayank Jobanputra 等 7 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Reward models are central to learning from human preferences, yet identifying what drives their predictions remains challenging. Recent sparse Mixture-of-Experts (MoE) reward models seek to improve interpretability by routing prompts to specialized experts and characterizing experts through examples with high routing weights. However, routing weights only reveal which prompts an expert $\textit{receives}$, not how it $\textit{judges}$ responses, providing only a partial account of expert behavior. We therefore propose $\textbf{Co}$ntribution-$\textbf{Co}$ntrast ($\textbf{CoCo}$) response-level interpretation, which faithfully characterizes experts' roles using chosen-rejected response pairs with the largest contribution contrasts, jointly capturing routing and preference behavior. Across automatic and human evaluations, CoCo yields more coherent, faithful, and specialized interpretations than router-based, score-based, and sparse autoencoder-based alternatives while maintaining competitive reward modeling accuracy. To the best of our knowledge, this is the first systematic study of interpretation methods for MoE reward models.
-
----
-
-
-### 6. [UAV3DCrop: Benchmarking 3D Reconstruction in Repeated Multi-Angle UAV Crop Surveys](https://arxiv.org/abs/2608.06404)
+### 5. [UAV3DCrop: Benchmarking 3D Reconstruction in Repeated Multi-Angle UAV Crop Surveys](https://arxiv.org/abs/2608.06404)
 
 **<font color=#1a73e8>作者：</font>** Junxiong Zhou, Xuechen Li, Chonghao Qiu 等 14 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -77,7 +66,7 @@
 ---
 
 
-### 7. [Deep Evidential Regression for Sparse Forest Height Estimation from Multimodal Satellite Imagery](https://arxiv.org/abs/2608.06406)
+### 6. [Deep Evidential Regression for Sparse Forest Height Estimation from Multimodal Satellite Imagery](https://arxiv.org/abs/2608.06406)
 
 **<font color=#1a73e8>作者：</font>** Laura Bader, Muhammad Ammar Ahmed, Xiao Xiang Zhu 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -88,7 +77,7 @@
 ---
 
 
-### 8. [TransSLR: A Lightweight Transformer for Sign Language Recognition](https://arxiv.org/abs/2608.06407)
+### 7. [TransSLR: A Lightweight Transformer for Sign Language Recognition](https://arxiv.org/abs/2608.06407)
 
 **<font color=#1a73e8>作者：</font>** Lucia Yen Wanchi, Samuel Johnny, Victor Tolulope Olufemi 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -100,18 +89,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 9. [ADIAS: Automated Design of Interactive Agentic Systems](https://arxiv.org/abs/2608.06410)
-
-**<font color=#1a73e8>作者：</font>** Lekang Jiang, Bohan Tang, Stephan Goetz 等 4 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Automated agent design improves agent harnesses through iterative revision, evaluation, and feedback summarization. Existing methods are largely candidate-centric: cross-round experience is organized around candidate agents, which leaves the repair progress implicit. This causes inefficient repair targeting, slow consolidation of partial progress, and propagation of ineffective interventions across rounds. Therefore, we formulate issue-centric agent optimization, in which repair progress is carried forward as an explicit persistent issue state to guide optimization, rather than re-derived from candidate history in each round. We instantiate the formulation in ADIAS, a framework for automated full-code agent design with two mechanisms. A persistent issue state maintains stable issue identities, lifecycle status, supporting evidence, and intervention-outcome histories. Issue-guided optimization uses this state to jointly propose repair targets and revision directions for subsequent focused full-code modification. Across five interactive benchmarks, ADIAS outperforms the strongest baseline by 25.2% on average and achieves consistent gains across four backbone models. Controlled ablations further show that removing persistent issue state or replacing issue-centric revision with candidate-centric policies leads to performance drops of up to 40.7%.
-
----
-
-
-### 10. [Risk-Aware Decision Policies for Agents Under Noisy Perception](https://arxiv.org/abs/2608.06420)
+### 8. [Risk-Aware Decision Policies for Agents Under Noisy Perception](https://arxiv.org/abs/2608.06420)
 
 **<font color=#1a73e8>作者：</font>** David Szczecina  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -122,7 +100,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 11. [Adversarial Causal Intervention Falsification](https://arxiv.org/abs/2608.06427)
+### 9. [Adversarial Causal Intervention Falsification](https://arxiv.org/abs/2608.06427)
 
 **<font color=#1a73e8>作者：</font>** Mojtaba Eslami  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -133,7 +111,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 12. [Fixed and Adaptive Topological DeepONets: Functional Measurements on Hausdorff Locally Convex Spaces](https://arxiv.org/abs/2608.06428)
+### 10. [Fixed and Adaptive Topological DeepONets: Functional Measurements on Hausdorff Locally Convex Spaces](https://arxiv.org/abs/2608.06428)
 
 **<font color=#1a73e8>作者：</font>** Khemraj Shukla, George Em Karniadakis  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -144,7 +122,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 13. [MiGHT-EHR: A Multi-task Graph Transformer for Heterogeneous Temporal Electronic Health Records](https://arxiv.org/abs/2608.06430)
+### 11. [MiGHT-EHR: A Multi-task Graph Transformer for Heterogeneous Temporal Electronic Health Records](https://arxiv.org/abs/2608.06430)
 
 **<font color=#1a73e8>作者：</font>** Anirudh Rayas, Yuan Wang, Pavan Turaga  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -155,7 +133,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 14. [SNI-GNN: SmartNIC-Assisted Full-Graph GNN Training with In-Network Embedding Prediction](https://arxiv.org/abs/2608.06441)
+### 12. [SNI-GNN: SmartNIC-Assisted Full-Graph GNN Training with In-Network Embedding Prediction](https://arxiv.org/abs/2608.06441)
 
 **<font color=#1a73e8>作者：</font>** Guofan Yu, Sitian Chen, Zhenheng Tang 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -166,7 +144,7 @@ To address this, we propose TransSLR, a lightweight Temporal Transformer Encoder
 ---
 
 
-### 15. [ED-CSP: Crystal Structure Prediction from Electron Diffraction](https://arxiv.org/abs/2608.06448)
+### 13. [ED-CSP: Crystal Structure Prediction from Electron Diffraction](https://arxiv.org/abs/2608.06448)
 
 **<font color=#1a73e8>作者：</font>** Germain Poloudenny, Yaël Frégier, Arnaud Demortière  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -178,7 +156,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 16. [Fairis: Fairness-Aware Aggregation with Provable Influence Containment against Fairness Poisoning Attacks in Collaborative Machine Learning](https://arxiv.org/abs/2608.06469)
+### 14. [Fairis: Fairness-Aware Aggregation with Provable Influence Containment against Fairness Poisoning Attacks in Collaborative Machine Learning](https://arxiv.org/abs/2608.06469)
 
 **<font color=#1a73e8>作者：</font>** Devharsh Trivedi, Nesrine Kaaniche, Nikos Triandopoulos 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -189,29 +167,19 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 17. [InsertFuse: A Unified Framework for Multi-Category Reference-Guided Image Insertion](https://arxiv.org/abs/2608.06490)
+### 15. [Beyond Attention: Signed Integrated Gradients Attribution in a BiomeGPT-Style Microbiome Transformer](https://arxiv.org/abs/2608.06486)
 
-**<font color=#1a73e8>作者：</font>** Guangzhao Li, Qingyan Wei, Huayu Zheng 等 10 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
-
-**<font color=#5f6368>摘要：</font>**
-> We present InsertFuse, a unified framework for multi-category reference-guided image insertion. Its key idea is to decouple category-specific expertise learning from cross-category capability consolidation. InsertFuse first trains specialized experts for different insertion categories and then introduces Insertion On-Policy Distillation (IOPD) to consolidate their capabilities into a single student. By querying the matched expert at states visited by the student, IOPD preserves category-specific insertion behavior while mitigating the cross-category interference caused by direct joint training. To improve spatial control, we propose Token-Aligned Geometry Conditioning (TAGC), which maps mask-derived geometric cues to the visual token grid, and Region-Balanced Flow Matching, which separately normalizes prediction errors inside and outside the insertion region to prevent background-dominated and scale-dependent supervision. We further introduce Reference CFG to isolate and strengthen the guidance induced by the visual reference under fixed scene and geometry conditions, with IOPD transferring this enhanced supervision into the unified student. Extensive experiments on the public AnyInsertion benchmark and our multi-category test set demonstrate state-of-the-art performance on most metrics, showing strong reference fidelity and generation quality across diverse insertion categories.
-
----
-
-
-### 18. [Toward Reliable Context Compression for Long-Horizon Agents: An Empirical Study of Execution Instability](https://arxiv.org/abs/2608.06503)
-
-**<font color=#1a73e8>作者：</font>** Guanghui Min, Liang Wu, Mayank Darbari 等 5 位作者  
+**<font color=#1a73e8>作者：</font>** Oren Nelson  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
 
 **<font color=#5f6368>摘要：</font>**
-> Recurrent context compression controls context growth in long-horizon agents, but its behavioral effects remain poorly understood. In this preliminary empirical study, we show that compression can weaken the influence of recent interactions, increasing blocked actions, repeated exploration, and instability across runs. Motivated by these observations, we introduce TRACE, a verifier-guided framework that evaluates individual compaction events through paired closed-loop continuations from the same environment state and uses summary preferences to optimize a natural-language compression prompt while keeping all models frozen. Initial results on AppWorld show improvements over existing compression baselines in task performance, multi-run reliability, and context--execution efficiency. These findings provide early evidence for boundary-local evaluation as a promising direction for reliable agent context compression.
+> In a feature-tokenized transformer (arXiv:2106.11959) such as BiomeGPT (doi:https://doi.org/10.64898/2026.01.05.697599), each input token is built by fusing a fixed identity with a sample-specific measurement: a fixed species and a variable abundance, T = S + A. To interpret downstream classification in such models, prior work inspects the attention weights of the special [CLS] token (arXiv:2106.11959, arXiv:1810.04805, BiomeGPT) to rank sample tokens by importance. These weights have two critical limitations: they are nonnegative, so they cannot separate disease-supporting from health-supporting evidence (arXiv:2201.12114), and they act after token fusion, obscuring how the input sources S and A each affect the output.
+To address this we use Integrated Gradients (arXiv:1703.01365), a signed, fusion-aware attribution method, and propose a source-derived baseline T' = S + A_0 for feature-tokenized models such as BiomeGPT, which preserves species identity as a fixed biological coordinate while isolating the effect of abundance variation. Applied to a disease-versus-health decision margin, it yields polarity that explicitly separates pathogenic from protective microbial signals. We show that this gradient-based approach uncovers species-abundance directional relationships and sensitivity diagnostics entirely obscured by unsigned [CLS] attention weights. We further recommend second-order Integrated Hessians (arXiv:2002.04138) to expose microbiome community interaction rules: how a perturbation in one member alters the model's sensitivity to another, and which other species drive ambiguous cases toward disease or health at a given abundance level. This provides a principled approach to explainability in BiomeGPT that generalizes to other smooth and differentiable feature-tokenized transformers. Code is available at this https URL
 
 ---
 
 
-### 19. [Canonicalization Failures as a Recurring Vulnerability Class: Representation Divergence in Cryptographic Systems and Its Avoidance](https://arxiv.org/abs/2608.06508)
+### 16. [Canonicalization Failures as a Recurring Vulnerability Class: Representation Divergence in Cryptographic Systems and Its Avoidance](https://arxiv.org/abs/2608.06508)
 
 **<font color=#1a73e8>作者：</font>** Arslan Brömme  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -222,7 +190,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 20. [Unmasking Removal-Budget Confounding: A Matched Operating-Point Evaluation Framework for Adaptive Data Cleaning](https://arxiv.org/abs/2608.06511)
+### 17. [Unmasking Removal-Budget Confounding: A Matched Operating-Point Evaluation Framework for Adaptive Data Cleaning](https://arxiv.org/abs/2608.06511)
 
 **<font color=#1a73e8>作者：</font>** Wei-Hsiang Chen, Pin-Hsuan Yu, Chen-Hsuan Fang 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -233,7 +201,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 21. [Target-Weighted Neyman Allocation: Experimental Design for Heterogeneous Treatment Effects under Population Shift](https://arxiv.org/abs/2608.06512)
+### 18. [Target-Weighted Neyman Allocation: Experimental Design for Heterogeneous Treatment Effects under Population Shift](https://arxiv.org/abs/2608.06512)
 
 **<font color=#1a73e8>作者：</font>** Hoang Dang, Luan Pham, Minh Nguyen  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -244,7 +212,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 22. [CertBind from Multimodal Connectivity to Certifiable Retrieval Decisions](https://arxiv.org/abs/2608.06516)
+### 19. [CertBind from Multimodal Connectivity to Certifiable Retrieval Decisions](https://arxiv.org/abs/2608.06516)
 
 **<font color=#1a73e8>作者：</font>** Shuheng Cao, Zhenhao Zhang, Ruiqi Chen 等 10 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -255,7 +223,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 23. [Online Security Learning in Cooperative Multi-Agent Systems under Hidden Byzantine Attacks](https://arxiv.org/abs/2608.06520)
+### 20. [Online Security Learning in Cooperative Multi-Agent Systems under Hidden Byzantine Attacks](https://arxiv.org/abs/2608.06520)
 
 **<font color=#1a73e8>作者：</font>** Ximing Sun, Yue Wang  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -266,7 +234,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 24. [KNOWPLAN: Knowledge-Driven AI Agents for Smart Degree Pathway Planning](https://arxiv.org/abs/2608.06530)
+### 21. [KNOWPLAN: Knowledge-Driven AI Agents for Smart Degree Pathway Planning](https://arxiv.org/abs/2608.06530)
 
 **<font color=#1a73e8>作者：</font>** Shuheng Cao, Weijia Zhang, Jiaqi Wu 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -277,7 +245,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 25. [TaskSense: Focusing on What Matters in World Models](https://arxiv.org/abs/2608.06544)
+### 22. [TaskSense: Focusing on What Matters in World Models](https://arxiv.org/abs/2608.06544)
 
 **<font color=#1a73e8>作者：</font>** SM Mazharul Islam, Manfred Huber  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -288,7 +256,7 @@ To train the model, we construct ED-CS, a dataset of 4.85 million simulated mult
 ---
 
 
-### 26. [Robust Average-Reward Markov Decision Processes: Minimax-Optimal Learning via Plug-in Reductions](https://arxiv.org/abs/2608.06545)
+### 23. [Robust Average-Reward Markov Decision Processes: Minimax-Optimal Learning via Plug-in Reductions](https://arxiv.org/abs/2608.06545)
 
 **<font color=#1a73e8>作者：</font>** Yuepeng Yang, Yuxin Chen, Yuejie Chi  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -300,7 +268,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 27. [Newton-Schulz Retraction-Based Inference Enables Hidden Quantum Markov Models to Outperform Classical HMMs](https://arxiv.org/abs/2608.06554)
+### 24. [Newton-Schulz Retraction-Based Inference Enables Hidden Quantum Markov Models to Outperform Classical HMMs](https://arxiv.org/abs/2608.06554)
 
 **<font color=#1a73e8>作者：</font>** Ning Ning  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -311,7 +279,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 28. [Theoretical Foundations of Communication-Efficient, Robust, and Practical Distributed and Federated Optimization](https://arxiv.org/abs/2608.06563)
+### 25. [Theoretical Foundations of Communication-Efficient, Robust, and Practical Distributed and Federated Optimization](https://arxiv.org/abs/2608.06563)
 
 **<font color=#1a73e8>作者：</font>** Grigory Malinovsky  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -322,7 +290,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 29. [Improving Low-Resolution Face Recognition under Limited Data: How Synthetic Data Generation Can Close the Domain Gap](https://arxiv.org/abs/2608.06580)
+### 26. [Improving Low-Resolution Face Recognition under Limited Data: How Synthetic Data Generation Can Close the Domain Gap](https://arxiv.org/abs/2608.06580)
 
 **<font color=#1a73e8>作者：</font>** Luis S. Luevano, Ünsal Öztürk, Hatef Otroshi Shahreza 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -333,7 +301,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 30. [WhiteNet: Robust Identification of Overlapping IEEE 802.11 Signals Across Unseen Channels](https://arxiv.org/abs/2608.06581)
+### 27. [WhiteNet: Robust Identification of Overlapping IEEE 802.11 Signals Across Unseen Channels](https://arxiv.org/abs/2608.06581)
 
 **<font color=#1a73e8>作者：</font>** Ildi Alla, Vincent Lenders  
 **<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
@@ -344,7 +312,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 31. [CrystalGRPO: Target-Aligned and Coverage-Preserving Reinforcement Learning for Flow-Based Crystal Structure Prediction](https://arxiv.org/abs/2608.06582)
+### 28. [CrystalGRPO: Target-Aligned and Coverage-Preserving Reinforcement Learning for Flow-Based Crystal Structure Prediction](https://arxiv.org/abs/2608.06582)
 
 **<font color=#1a73e8>作者：</font>** Kaixiang Su, Hongfei Xue, Qiang Zhu  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -355,7 +323,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 32. [Flowing Through States: Neural ODE Regularization for Reinforcement Learning](https://arxiv.org/abs/2608.06595)
+### 29. [Flowing Through States: Neural ODE Regularization for Reinforcement Learning](https://arxiv.org/abs/2608.06595)
 
 **<font color=#1a73e8>作者：</font>** Mohamed Ghanem, Bernd Finkbeiner  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -366,7 +334,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 33. [Toward surface-based registration of a virtual preoperative cutting guide onto the mandible for reconstruction surgery](https://arxiv.org/abs/2608.06599)
+### 30. [Toward surface-based registration of a virtual preoperative cutting guide onto the mandible for reconstruction surgery](https://arxiv.org/abs/2608.06599)
 
 **<font color=#1a73e8>作者：</font>** Yue Yang, Jie Ying Wu  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -377,7 +345,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 34. [Pre-Inference Routing for Cost-Efficient Document Field Extraction](https://arxiv.org/abs/2608.06607)
+### 31. [Pre-Inference Routing for Cost-Efficient Document Field Extraction](https://arxiv.org/abs/2608.06607)
 
 **<font color=#1a73e8>作者：</font>** Sreerekha Rajendran  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -388,7 +356,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 35. [SLED: Scalable Location Encoding via Distillation](https://arxiv.org/abs/2608.06612)
+### 32. [SLED: Scalable Location Encoding via Distillation](https://arxiv.org/abs/2608.06612)
 
 **<font color=#1a73e8>作者：</font>** Kevin Lane, Zhongying Wang, Esther Rolf 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -399,7 +367,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 36. [Factorized Hypothesis Search for Evidence-to-Taxonomy Retrieval](https://arxiv.org/abs/2608.06614)
+### 33. [Factorized Hypothesis Search for Evidence-to-Taxonomy Retrieval](https://arxiv.org/abs/2608.06614)
 
 **<font color=#1a73e8>作者：</font>** Linhai Ma, Ethan F. Wei, Xueqing Peng 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -410,7 +378,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 37. [Bypassing Krum: Selection-Aware Backdoor Attacks in Federated Learning](https://arxiv.org/abs/2608.06637)
+### 34. [Bypassing Krum: Selection-Aware Backdoor Attacks in Federated Learning](https://arxiv.org/abs/2608.06637)
 
 **<font color=#1a73e8>作者：</font>** Srinivasan Subramanian, Md. Abdullah Al Hafiz Khan, Kazi Aminul Islam  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -421,7 +389,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 38. [Discovering Conceptual Metaphors Across Topics and Media Types](https://arxiv.org/abs/2608.06652)
+### 35. [Discovering Conceptual Metaphors Across Topics and Media Types](https://arxiv.org/abs/2608.06652)
 
 **<font color=#1a73e8>作者：</font>** Alexandria Leto, Rohan Das, Juan Vásquez 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -432,7 +400,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 39. [Dirichlet Follow-the-Leader Closes the Gap in Simultaneous Multiclass U-Calibration](https://arxiv.org/abs/2608.06656)
+### 36. [Dirichlet Follow-the-Leader Closes the Gap in Simultaneous Multiclass U-Calibration](https://arxiv.org/abs/2608.06656)
 
 **<font color=#1a73e8>作者：</font>** Pahan Dewasurendra  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -443,7 +411,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 40. [TRACE: A Multi-Layer Benchmark for Human AI Controller Coordination Under Drift and Failure](https://arxiv.org/abs/2608.06657)
+### 37. [TRACE: A Multi-Layer Benchmark for Human AI Controller Coordination Under Drift and Failure](https://arxiv.org/abs/2608.06657)
 
 **<font color=#1a73e8>作者：</font>** Joshua Zuniga, Srinivasan Subramanian, Ramya Madhuri Narapureddy 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -454,7 +422,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 41. [Vehicle routing problem using deep reinforcement learning - A case study about truck planning in the industry](https://arxiv.org/abs/2608.06668)
+### 38. [Vehicle routing problem using deep reinforcement learning - A case study about truck planning in the industry](https://arxiv.org/abs/2608.06668)
 
 **<font color=#1a73e8>作者：</font>** Siliang Lu, Dan Hu, Lili Wu  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -465,7 +433,7 @@ Let $H_0$ and $H_\sigma$ denote the nominal and robust optimal bias spans, respe
 ---
 
 
-### 42. [EpiFlow: A framework for improving the utility of wastewater signals for disease forecasting](https://arxiv.org/abs/2608.06671)
+### 39. [EpiFlow: A framework for improving the utility of wastewater signals for disease forecasting](https://arxiv.org/abs/2608.06671)
 
 **<font color=#1a73e8>作者：</font>** Aniruddha Adiga, Jingyuan Chou, Gursharn Kaur 等 11 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -478,7 +446,7 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 43. [Corrupting Attention: Evasion-Based Adversarial Attacks on Encoder Attention in Detection Transformers](https://arxiv.org/abs/2608.06674)
+### 40. [Corrupting Attention: Evasion-Based Adversarial Attacks on Encoder Attention in Detection Transformers](https://arxiv.org/abs/2608.06674)
 
 **<font color=#1a73e8>作者：</font>** Ridma Jayasundara, Shaheer Mohamed, Tharindu Fernando 等 9 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -489,7 +457,7 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 44. [Octo's Adventure: At-home Deployment of a Pediatric Education Tool](https://arxiv.org/abs/2608.06684)
+### 41. [Octo's Adventure: At-home Deployment of a Pediatric Education Tool](https://arxiv.org/abs/2608.06684)
 
 **<font color=#1a73e8>作者：</font>** Crimson Olaleye, Neda Barbazi, Ji Youn Shin 等 5 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Human-Computer Interaction
@@ -500,7 +468,7 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 45. [CoDAT: Collaborative Dual-Attention Transformer with Low-Cost Temporal Modeling for Efficient Edge Action Recognition](https://arxiv.org/abs/2608.06691)
+### 42. [CoDAT: Collaborative Dual-Attention Transformer with Low-Cost Temporal Modeling for Efficient Edge Action Recognition](https://arxiv.org/abs/2608.06691)
 
 **<font color=#1a73e8>作者：</font>** Novendra Setyawan, Chi-Chia Sun, Mao-Hsiu Hsu 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -511,7 +479,7 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 46. [A Transferable Autologistic Model for Predicting Rare Failures in Heterogeneous Equipment](https://arxiv.org/abs/2608.06695)
+### 43. [A Transferable Autologistic Model for Predicting Rare Failures in Heterogeneous Equipment](https://arxiv.org/abs/2608.06695)
 
 **<font color=#1a73e8>作者：</font>** Islam Benamirouche, Djemel Ziou, Feriel Fass  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -522,7 +490,7 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 47. [Scalable Long-Horizon Planning with Staggered Updates for Lifelong MAPF](https://arxiv.org/abs/2608.06702)
+### 44. [Scalable Long-Horizon Planning with Staggered Updates for Lifelong MAPF](https://arxiv.org/abs/2608.06702)
 
 **<font color=#1a73e8>作者：</font>** Vaibhav Sanjay, Jiaoyang Li  
 **<font color=#188038>arXiv所属领域：</font>** Multiagent Systems
@@ -533,18 +501,7 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 48. [WebRider: Persona-Conditioned Intent Controllers for Live-Web Assistance](https://arxiv.org/abs/2608.06704)
-
-**<font color=#1a73e8>作者：</font>** Zhi Li, Tao Zhou, Yeqing Li 等 5 位作者  
-**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
-
-**<font color=#5f6368>摘要：</font>**
-> Delegating a web task involves more than asking a question; it requires transferring a policy: what to verify, how to handle uncertainty, which preferences matter, and when to stop. Yet, current live-web agents are evaluated solely on the final answer, ignoring the policy constraints that define the delegation. A plausible final answer can conceal violations of that policy. Our full live audit reveals this critical gap: a strong controller completes 99.2% of tasks but honors all policy constraints in only 38.8% of cases. Finishing does not imply fidelity. WebRider bridges this gap by formalizing the delegated policy as an intent contract---an operational record of goals, constraints, evidence obligations, answer form, and task-local persona controls that must hold even as web pages change. WebRider employs a hierarchical architecture: a top-layer controller maintains the contract, a middle layer realizes intentions as guarded executable actions, and a tool layer executes these actions via browser, search, and maps tools. Our benchmark, RiderBench, evaluates this design on 4,096 live-web contracts across 42 public websites, auditing both the internal contract state and the visible user experience to determine if a rollout preserved its policy and if the steps were persona-consistent. The guarded middle interface also serves as a high-quality training signal; an 8B action-policy model trained through this interface outperforms executable-only baselines under a fixed controller. By making the browsing path a first-class object, WebRider enables a system that is auditable, human-judgeable, and learnable without conflating action realization with final-answer decisions. Dataset URL: this http URL.
-
----
-
-
-### 49. [Dueling World Models: Advantage-Style Action Channels for Common-Mode Distractor Rejection](https://arxiv.org/abs/2608.06706)
+### 45. [Dueling World Models: Advantage-Style Action Channels for Common-Mode Distractor Rejection](https://arxiv.org/abs/2608.06706)
 
 **<font color=#1a73e8>作者：</font>** Jiazhuo Li, Yiming Fei, Zhiruo Zhou 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Machine Learning
@@ -555,7 +512,7 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
-### 50. [Suppress and Diversify: Refining Robust Pathways for Corruption Robustness](https://arxiv.org/abs/2608.06712)
+### 46. [Suppress and Diversify: Refining Robust Pathways for Corruption Robustness](https://arxiv.org/abs/2608.06712)
 
 **<font color=#1a73e8>作者：</font>** Jiangang Yang, Wenhui Shi, Xiaoran Xu 等 7 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -566,9 +523,55 @@ We test the utility of our methods by forecasting COVID-19 hospital admissions a
 ---
 
 
+### 47. [WaveFreqAnchor: Wave-Structural Anchoring and Frequency Correction Diffusion for Training-Free Face Restoration](https://arxiv.org/abs/2608.06717)
+
+**<font color=#1a73e8>作者：</font>** Zelin Du, Wenjie Li, Zhengxue Wang 等 6 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Diffusion-based face restoration that adjusts the sampling trajectory of pre-trained diffusion models has achieved remarkable progress. However, existing approaches provide insufficient constraints during reverse diffusion, causing identity-related structural drift and degraded fidelity under severe degradations. To address this, we propose WaveFreqAnchor, a training-free framework based on Wave-Structural Anchoring and Frequency Correction Diffusion. Specifically, Anchor-Space Wave-Structural Guidance (ASWG) constrains facial structures through anisotropic wave-response consistency, while Multi-scale Wavelet-Fourier Injection (MWFI) aligns the predicted low-frequency subband with the observation by replacing its phase, correcting inconsistencies accumulated during reverse diffusion. For real-world scenes, we further introduce Subband High-Frequency Enhancement (SHE), which performs bounded, spatially masked refinement on the predicted high-frequency subbands to recover fine facial details under unknown compound degradations. Together, these designs effectively preserve facial identity while restoring sharp and realistic facial details. Extensive experiments show that our method consistently outperforms existing methods, achieving high-quality and high-fidelity face restoration.
+
+---
+
+
+### 48. [Tight Security for BBS Signatures](https://arxiv.org/abs/2608.06724)
+
+**<font color=#1a73e8>作者：</font>** Rutchathon Chairattana-Apirom, Dennis Hofheinz, Stefano Tessaro  
+**<font color=#188038>arXiv所属领域：</font>** Cryptography and Security
+
+**<font color=#5f6368>摘要：</font>**
+> This paper studies the concrete security of BBS signatures (Boneh, Boyen, Shacham, CRYPTO '04; Camenisch and Lysyanskaya, CRYPTO '04), a popular algebraic construction of digital signatures which underlies practical privacy-preserving authentication systems and is undergoing standardization by the W3C and IRTF.
+Schäge (Journal of Cryptology '15) gave a tight standard-model security proof under the q-SDH assumption for a less efficient variant of the scheme, called BBS+--here, q is the number of issued signatures. In contrast, the security proof for BBS (Tessaro and Zhu, EUROCRYPT '23), also under the q-SDH assumption, is \emph{not} tight. Nonetheless, this recent proof shifted both standardization and industry adoption towards the more efficient BBS, instead of BBS+, and for this reason, it is important to understand whether this tightness gap is inherent. Recent cryptanalysis by Chairattana-Apirom and Tessaro (ASIACRYPT '25) also shows that a tight reduction to q-SDH is the best we can hope for.
+This paper closes this gap in two different ways. On the positive end, we show a novel tight reduction for BBS in the case where each message is signed at most once--this case covers in particular the common practical use case which derandomizes signing. On the negative end, we use a meta-reduction argument to prove that if we allow generating multiple signatures for the same message, then {\em no} algebraic reduction to q-SDH (and its variants) can be tight.
+
+---
+
+
+### 49. [bioMoR: Biology-Guided Mixture-of-Recursions for Effective Genomic Learning](https://arxiv.org/abs/2608.06727)
+
+**<font color=#1a73e8>作者：</font>** Koushik Howlader, Tirtho Roy, Md Tauhidul Islam 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
+
+**<font color=#5f6368>摘要：</font>**
+> Transformer models for high-dimensional omics analysis process thousands of genes or pathways, although only a subset requires deep computation. Mixture-of-Recursions (MoR) improves efficiency through adaptive token-choice or expert-choice routing. We propose bioMoR, which, to the best of our knowledge, is the first framework to apply MoR to gene-level and pathway-level learning. Our contributions include identifying three locations for integrating structured biological knowledge within an MoR backbone: graph-based information sharing refines token embeddings, a structural bias guides self-attention toward biologically related tokens, and a graph-aware router uses neighborhood information to determine each token's recursion depth. These techniques are centered on our insight that additional knowledge of token interaction can effectively help models construct embeddings and select which tokens should be learned more deeply. Across eight benchmarks spanning diverse omics data types and evaluated under a unified five-fold cross-validation protocol, bioMoR improves average macro-F1 by 8.2 percentage points and balanced accuracy by 7.1 percentage points over the strongest biology-agnostic MoR baseline while using 75 percent fewer parameters and up to 58 percent fewer FLOPs than a non-recursive Transformer. The selected marker genes or pathways provide biological interpretability, while their token-specific recursion depths reveal how computation is allocated.
+
+---
+
+
+### 50. [From Cheap Fakes to Pure Synthesis: Addressing the New Era of T2V Fake News Videos](https://arxiv.org/abs/2608.06732)
+
+**<font color=#1a73e8>作者：</font>** Yifeng Luo, Yupeng Li, Liang Lan 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
+
+**<font color=#5f6368>摘要：</font>**
+> Recent text-to-video (T2V) generation models enable fake news videos to be synthesized from scratch, shifting the threat beyond cheap fakes assembled from existing footage. Such news videos can closely match fabricated narratives, creating a modality alignment trap for existing detectors. Existing datasets lack pure synthesis fake news videos. Although directly prompting T2V models with descriptions of fake news videos can yield perfectly aligned samples, it reduces the fake news video detection (FNVD) to unimodal shortcuts and causes semantic-visual degeneration. To counter this, we formulate T2V-FNVD as a novel ternary classification task with three labels (real, cheap fake, and pure synthesis fake) and construct the first pure synthesis fake news video dataset (PS-FNVD). PS-FNVD includes fabricated events with aligned deception (Type 1) and true events with false visual provenance (Type 2), preventing models from exploiting unimodal shortcuts. Furthermore, we propose the Reasoning-guided T2V-FNVD (R-T2V) framework. Trained through conditioned rationale generation and supervised fine-tuning, R-T2V integrates high-level semantic logic with low-level physical generative traces to predict the ternary veracity label. Extensive experiments across 10 prevailing baselines show that R-T2V achieves the state-of-the-art performance, outperforming the second-best baseline by 12.20 percentage points in accuracy and 8.46 percentage points in macro $F_1$.
+
+---
+
+
 > [!TIP]
 > 当前位于：**1-50**（第 1/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：**1-50** | [51-100](./part-02.md) | [101-150](./part-03.md) | [151-190](./part-04.md)
+> - 分组跳转：**1-50** | [51-100](./part-02.md) | [101-150](./part-03.md) | [151-167](./part-04.md)
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*
