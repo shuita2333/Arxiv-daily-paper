@@ -1,17 +1,28 @@
 # 🧠 大模型相关研究 | 2026年08月10日
 
-> 本类共 **170** 篇论文：已确认 **159** 篇，待复核 **11** 篇
+> 本类共 **171** 篇论文：已确认 **160** 篇，待复核 **11** 篇
 
 > 聚焦 LLM / MLLM / Agent / MoE 等大模型研究，并包含使用 LLM 完成网络安全任务的研究；待复核论文合并展示在本章末尾。
 
 > [!TIP]
-> 当前位于：**151-170**（第 4/4 组）
+> 当前位于：**151-171**（第 4/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | [101-150](./part-03.md) | **151-170**
+> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | [101-150](./part-03.md) | **151-171**
 
 ---
 
-### 151. [SABRE: Scalable and Automated Benchmarking of VLMs under Stress](https://arxiv.org/abs/2608.07435)
+### 151. [Conformal Coverage Guarantees for Any Video Temporal Grounder](https://arxiv.org/abs/2608.07434)
+
+**<font color=#1a73e8>作者：</font>** Aseel Mohamed, Rasul Khanbayov, Erchin Serpedin 等 4 位作者  
+**<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
+
+**<font color=#5f6368>摘要：</font>**
+> Event boundaries in continuous video are ambiguous: re-annotate the same query-video pair and independent annotators mark moments that overlap by less than half on a large fraction of samples. The ground truth for video temporal grounding is therefore a distribution over intervals, yet every grounder returns a single interval with no statement of reliability, so at deployment a wrong interval is indistinguishable from a right one. COVER changes the output object: a post-hoc, model-agnostic wrapper that turns any grounder, a trained localizer or a black-box video--language model, into one that emits a temporal region containing the true moment with probability at least $1-\alpha$, by calibrating the quantile of a temporal nonconformity score on held-out labels and widening the base prediction by that amount. The guarantee is finite-sample and distribution-free under exchangeability, and requires neither retraining nor white-box access. We give two score families, a two-sided boundary-widening score for grounders that emit an interval and a super-level-set score for grounders that emit a relevance signal, and develop theory specific to grounding that bounds how large the certified region becomes, when coverage survives conditioning on event length, and how it degrades when moments from one video break exchangeability. Across three benchmarks and five grounders, realized coverage tracks the target, and calibration exposes what point metrics hide.
+
+---
+
+
+### 152. [SABRE: Scalable and Automated Benchmarking of VLMs under Stress](https://arxiv.org/abs/2608.07435)
 
 **<font color=#1a73e8>作者：</font>** Zixuan Lan, Luzhe Sun, Matthew R. Walter 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Computer Vision and Pattern Recognition
@@ -22,7 +33,7 @@
 ---
 
 
-### 152. [Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing](https://arxiv.org/abs/2608.07437)
+### 153. [Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing](https://arxiv.org/abs/2608.07437)
 
 **<font color=#1a73e8>作者：</font>** Jiacheng Miao, Jin Mu, Guanhua Chen 等 4 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -33,7 +44,7 @@
 ---
 
 
-### 153. [PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents](https://arxiv.org/abs/2608.07438)
+### 154. [PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents](https://arxiv.org/abs/2608.07438)
 
 **<font color=#1a73e8>作者：</font>** Mohammad Amanlou, Parham Abed Azad, Farbod Davoodi 等 6 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -44,7 +55,7 @@
 ---
 
 
-### 154. [An Exploratory Evaluation of LLM-Assisted Rewriting of Moderate-Complexity Financial Sentences for DisCoCat-Based Sentiment Analysis](https://arxiv.org/abs/2608.07439)
+### 155. [An Exploratory Evaluation of LLM-Assisted Rewriting of Moderate-Complexity Financial Sentences for DisCoCat-Based Sentiment Analysis](https://arxiv.org/abs/2608.07439)
 
 **<font color=#1a73e8>作者：</font>** Brian Llinas, Nikos Chrisochoides  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -55,7 +66,7 @@
 ---
 
 
-### 155. [Blast Radius](https://arxiv.org/abs/2608.07440)
+### 156. [Blast Radius](https://arxiv.org/abs/2608.07440)
 
 **<font color=#1a73e8>作者：</font>** MY Pitsane, Hope Mogale  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -66,7 +77,7 @@
 ---
 
 
-### 156. [SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent](https://arxiv.org/abs/2608.07449)
+### 157. [SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent](https://arxiv.org/abs/2608.07449)
 
 **<font color=#1a73e8>作者：</font>** Mingxuan Zheng, Yujin Zhou, Chuxue Cao 等 9 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Artificial Intelligence
@@ -77,7 +88,7 @@
 ---
 
 
-### 157. [Strategy-first synthesis planning for complex natural products](https://arxiv.org/abs/2608.07454)
+### 158. [Strategy-first synthesis planning for complex natural products](https://arxiv.org/abs/2608.07454)
 
 **<font color=#1a73e8>作者：</font>** Daniel Armstrong, Xuan-Vu Nguyen, Octavian Susanu 等 18 位作者  
 **<font color=#188038>arXiv所属领域：</font>** Multiagent Systems
@@ -88,7 +99,7 @@
 ---
 
 
-### 158. [CoinRAG: Contextualized Information Nugget KV Cache Reuse for Long-Context RAG](https://arxiv.org/abs/2608.07458)
+### 159. [CoinRAG: Contextualized Information Nugget KV Cache Reuse for Long-Context RAG](https://arxiv.org/abs/2608.07458)
 
 **<font color=#1a73e8>作者：</font>** Gyuwan Kim, Cheoneum Park, Tao Yang  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -99,7 +110,7 @@
 ---
 
 
-### 159. [CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity](https://arxiv.org/abs/2608.07460)
+### 160. [CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity](https://arxiv.org/abs/2608.07460)
 
 **<font color=#1a73e8>作者：</font>** Ananya Sahu, Mohit Bansal, Elias Stengel-Eskin  
 **<font color=#188038>arXiv所属领域：</font>** Computation and Language
@@ -114,7 +125,7 @@
 
 > 以下论文保留内部待复核标记，并统一放在大模型章节末尾。
 
-### 160. [Towards Multi-Label Graph Foundation Models: from Single-Vector Representation Learning to Multi-Semantic Basis Learning](https://arxiv.org/abs/2608.06394)
+### 161. [Towards Multi-Label Graph Foundation Models: from Single-Vector Representation Learning to Multi-Semantic Basis Learning](https://arxiv.org/abs/2608.06394)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -127,7 +138,7 @@
 ---
 
 
-### 161. [InsertFuse: A Unified Framework for Multi-Category Reference-Guided Image Insertion](https://arxiv.org/abs/2608.06490)
+### 162. [InsertFuse: A Unified Framework for Multi-Category Reference-Guided Image Insertion](https://arxiv.org/abs/2608.06490)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -140,7 +151,7 @@
 ---
 
 
-### 162. [Bootstrap-Conditioned Action Selection with Tabular Foundation Models](https://arxiv.org/abs/2608.06559)
+### 163. [Bootstrap-Conditioned Action Selection with Tabular Foundation Models](https://arxiv.org/abs/2608.06559)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -153,7 +164,7 @@
 ---
 
 
-### 163. [Do 3D Medical Foundation Models See Through MRI Artifacts? A Controlled Study of Representation Robustness](https://arxiv.org/abs/2608.06613)
+### 164. [Do 3D Medical Foundation Models See Through MRI Artifacts? A Controlled Study of Representation Robustness](https://arxiv.org/abs/2608.06613)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -166,7 +177,7 @@
 ---
 
 
-### 164. [CellWorld: From Gene-Level Reconstruction to Latent Cell Prediction in Spatial Transcriptomics Foundation Models](https://arxiv.org/abs/2608.06659)
+### 165. [CellWorld: From Gene-Level Reconstruction to Latent Cell Prediction in Spatial Transcriptomics Foundation Models](https://arxiv.org/abs/2608.06659)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -179,7 +190,7 @@
 ---
 
 
-### 165. [Beyond Foundation Models: Dimension-Aware Neural Architecture Search with Small-Data Representation Models for Cryocooler Lifetime Prediction](https://arxiv.org/abs/2608.06993)
+### 166. [Beyond Foundation Models: Dimension-Aware Neural Architecture Search with Small-Data Representation Models for Cryocooler Lifetime Prediction](https://arxiv.org/abs/2608.06993)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -194,7 +205,7 @@ Experiments on cryocooler telemetry show that the proposed approach achieves com
 ---
 
 
-### 166. [ZIPBrain: Can EEG Foundation Models Be Faster, Locally Deployable, but Accurate?](https://arxiv.org/abs/2608.07033)
+### 167. [ZIPBrain: Can EEG Foundation Models Be Faster, Locally Deployable, but Accurate?](https://arxiv.org/abs/2608.07033)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -207,7 +218,7 @@ Experiments on cryocooler telemetry show that the proposed approach achieves com
 ---
 
 
-### 167. [Unsupervised Adaptation of PDE Foundation Models](https://arxiv.org/abs/2608.07053)
+### 168. [Unsupervised Adaptation of PDE Foundation Models](https://arxiv.org/abs/2608.07053)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -220,7 +231,7 @@ Experiments on cryocooler telemetry show that the proposed approach achieves com
 ---
 
 
-### 168. [Learning Suffers More Than the Policy Class Under Partial Observability: A Closed-Form Analysis](https://arxiv.org/abs/2608.07228)
+### 169. [Learning Suffers More Than the Policy Class Under Partial Observability: A Closed-Form Analysis](https://arxiv.org/abs/2608.07228)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -235,7 +246,7 @@ The cause is a bias in what the critic learns rather than a limit on what the ac
 ---
 
 
-### 169. [A foundation-model approach to pediatric headache classification from rs-fMRI](https://arxiv.org/abs/2608.07287)
+### 170. [A foundation-model approach to pediatric headache classification from rs-fMRI](https://arxiv.org/abs/2608.07287)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -248,7 +259,7 @@ The cause is a bias in what the critic learns rather than a limit on what the ac
 ---
 
 
-### 170. [Foundation Models Adaptation for Multi-View Multi-modal Cardiac MRI Segmentation and Direct Ejection Fraction Estimation](https://arxiv.org/abs/2608.07291)
+### 171. [Foundation Models Adaptation for Multi-View Multi-modal Cardiac MRI Segmentation and Direct Ejection Fraction Estimation](https://arxiv.org/abs/2608.07291)
 
 > ⚠️ **待复核**：规则检测到弱相关信号，暂并入大模型章节。
 
@@ -262,8 +273,8 @@ The cause is a bias in what the critic learns rather than a limit on what the ac
 
 
 > [!TIP]
-> 当前位于：**151-170**（第 4/4 组）
+> 当前位于：**151-171**（第 4/4 组）
 > - [返回当日日报目录](../index.md)
-> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | [101-150](./part-03.md) | **151-170**
+> - 分组跳转：[1-50](./part-01.md) | [51-100](./part-02.md) | [101-150](./part-03.md) | **151-171**
 
 *本日报由 AI 自动生成，数据来源：[arXiv.org](https://arxiv.org)*
