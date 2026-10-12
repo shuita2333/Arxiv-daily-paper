@@ -22,6 +22,7 @@
 
 | 日期 | LLM安全 | 大模型 | 其他 | 今日关键词 |
 |------|---------|--------|------|------------|
+| [2026-10-13](papers/2026-10-13/index.md) | [3篇](papers/2026-10-13/01-security-llm/part-01.md) | [231篇](papers/2026-10-13/02-llm-research/part-01.md) | [244篇](papers/2026-10-13/04-other-research/part-01.md) | 安全：后门与投毒、防护栏、攻击链；大模型：Agent、推理、多模态、模型评测、强化学习 |
 | [2026-10-12](papers/2026-10-12/index.md) | [9篇](papers/2026-10-12/01-security-llm/part-01.md) | [288篇](papers/2026-10-12/02-llm-research/part-01.md) | [329篇](papers/2026-10-12/04-other-research/part-01.md) | 安全：提示注入、红队评测、防护栏；大模型：Agent、推理、多模态、模型评测、微调 |
 | [2026-10-09](papers/2026-10-09/index.md) | [8篇](papers/2026-10-09/01-security-llm/part-01.md) | [266篇](papers/2026-10-09/02-llm-research/part-01.md) | [324篇](papers/2026-10-09/04-other-research/part-01.md) | 安全：提示注入、防护栏、安全对齐；大模型：Agent、推理、模型评测、多模态、强化学习 |
 | [2026-10-08](papers/2026-10-08/index.md) | [12篇](papers/2026-10-08/01-security-llm/part-01.md) | [303篇](papers/2026-10-08/02-llm-research/part-01.md) | [335篇](papers/2026-10-08/04-other-research/part-01.md) | 安全：后门与投毒、鲁棒性、提示注入；大模型：Agent、推理、多模态、模型评测、微调 |
