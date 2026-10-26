@@ -22,6 +22,7 @@
 
 | 日期 | LLM安全 | 大模型 | 其他 | 今日关键词 |
 |------|---------|--------|------|------------|
+| [2026-10-27](papers/2026-10-27/index.md) | [4篇](papers/2026-10-27/01-security-llm/part-01.md) | [204篇](papers/2026-10-27/02-llm-research/part-01.md) | [198篇](papers/2026-10-27/04-other-research/part-01.md) | 安全：提示注入、水印、防护栏；大模型：Agent、多模态、推理、模型评测、强化学习 |
 | [2026-10-26](papers/2026-10-26/index.md) | [3篇](papers/2026-10-26/01-security-llm/part-01.md) | [241篇](papers/2026-10-26/02-llm-research/part-01.md) | [211篇](papers/2026-10-26/04-other-research/part-01.md) | 安全：水印、越狱、防护栏；大模型：Agent、推理、模型评测、多模态、强化学习 |
 | [2026-10-23](papers/2026-10-23/index.md) | [5篇](papers/2026-10-23/01-security-llm/part-01.md) | [204篇](papers/2026-10-23/02-llm-research/part-01.md) | [232篇](papers/2026-10-23/04-other-research/part-01.md) | 安全：提示注入、红队评测、漏洞发现；大模型：Agent、推理、模型评测、多模态、强化学习 |
 | [2026-10-22](papers/2026-10-22/index.md) | [4篇](papers/2026-10-22/01-security-llm/part-01.md) | [299篇](papers/2026-10-22/02-llm-research/part-01.md) | [288篇](papers/2026-10-22/04-other-research/part-01.md) | 安全：防护栏、水印、鲁棒性；大模型：Agent、模型评测、推理、多模态、微调 |
