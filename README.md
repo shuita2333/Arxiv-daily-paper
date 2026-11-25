@@ -22,6 +22,7 @@
 
 | 日期 | LLM安全 | 大模型 | 其他 | 今日关键词 |
 |------|---------|--------|------|------------|
+| [2026-11-26](papers/2026-11-26/index.md) | [7篇](papers/2026-11-26/01-security-llm/part-01.md) | [299篇](papers/2026-11-26/02-llm-research/part-01.md) | [342篇](papers/2026-11-26/04-other-research/part-01.md) | 安全：后门与投毒、红队评测、提示注入；大模型：Agent、多模态、推理、模型评测、微调 |
 | [2026-11-25](papers/2026-11-25/index.md) | [11篇](papers/2026-11-25/01-security-llm/part-01.md) | [486篇](papers/2026-11-25/02-llm-research/part-01.md) | [569篇](papers/2026-11-25/04-other-research/part-01.md) | 安全：后门与投毒、红队评测、提示注入；大模型：Agent、多模态、推理、模型评测、微调 |
 | [2026-11-24](papers/2026-11-24/index.md) | [7篇](papers/2026-11-24/01-security-llm/part-01.md) | [200篇](papers/2026-11-24/02-llm-research/part-01.md) | [206篇](papers/2026-11-24/04-other-research/part-01.md) | 安全：防护栏、后门与投毒、安全对齐；大模型：Agent、多模态、推理、微调、模型评测 |
 | [2026-11-23](papers/2026-11-23/index.md) | [1篇](papers/2026-11-23/01-security-llm/part-01.md) | [266篇](papers/2026-11-23/02-llm-research/part-01.md) | [265篇](papers/2026-11-23/04-other-research/part-01.md) | 安全：提示注入、Agent、agentic；大模型：Agent、多模态、推理、模型评测、微调 |
